@@ -1,13 +1,4 @@
----
-title: "Walkthrough reading in synthetic OMOP data for Critical Care"
-output:
-  html_document:
-    keep_md: true
-author: Andy South
-date: "2024-11-05"
----
-
-<!-- *.md is generated from *.Rmd in /dynamic-docs/, to update edit *.Rmd, re-knit & copy *.md to root folder -->
+<!-- *.md is generated from *.Rmd in /dynamic-docs/, to update edit *.Rmd, re-knit, copy *.md to root folder, delete YAML header so it displays better in Github -->
 
 
 This document is an introductory walkthrough, demonstrating how to read into R some OMOP data from a series of csv files, join on concept names and explore and visualise the data.
