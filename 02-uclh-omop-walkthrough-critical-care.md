@@ -1,11 +1,3 @@
----
-title: "Walkthrough reading in synthetic OMOP data for Critical Care"
-output:
-  html_document:
-    keep_md: true
-author: Andy South
-date: "2024-12-03"
----
 
 <!-- *.md is generated from *.Rmd in /dynamic-docs/, to update edit *.Rmd, re-knit, copy *.md to root folder, delete YAML header so it displays better in Github -->
 
