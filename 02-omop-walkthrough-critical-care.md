@@ -1,5 +1,4 @@
-
-<!-- *.md is generated from *.Rmd in /dynamic-docs/, to update edit *.Rmd, re-knit, copy *.md to root folder, delete YAML header so it displays better in Github -->
+<!-- *.md is generated from `*.Rmd` in /dynamic-docs/, to update edit `*.Rmd`, re-knit, copy `*.md` & the `*_files` folder to root, delete YAML header so it displays better in Github, don't delete `.html` because that will delete folder and images used by the md. We can automate this process later. -->
 
 
 This document is an introductory walkthrough, demonstrating how to read into R some OMOP data from a series of csv files, join on concept names and explore and visualise the data.
@@ -37,7 +36,7 @@ Here we will download & read in some UCLH critical care data stored in Github (i
 ``` r
 repo <- "SAFEHR-data/uclh-research-discovery"
 path <- "_projects/uclh_cchic_s0/data"
-destdata <- here("dynamic-docs/02-uclh-omop-walkthrough-critical-care/data")
+destdata <- here("dynamic-docs/02-omop-walkthrough-critical-care/data")
 
 # only download if not already present
 if (! file.exists(file.path(destdata,"person.csv")))
@@ -133,7 +132,7 @@ ggplot(omop$person, aes(x=year_of_birth, fill = as.factor(gender_concept_id))) +
   theme_minimal()
 ```
 
-![](02-uclh-omop-walkthrough-critical-care_files/figure-html/explore-person-1.png)<!-- -->
+![](02-omop-walkthrough-critical-care_files/figure-html/explore-person-1.png)<!-- -->
 
 In the plot above bars are coloured by `gender_concept_id` which is the OMOP ID for gender, but we don't actually know which is which. We will look at resolving that by retrieving OMOP concept names in the next section.
 
@@ -165,7 +164,7 @@ ggplot(omop_named$person, aes(x=year_of_birth, fill = as.factor(gender_concept_n
   theme_minimal()
 ```
 
-![](02-uclh-omop-walkthrough-critical-care_files/figure-html/omop-join-names-all-1.png)<!-- -->
+![](02-omop-walkthrough-critical-care_files/figure-html/omop-join-names-all-1.png)<!-- -->
 
 ## Looking at the `measurement` table
 
@@ -403,7 +402,7 @@ omop_named$visit_occurrence |>
   theme(legend.position = "none")
 ```
 
-![](02-uclh-omop-walkthrough-critical-care_files/figure-html/explore-visit_occurrence-1.png)<!-- -->
+![](02-omop-walkthrough-critical-care_files/figure-html/explore-visit_occurrence-1.png)<!-- -->
 
 
 ## Joining `person` data to other tables
@@ -428,7 +427,7 @@ freq_top_measures |>
     theme(legend.position = "none")
 ```
 
-![](02-uclh-omop-walkthrough-critical-care_files/figure-html/join-person-measurement-1.png)<!-- -->
+![](02-omop-walkthrough-critical-care_files/figure-html/join-person-measurement-1.png)<!-- -->
 
 Note that we use `left_join` here because we only want to join on `person` information for rows occurring in the `measurement` table which is the left hand argument of the join. Also note that in this example we end up with one row per patient because the synthetic `measurement` table only has one row per patient. Usually we would expect multiple measurements per patient that would result in multiple rows per patient in the joined table.
 

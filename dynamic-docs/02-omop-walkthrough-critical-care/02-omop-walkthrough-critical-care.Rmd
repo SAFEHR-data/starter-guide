@@ -48,7 +48,7 @@ Here we will download & read in some UCLH critical care data stored in Github (i
 
 repo <- "SAFEHR-data/uclh-research-discovery"
 path <- "_projects/uclh_cchic_s0/data"
-destdata <- here("dynamic-docs/02-uclh-omop-walkthrough-critical-care/data")
+destdata <- here("dynamic-docs/02-omop-walkthrough-critical-care/data")
 
 # only download if not already present
 if (! file.exists(file.path(destdata,"person.csv")))
