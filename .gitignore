@@ -1,3 +1,6 @@
+# knitted htmls that github can't display
+*.html
+
 # History files
 .Rhistory
 .Rapp.history
