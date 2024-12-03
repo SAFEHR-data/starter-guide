@@ -1,8 +1,5 @@
-# starter-guide
+# Starter guide for working with [SAFEHR-data](https://www.uclhospitals.brc.nihr.ac.uk/core-themes/safehr)
 
-Starter guide for working with SAFEHR-data.
-
-Access pages by following links in the Github file list above or here :
 
 Help file | content
 -------------------------- | ------------------------------
