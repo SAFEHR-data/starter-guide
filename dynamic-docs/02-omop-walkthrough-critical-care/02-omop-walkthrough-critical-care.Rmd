@@ -19,6 +19,10 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
 ## Installing & loading required packages
+
+If any of the `library($PACKAGE)` packages aren't installed, you can install them by running `install.packages("$PACKAGE")`,
+replacing `$PACKAGE` with the package name.
+
 ```{r packages}
 
 # install omopcept from Github if not installed
@@ -55,10 +59,10 @@ if (! file.exists(file.path(destdata,"person.csv")))
 {
   # Make GitHub API request to list contents of given path
   response <- gh::gh(glue::glue("/repos/{repo}/contents/{path}"))
-  
+
   # Download all files to the destination dir
   purrr::walk(response, ~ download.file(.x$download_url, destfile = file.path(destdata, .x$name)))
-  
+
   list.files(destdata)
 }
 
