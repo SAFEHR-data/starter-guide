@@ -33,6 +33,8 @@ jobs:
             remotes::install_github("SAFEHR-data/omopcept")
             renv::snapshot()
           '
+        env:
+          GITHUB_PAT: ${{ secrets.READ_OMOPCEPT_PAT }}
 
       - name: Find and knit Rmd files
         run: |
