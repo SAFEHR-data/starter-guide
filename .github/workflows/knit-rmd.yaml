@@ -20,6 +20,10 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v4
+        # Only pull current branch, not the merge outcome so that we can commit the output
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
