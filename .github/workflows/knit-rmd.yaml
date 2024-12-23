@@ -26,7 +26,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          Rscript -e 'install.packages(c("rmarkdown", "knitr"))'
+          Rscript -e 'install.packages(c("rmarkdown", "knitr")); remotes::install_github("SAFEHR-data/omopcept")'
 
       - name: Find and knit Rmd files
         run: |
