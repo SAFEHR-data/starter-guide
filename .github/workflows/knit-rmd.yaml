@@ -15,6 +15,9 @@ jobs:
       pull-requests: write
 
     steps:
+      - name: Install pandoc
+        uses: pandoc/actions/setup@v1
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
