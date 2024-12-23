@@ -15,9 +15,6 @@ jobs:
       pull-requests: write
 
     steps:
-      - name: Install pandoc
-        uses: pandoc/actions/setup@v1
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -25,6 +22,13 @@ jobs:
         uses: r-lib/actions/setup-r@v2
 
       - name: Install dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            any::rmarkdown
+            any::knitr
+          install-pandoc: true
+      -
         run: |
           Rscript -e 'install.packages(c("rmarkdown", "knitr"))'
 
