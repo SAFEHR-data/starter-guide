@@ -50,6 +50,12 @@ jobs:
           git add -A
           git commit -m "Add omopcept" || echo "No changes to commit"
           git format-patch -1 HEAD
+          cat 0001-Add-omopcept.patch
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          branch: ${{ github.head_ref || github.ref_name }}
 
       - name: Find and knit Rmd files
         run: |
