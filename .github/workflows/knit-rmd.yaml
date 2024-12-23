@@ -39,17 +39,13 @@ jobs:
           GITHUB_PAT: ${{ secrets.READ_OMOPCEPT_PAT }}
 
 
-      - name: Tmp commit changes
+      - name: Show changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           git commit -m "Add omopcept" || echo "No changes to commit"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.8.0
-        with:
-          branch: ${{ github.head_ref }}
+          git format-patch -1 HEAD
 
       - name: Find and knit Rmd files
         run: |
@@ -70,4 +66,4 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@v0.8.0
         with:
-          branch: ${{ github.head_ref }}
+          branch: ${{ github.head_ref || github.ref_name }}
