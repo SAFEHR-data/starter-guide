@@ -61,6 +61,28 @@
       ],
       "Hash": "45f0398006e83a5b10b72a90663d8d8c"
     },
+    "arrow": {
+      "Package": "arrow",
+      "Version": "18.1.0",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "R6",
+        "assertthat",
+        "bit64",
+        "cpp11",
+        "glue",
+        "methods",
+        "purrr",
+        "rlang",
+        "stats",
+        "tidyselect",
+        "utils",
+        "vctrs"
+      ],
+      "Hash": "d83c5ed8c1a89c5fd5788a8da714364e"
+    },
     "askpass": {
       "Package": "askpass",
       "Version": "1.2.0",
@@ -70,6 +92,16 @@
         "sys"
       ],
       "Hash": "cad6cf7f1d5f6e906700b9d3e718c796"
+    },
+    "assertthat": {
+      "Package": "assertthat",
+      "Version": "0.2.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "tools"
+      ],
+      "Hash": "50c838a310445e954bc13f26f26a6ecf"
     },
     "base64enc": {
       "Package": "base64enc",
@@ -640,6 +672,28 @@
       ],
       "Hash": "ccbb8846be320b627e6aa2b4616a2ded"
     },
+    "omopcept": {
+      "Package": "omopcept",
+      "Version": "0.0.6.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "omopcept",
+      "RemoteUsername": "SAFEHR-data",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "145c5e82c2f252903dbb5ca52f50a0d841ed09b2",
+      "Requirements": [
+        "R",
+        "arrow",
+        "dplyr",
+        "ggplot2",
+        "lubridate",
+        "readr",
+        "rlang",
+        "stringr"
+      ],
+      "Hash": "046e0eba1d9ac70bd15bab91577e19a9"
+    },
     "openssl": {
       "Package": "openssl",
       "Version": "2.2.1",
@@ -652,12 +706,11 @@
     },
     "pillar": {
       "Package": "pillar",
-      "Version": "1.9.0",
+      "Version": "1.10.0",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Requirements": [
         "cli",
-        "fansi",
         "glue",
         "lifecycle",
         "rlang",
@@ -665,7 +718,7 @@
         "utils",
         "vctrs"
       ],
-      "Hash": "15da5a8412f317beeee6175fbc76f4bb"
+      "Hash": "101ca350beea21261a15ba169d7a8513"
     },
     "pkgconfig": {
       "Package": "pkgconfig",
