@@ -36,9 +36,9 @@ jobs:
       - name: Find and knit Rmd files
         run: |
           Rscript -e '
-            rmd_files <- list.files(pattern = "\\.Rmd$", recursive = TRUE)
+            rmd_files <- list.files(path = "dynamic-docs", pattern = "\\.Rmd$", recursive = TRUE)
             for (file in rmd_files) {
-              rmarkdown::render(file)
+              rmarkdown::render(file, output_format = "md_document")
             }
           '
 
