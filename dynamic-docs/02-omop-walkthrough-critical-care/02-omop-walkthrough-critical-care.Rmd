@@ -7,7 +7,10 @@ author: Andy South
 date: "2024-12-03"
 ---
 
-<!-- *.md is generated from `*.Rmd` in /dynamic-docs/, to update edit `*.Rmd`, re-knit, copy `*.md` & the `*_files` folder to root, delete YAML header so it displays better in Github, don't delete `.html` because that will delete folder and images used by the md. We can automate this process later. -->
+<!-- 
+  *.md is generated from `*.Rmd` in /dynamic-docs/, this is updated in a github action,
+  you can regenerate this by running the "Find and knit Rmd files" step from the github action.
+-->
 
 
 This document is an introductory walkthrough, demonstrating how to read into R some OMOP data from a series of csv files, join on concept names and explore and visualise the data.
