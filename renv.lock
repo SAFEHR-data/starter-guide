@@ -677,11 +677,11 @@
       "Version": "0.0.6.1",
       "Source": "GitHub",
       "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "omopcept",
       "RemoteUsername": "SAFEHR-data",
+      "RemoteRepo": "omopcept",
       "RemoteRef": "HEAD",
-      "RemoteSha": "145c5e82c2f252903dbb5ca52f50a0d841ed09b2",
+      "RemoteSha": "9aa7e10eb94c6a3442f4de259d7445c341818997",
+      "RemoteHost": "api.github.com",
       "Requirements": [
         "R",
         "arrow",
@@ -692,7 +692,7 @@
         "rlang",
         "stringr"
       ],
-      "Hash": "046e0eba1d9ac70bd15bab91577e19a9"
+      "Hash": "6f7ccde3675c111b089fb1a9b0a2e84e"
     },
     "openssl": {
       "Package": "openssl",
