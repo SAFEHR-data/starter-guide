@@ -18,6 +18,8 @@ import pandas as pd
 import datetime
 import seaborn as sns
 import matplotlib.pyplot as plt
+import requests
+from pathlib import Path
 ```
 
 # Downloading & reading in OMOP data
@@ -25,15 +27,15 @@ Here we will download & read in some UCLH critical care data stored in Github
 
 
 ```python
-
-
 # Repository and file paths
 repository = "SAFEHR-data/uclh-research-discovery"
 source_path = "_projects/uclh_cchic_s0/data"
-destination_folder = "Starter_Guide_python/data"
+
+# Define destination folder dynamically 
+destination_folder = Path().resolve() / "data"
 
 # Create destination folder if it doesn't exist
-os.makedirs(destination_folder, exist_ok=True)
+destination_folder.mkdir(parents=True, exist_ok=True)
 
 # GitHub API URL to get the contents of the folder
 api_url = f"https://api.github.com/repos/{repository}/contents/{source_path}"
@@ -45,35 +47,31 @@ files = requests.get(api_url).json()
 for file in files:
     file_url = file["download_url"]
     file_name = file["name"]
-    file_path = os.path.join(destination_folder, file_name)
+    file_path = destination_folder / file_name
 
-    # Download the file and save it locally
-    print(f"Downloading {file_name} ******")
-    file_response = requests.get(file_url)
-
-    # Save the file to the local folder
+    # Download and save the file
+    print(f"Downloading {file_name}...")
     with open(file_path, "wb") as local_file:
-        local_file.write(file_response.content)
+        local_file.write(requests.get(file_url).content)
 
 # List all downloaded files
 print("Download complete! Files in the folder:")
-print(os.listdir(destination_folder))
+
 
 ```
 
-    Downloading condition_occurrence.csv ******
-    Downloading death.csv ******
-    Downloading device_exposure.csv ******
-    Downloading drug_exposure.csv ******
-    Downloading measurement.csv ******
-    Downloading observation.csv ******
-    Downloading observation_period.csv ******
-    Downloading person.csv ******
-    Downloading procedure_occurrence.csv ******
-    Downloading specimen.csv ******
-    Downloading visit_occurrence.csv ******
+    Downloading condition_occurrence.csv...
+    Downloading death.csv...
+    Downloading device_exposure.csv...
+    Downloading drug_exposure.csv...
+    Downloading measurement.csv...
+    Downloading observation.csv...
+    Downloading observation_period.csv...
+    Downloading person.csv...
+    Downloading procedure_occurrence.csv...
+    Downloading specimen.csv...
+    Downloading visit_occurrence.csv...
     Download complete! Files in the folder:
-    ['observation_period.csv', 'drug_exposure.csv', 'specimen.csv', 'death.csv', 'device_exposure.csv', 'measurement.csv', 'condition_occurrence.csv', 'visit_occurrence.csv', 'person.csv', 'observation.csv', 'procedure_occurrence.csv']
 
 
 # Loading Multiple CSV Files into DataFrames
@@ -83,14 +81,13 @@ This script loads all CSV files from a specified folder into individual pandas D
 ```python
 #########Load files in Data frames w.r.t file names
 # store the loaded data from each CSV file.
-df = {} 
-for file in os.listdir(destination_folder):
-    if file.endswith(".csv"):
-        # Extract the file name without extension
-        file_name = os.path.splitext(file)[0]
+cdm = {} 
+for file in destination_folder.iterdir():
+    if file.suffix == ".csv":  # Check file extension
+        # Extract file name without extension
+        file_name = file.stem
         # Load the file into a DataFrame
-        file_path = os.path.join(destination_folder, file)
-        df[file_name] = pd.read_csv(file_path)
+        cdm[file_name] = pd.read_csv(file)
         print(f"Loaded {file_name} into a DataFrame.")
 ```
 
@@ -109,7 +106,7 @@ for file in os.listdir(destination_folder):
 
 
 ```python
-for name in df.keys():
+for name in cdm.keys():
     print(name)
 
 ```
@@ -135,7 +132,7 @@ Thus we can find the names of the columns in person, use df["person"].columns an
 
 ```python
 # show column names for one of the tables
-df['person'].columns
+cdm['person'].columns
 ```
 
 
@@ -155,7 +152,7 @@ df['person'].columns
 
 ```python
 # show column datatype for one of the tables
-df['person'].dtypes
+cdm['person'].dtypes
 ```
 
 
@@ -186,7 +183,7 @@ df['person'].dtypes
 
 ```python
 # glimpse table data
-df['person'].head() 
+cdm['person'].head() 
 ```
 
 
@@ -346,7 +343,7 @@ df['person'].head()
 
 
 ```python
-birth_year_gender_cnt = df['person'].groupby(['year_of_birth', 'gender_concept_id'])['person_id'].count().reset_index()
+birth_year_gender_cnt = cdm['person'].groupby(['year_of_birth', 'gender_concept_id'])['person_id'].count().reset_index()
 
 # Rename the 'person_id' column to 'count'
 birth_year_gender_cnt.rename(columns={'person_id': 'count'}, inplace=True)
@@ -394,7 +391,7 @@ import urllib.request
 tag = "v4"
 relative_path = "data/concept.parquet"
 download_url = f"https://github.com/SAFEHR-data/omop-vocabs-processed/raw/refs/tags/{tag}/{relative_path}"
-local_filename = "concept.parquet"
+local_filename = destination_folder/"concept.parquet"
 
 urllib.request.urlretrieve(download_url, local_filename)
 ```
@@ -402,20 +399,18 @@ urllib.request.urlretrieve(download_url, local_filename)
 
 
 
-    ('concept.parquet', <http.client.HTTPMessage at 0x14883f3e0>)
+    (PosixPath('/Users/muhammadqummerularfeen/Documents/starter-guide/dynamic-docs/02B-Python-Omop-walkthrough-critical-care/data/concept.parquet'),
+     <http.client.HTTPMessage at 0x13e1fe060>)
 
 
 
 
 ```python
-
-file_path = "/Users/muhammadqummerularfeen/concept.parquet" 
-
 # Read the parquet file into a pandas DataFrame
-df_concept = pd.read_parquet(file_path)
+cdm_concept = pd.read_parquet(local_filename)
 
 # Display the first few rows of the DataFrame to ensure it's loaded
-df_concept.head()
+cdm_concept.head()
 ```
 
 
@@ -525,12 +520,12 @@ df_concept.head()
 
 
 ```python
-df_person_concept = pd.merge(df['person'], df_concept, 
+cdm_person_concept = pd.merge(cdm['person'], cdm_concept, 
                              left_on='gender_concept_id', 
                              right_on='concept_id', 
                              how='left')
 
-df_person_concept.head()
+cdm_person_concept.head()
 ```
 
 
@@ -707,7 +702,7 @@ df_person_concept.head()
 
 
 ```python
-birth_year_gender_cnt = df_person_concept.groupby(['year_of_birth', 'concept_name'])['person_id'].count().reset_index()
+birth_year_gender_cnt = cdm_person_concept.groupby(['year_of_birth', 'concept_name'])['person_id'].count().reset_index()
 
 # Rename the 'person_id' column to 'count'
 birth_year_gender_cnt.rename(columns={'person_id': 'count'}, inplace=True)
@@ -734,17 +729,12 @@ plt.show()
     
 
 
-
-```python
-
-```
-
 # Looking at the measurement table
 We can use the measurement_concept_name column (that was added by omop_join_name_all() above) to see which are the most common measurements.
 
 
 ```python
-df['measurement'].head()
+cdm['measurement'].head()
 ```
 
 
@@ -915,13 +905,13 @@ df['measurement'].head()
 
 ```python
 # Join the Measurement dataframe with Concept
-df_measurement_concept = pd.merge(df['measurement'], df_concept, 
+cdm_measurement_concept = pd.merge(cdm['measurement'], cdm_concept, 
                              left_on='measurement_concept_id', 
                              right_on='concept_id', 
                              how='left')
 
 # most frequent measurement concepts
-measurement_concept_cnt=df_measurement_concept.groupby(['concept_name'])['person_id'].count().reset_index().sort_values(by='person_id', ascending=False)
+measurement_concept_cnt=cdm_measurement_concept.groupby(['concept_name'])['person_id'].count().reset_index().sort_values(by='person_id', ascending=False)
 
 # rename the columns
 measurement_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'Measurement Concept Name'}, inplace=True)
@@ -997,7 +987,7 @@ We can use the observation_concept_name column to see which are the most common 
 
 
 ```python
-df['observation'].head()
+cdm['observation'].head()
 ```
 
 
@@ -1156,13 +1146,13 @@ df['observation'].head()
 
 ```python
 # Join the Measurement dataframe with Concept
-df_observation_concept=pd.merge(df['observation'], df_concept, 
+cdm_observation_concept=pd.merge(cdm['observation'], cdm_concept, 
                              left_on='observation_concept_id', 
                              right_on='concept_id', 
                              how='left')
 
 # most frequent measurement concepts
-observation_concept_cnt=df_observation_concept.groupby(['concept_name'])['person_id'].count().reset_index().sort_values(by='person_id', ascending=False)
+observation_concept_cnt=cdm_observation_concept.groupby(['concept_name'])['person_id'].count().reset_index().sort_values(by='person_id', ascending=False)
 
 # rename the columns
 observation_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'Observation Concept Name'}, inplace=True)
@@ -1239,7 +1229,7 @@ We can use the drug_concept_name column to see which are the most common drugs.
 
 
 ```python
-df['drug_exposure'].head()
+cdm['drug_exposure'].head()
 ```
 
 
@@ -1417,13 +1407,13 @@ df['drug_exposure'].head()
 
 ```python
 # Join the Drug Exposure dataframe with Concept
-df_drug_exposure_concept = pd.merge(df['drug_exposure'], df_concept, 
+cdm_drug_exposure_concept = pd.merge(cdm['drug_exposure'], cdm_concept, 
                              left_on='drug_concept_id', 
                              right_on='concept_id', 
                              how='left')
 
 # most frequent  Drug Exposure concepts
-drugexposure_concept_cnt=df_drug_exposure_concept.groupby(['concept_name'])['person_id'].count().reset_index().sort_values(by='person_id', ascending=False)
+drugexposure_concept_cnt=cdm_drug_exposure_concept.groupby(['concept_name'])['person_id'].count().reset_index().sort_values(by='person_id', ascending=False)
 
 # rename the columns
 drugexposure_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'Measurement Concept Name'}, inplace=True)
@@ -1500,7 +1490,7 @@ The visit_occurrence table contains times and attributes of visits. Other tables
 
 
 ```python
-df['visit_occurrence'].head()
+cdm['visit_occurrence'].head()
 ```
 
 
@@ -1652,14 +1642,14 @@ df['visit_occurrence'].head()
 
 
 ```python
-df['visit_occurrence']['visit_start_date'] = pd.to_datetime(df['visit_occurrence']['visit_start_date'], errors='coerce')
-df['visit_occurrence']['visit_end_date'] = pd.to_datetime(df['visit_occurrence']['visit_end_date'], errors='coerce')
+cdm['visit_occurrence']['visit_start_date'] = pd.to_datetime(cdm['visit_occurrence']['visit_start_date'], errors='coerce')
+cdm['visit_occurrence']['visit_end_date'] = pd.to_datetime(cdm['visit_occurrence']['visit_end_date'], errors='coerce')
 
 ```
 
 
 ```python
-df['visit_occurrence'][['visit_occurrence_id','person_id','visit_concept_id','visit_type_concept_id']].head()
+cdm['visit_occurrence'][['visit_occurrence_id','person_id','visit_concept_id','visit_type_concept_id']].head()
 ```
 
 
@@ -1733,20 +1723,20 @@ df['visit_occurrence'][['visit_occurrence_id','person_id','visit_concept_id','vi
 
 
 ```python
-df['visit_occurrence']['visit_start_year'] =df['visit_occurrence']['visit_start_date'].dt.to_period('Y')
-df['visit_occurrence']['visit_end_year'] =df['visit_occurrence']['visit_end_date'].dt.to_period('Y')
+cdm['visit_occurrence']['visit_start_year'] =cdm['visit_occurrence']['visit_start_date'].dt.to_period('Y')
+cdm['visit_occurrence']['visit_end_year'] =cdm['visit_occurrence']['visit_end_date'].dt.to_period('Y')
 ```
 
 
 ```python
 # Join the Visit Occurance dataframe with Concept
-df_visit_concept = pd.merge(df['visit_occurrence'], df_concept, 
+cdm_visit_concept = pd.merge(cdm['visit_occurrence'], cdm_concept, 
                              left_on='visit_concept_id', 
                              right_on='concept_id', 
                              how='left')
 
 # most frequent Visit Occurance concepts
-visit_occurance_concept_cnt = df_visit_concept.groupby(['concept_name', 'visit_start_year'])['person_id'].count().reset_index().sort_values(by='visit_start_year', ascending=False)
+visit_occurance_concept_cnt = cdm_visit_concept.groupby(['concept_name', 'visit_start_year'])['person_id'].count().reset_index().sort_values(by='visit_start_year', ascending=True)
 
 
 # rename the columns
@@ -1783,33 +1773,33 @@ visit_occurance_concept_cnt.head()
   </thead>
   <tbody>
     <tr>
-      <th>72</th>
-      <td>Inpatient Visit</td>
-      <td>2023</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>71</th>
-      <td>Inpatient Visit</td>
-      <td>2021</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>33</th>
+      <th>0</th>
       <td>Emergency Room Visit</td>
-      <td>2021</td>
+      <td>1934</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>70</th>
+      <th>34</th>
       <td>Inpatient Visit</td>
-      <td>2019</td>
+      <td>1934</td>
       <td>1</td>
     </tr>
     <tr>
-      <th>32</th>
+      <th>1</th>
       <td>Emergency Room Visit</td>
-      <td>2019</td>
+      <td>1947</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Emergency Room Visit</td>
+      <td>1949</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Emergency Room Visit</td>
+      <td>1951</td>
       <td>1</td>
     </tr>
   </tbody>
@@ -1837,7 +1827,7 @@ plt.show()
 
 
     
-![png](output_38_0.png)
+![png](output_37_0.png)
     
 
 
@@ -1847,7 +1837,7 @@ The OMOP common data model is person centred. Most tables have a person_id colum
 
 
 ```python
-joined_mp = pd.merge(df['person'], df['measurement'], 
+joined_mp = pd.merge(cdm['person'], cdm['measurement'], 
                              on='person_id', 
                              how='inner')
 ```
@@ -1870,9 +1860,9 @@ freq_top_measures = (
 ```python
 joined_data = (
     joined_mp
-    .merge(df_concept, left_on='measurement_concept_id', right_on='concept_id', how='left')
+    .merge(cdm_concept, left_on='measurement_concept_id', right_on='concept_id', how='left')
     .rename(columns={'concept_name_x': 'measurement_concept_name'})
-    .merge(df_concept, left_on='gender_concept_id', right_on='concept_id', how='left')
+    .merge(cdm_concept, left_on='gender_concept_id', right_on='concept_id', how='left')
     .rename(columns={'concept_name_y': 'gender_concept_name'})
 )
 ```
@@ -1993,7 +1983,7 @@ plt.show()
 
 
     
-![png](output_46_0.png)
+![png](output_45_0.png)
     
 
 
@@ -2004,3 +1994,16 @@ These particular synthetic data are useful to demonstrate the reading in and man
 
 person, measurement, observation & drug_exposure tables are all same length (100 rows), in real data one would expect many more measurements, observations & drug exposures than patients
 Related to 1, in these data there are a single measurement, observation and drug_exposure per patient. In reality one would expect many tens or hundreds of these other values per patient.
+
+
+```python
+destination_folder
+
+```
+
+
+
+
+    PosixPath('/Users/muhammadqummerularfeen/Documents/starter-guide/dynamic-docs/02B-Python-Omop-walkthrough-critical-care/data')
+
+
