@@ -393,16 +393,8 @@ relative_path = "data/concept.parquet"
 download_url = f"https://github.com/SAFEHR-data/omop-vocabs-processed/raw/refs/tags/{tag}/{relative_path}"
 local_filename = destination_folder/"concept.parquet"
 
-urllib.request.urlretrieve(download_url, local_filename)
+#urllib.request.urlretrieve(download_url, local_filename)
 ```
-
-
-
-
-    (PosixPath('/Users/muhammadqummerularfeen/Documents/starter-guide/dynamic-docs/02B-Python-Omop-walkthrough-critical-care/data/concept.parquet'),
-     <http.client.HTTPMessage at 0x13e1fe060>)
-
-
 
 
 ```python
@@ -702,7 +694,189 @@ cdm_person_concept.head()
 
 
 ```python
-birth_year_gender_cnt = cdm_person_concept.groupby(['year_of_birth', 'concept_name'])['person_id'].count().reset_index()
+# Merge person data with the concept data, focusing only on gender_concept_id and concept_name
+cdm_person_concept = pd.merge(
+    cdm['person'], 
+    cdm_concept[['concept_id', 'concept_name']],  # Only select 'concept_id' and 'concept_name'
+    left_on='gender_concept_id', right_on='concept_id', 
+    how='left'
+)
+
+# Rename the 'concept_name' column to 'gender_concept_name'
+cdm_person_concept = cdm_person_concept.rename(columns={'concept_name': 'gender_concept_name'})
+
+cdm_person_concept.head()
+
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>person_id</th>
+      <th>gender_concept_id</th>
+      <th>year_of_birth</th>
+      <th>month_of_birth</th>
+      <th>day_of_birth</th>
+      <th>birth_datetime</th>
+      <th>race_concept_id</th>
+      <th>ethnicity_concept_id</th>
+      <th>location_id</th>
+      <th>provider_id</th>
+      <th>care_site_id</th>
+      <th>person_source_value</th>
+      <th>gender_source_value</th>
+      <th>gender_source_concept_id</th>
+      <th>race_source_value</th>
+      <th>race_source_concept_id</th>
+      <th>ethnicity_source_value</th>
+      <th>ethnicity_source_concept_id</th>
+      <th>concept_id</th>
+      <th>gender_concept_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2451</td>
+      <td>8532</td>
+      <td>1947</td>
+      <td>3</td>
+      <td>18</td>
+      <td>1947-03-18 11:34:00.221602</td>
+      <td>46285839</td>
+      <td>38003564</td>
+      <td>97</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FEMALE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Not Hispanic or Latino</td>
+      <td>NaN</td>
+      <td>8532</td>
+      <td>FEMALE</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2452</td>
+      <td>8532</td>
+      <td>1945</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1945-01-02 19:12:41.795667</td>
+      <td>46285825</td>
+      <td>38003564</td>
+      <td>92</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>FEMALE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Not Hispanic or Latino</td>
+      <td>NaN</td>
+      <td>8532</td>
+      <td>FEMALE</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2453</td>
+      <td>8507</td>
+      <td>1985</td>
+      <td>2</td>
+      <td>13</td>
+      <td>1985-02-13 09:53:37.14794</td>
+      <td>46286810</td>
+      <td>38003563</td>
+      <td>70</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>MALE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hispanic or Latino</td>
+      <td>NaN</td>
+      <td>8507</td>
+      <td>MALE</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2454</td>
+      <td>8507</td>
+      <td>1948</td>
+      <td>11</td>
+      <td>22</td>
+      <td>1948-11-22 02:21:08.685898</td>
+      <td>46286810</td>
+      <td>38003563</td>
+      <td>32</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>MALE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hispanic or Latino</td>
+      <td>NaN</td>
+      <td>8507</td>
+      <td>MALE</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2455</td>
+      <td>8507</td>
+      <td>1946</td>
+      <td>1</td>
+      <td>19</td>
+      <td>1946-01-19 04:41:57.006488</td>
+      <td>46286810</td>
+      <td>38003563</td>
+      <td>91</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>MALE</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Hispanic or Latino</td>
+      <td>NaN</td>
+      <td>8507</td>
+      <td>MALE</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+birth_year_gender_cnt = cdm_person_concept.groupby(['year_of_birth', 'gender_concept_name'])['person_id'].count().reset_index()
 
 # Rename the 'person_id' column to 'count'
 birth_year_gender_cnt.rename(columns={'person_id': 'count'}, inplace=True)
@@ -711,7 +885,7 @@ birth_year_gender_cnt.rename(columns={'person_id': 'count'}, inplace=True)
 plt.figure(figsize=(15, 15))
 
 # Create the plot
-sns.barplot(x='year_of_birth', y='count', hue='concept_name', data=birth_year_gender_cnt)
+sns.barplot(x='year_of_birth', y='count', hue='gender_concept_name', data=birth_year_gender_cnt)
 
 # Add title and labels
 plt.title('Count of Person IDs by Year of Birth and Concept_Name (Gender) ')
@@ -725,7 +899,7 @@ plt.show()
 
 
     
-![png](output_20_0.png)
+![png](output_21_0.png)
     
 
 
@@ -904,19 +1078,19 @@ cdm['measurement'].head()
 
 
 ```python
-# Join the Measurement dataframe with Concept
-cdm_measurement_concept = pd.merge(cdm['measurement'], cdm_concept, 
-                             left_on='measurement_concept_id', 
-                             right_on='concept_id', 
-                             how='left')
-
+cdm_measurement_concept = pd.merge( cdm['measurement'], 
+                                    cdm_concept[['concept_id', 'concept_name']],  # Only select 'concept_id' and 'concept_name'
+                                    left_on='measurement_concept_id', right_on='concept_id', 
+                                    how='left')
+                                    
 # most frequent measurement concepts
 measurement_concept_cnt=cdm_measurement_concept.groupby(['concept_name'])['person_id'].count().reset_index().sort_values(by='person_id', ascending=False)
 
-# rename the columns
-measurement_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'Measurement Concept Name'}, inplace=True)
+# Rename the 'concept_name' column to 'measurement_concept_name'
+measurement_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'measurement_concept_name'}, inplace=True)
 
-measurement_concept_cnt.head(5).reset_index()
+#
+measurement_concept_cnt.head().reset_index()
 ```
 
 
@@ -941,7 +1115,7 @@ measurement_concept_cnt.head(5).reset_index()
     <tr style="text-align: right;">
       <th></th>
       <th>index</th>
-      <th>Measurement Concept Name</th>
+      <th>measurement_concept_name</th>
       <th>Count</th>
     </tr>
   </thead>
@@ -1146,16 +1320,16 @@ cdm['observation'].head()
 
 ```python
 # Join the Measurement dataframe with Concept
-cdm_observation_concept=pd.merge(cdm['observation'], cdm_concept, 
-                             left_on='observation_concept_id', 
-                             right_on='concept_id', 
-                             how='left')
+cdm_observation_concept = pd.merge( cdm['observation'], 
+                                    cdm_concept[['concept_id', 'concept_name']],  # Only select 'concept_id' and 'concept_name'
+                                    left_on='observation_concept_id', right_on='concept_id', 
+                                    how='left')
 
 # most frequent measurement concepts
 observation_concept_cnt=cdm_observation_concept.groupby(['concept_name'])['person_id'].count().reset_index().sort_values(by='person_id', ascending=False)
 
 # rename the columns
-observation_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'Observation Concept Name'}, inplace=True)
+observation_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'observation_concept_name'}, inplace=True)
 
 observation_concept_cnt.head().reset_index()
 
@@ -1183,7 +1357,7 @@ observation_concept_cnt.head().reset_index()
     <tr style="text-align: right;">
       <th></th>
       <th>index</th>
-      <th>Observation Concept Name</th>
+      <th>observation_concept_name</th>
       <th>Count</th>
     </tr>
   </thead>
@@ -1224,12 +1398,18 @@ observation_concept_cnt.head().reset_index()
 
 
 
+
+```python
+
+```
+
 # Looking at the drug_exposure table
 We can use the drug_concept_name column to see which are the most common drugs.
 
 
 ```python
 cdm['drug_exposure'].head()
+
 ```
 
 
@@ -1407,16 +1587,16 @@ cdm['drug_exposure'].head()
 
 ```python
 # Join the Drug Exposure dataframe with Concept
-cdm_drug_exposure_concept = pd.merge(cdm['drug_exposure'], cdm_concept, 
-                             left_on='drug_concept_id', 
-                             right_on='concept_id', 
-                             how='left')
+cdm_drug_exposure_concept = pd.merge( cdm['drug_exposure'], 
+                                    cdm_concept[['concept_id', 'concept_name']],  # Only select 'concept_id' and 'concept_name'
+                                    left_on='drug_concept_id', right_on='concept_id', 
+                                    how='left')
 
 # most frequent  Drug Exposure concepts
 drugexposure_concept_cnt=cdm_drug_exposure_concept.groupby(['concept_name'])['person_id'].count().reset_index().sort_values(by='person_id', ascending=False)
 
 # rename the columns
-drugexposure_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'Measurement Concept Name'}, inplace=True)
+drugexposure_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'drug_concept_name'}, inplace=True)
 
 drugexposure_concept_cnt.head(5).reset_index()
 ```
@@ -1443,7 +1623,7 @@ drugexposure_concept_cnt.head(5).reset_index()
     <tr style="text-align: right;">
       <th></th>
       <th>index</th>
-      <th>Measurement Concept Name</th>
+      <th>drug_concept_name</th>
       <th>Count</th>
     </tr>
   </thead>
@@ -1730,17 +1910,18 @@ cdm['visit_occurrence']['visit_end_year'] =cdm['visit_occurrence']['visit_end_da
 
 ```python
 # Join the Visit Occurance dataframe with Concept
-cdm_visit_concept = pd.merge(cdm['visit_occurrence'], cdm_concept, 
-                             left_on='visit_concept_id', 
-                             right_on='concept_id', 
-                             how='left')
+
+cdm_visit_concept = pd.merge( cdm['visit_occurrence'], 
+                                    cdm_concept[['concept_id', 'concept_name']],  # Only select 'concept_id' and 'concept_name'
+                                    left_on='visit_concept_id', right_on='concept_id', 
+                                    how='left')
 
 # most frequent Visit Occurance concepts
 visit_occurance_concept_cnt = cdm_visit_concept.groupby(['concept_name', 'visit_start_year'])['person_id'].count().reset_index().sort_values(by='visit_start_year', ascending=True)
 
 
 # rename the columns
-visit_occurance_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'Visit Concept Name','visit_start_year': 'Year'}, inplace=True)
+visit_occurance_concept_cnt.rename(columns={'person_id': 'Count', 'concept_name': 'visit_concept_name','visit_start_year': 'Year'}, inplace=True)
 
 visit_occurance_concept_cnt.head()
 ```
@@ -1766,7 +1947,7 @@ visit_occurance_concept_cnt.head()
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Visit Concept Name</th>
+      <th>visit_concept_name</th>
       <th>Year</th>
       <th>Count</th>
     </tr>
@@ -1813,10 +1994,10 @@ visit_occurance_concept_cnt.head()
 # Plot using seaborn
 plt.figure(figsize=(20, 6))
 
-sns.barplot(x='Year', y='Count', hue='Visit Concept Name', data=visit_occurance_concept_cnt)
+sns.barplot(x='Year', y='Count', hue='visit_concept_name', data=visit_occurance_concept_cnt)
 
 # Add titles and labels
-plt.title('Visit Count by Year and Visit Concept Name')
+plt.title('Visit Count by Year & Visit Concept Name')
 plt.xlabel('Year')
 plt.ylabel('Number of Visits')
 plt.xticks(rotation=45)
@@ -1827,7 +2008,7 @@ plt.show()
 
 
     
-![png](output_37_0.png)
+![png](output_39_0.png)
     
 
 
@@ -1844,46 +2025,48 @@ joined_mp = pd.merge(cdm['person'], cdm['measurement'],
 
 
 ```python
+# Step 1: Merge the 'person' and 'measurement' tables on 'person_id'
+joined_mp = pd.merge(cdm['person'], cdm['measurement'], 
+                     on='person_id', 
+                     how='inner')
+
+# Step 2-a: Merge the 'joined_mp' table with 'cdm_concept' to add concept names for measurement_concept_id
+
+joined_mp = (
+    joined_mp
+    .merge(cdm_concept[['concept_id', 'concept_name']], 
+           left_on='measurement_concept_id', 
+           right_on='concept_id', 
+           how='left')
+)
+joined_mp.rename(columns={'concept_name': 'measurement_concept_name'}, inplace=True)
+
+
+ # Step 2-b:add 'gender_concept_name', you can merge with 'cdm_concept' again for 'gender_concept_id'
+joined_mp = (
+    joined_mp
+    .merge(cdm_concept[['concept_id', 'concept_name']], 
+           left_on='gender_concept_id', 
+           right_on='concept_id', 
+           how='left')
+)
+# rename columns
+joined_mp.rename(columns={'concept_name': 'gender_concept_name'}, inplace=True)
+
+
+# Step 3: Perform grouping, size calculation, and filtering (as per the original logic)
 freq_top_measures = (
     joined_mp
-    .groupby(['measurement_concept_id', 'gender_concept_id'])
-    .size()
-    .reset_index(name='n')
-    .sort_values(by='n', ascending=False)
-    .query('n > 1')
+    .groupby(['measurement_concept_name', 'gender_concept_name'])
+    .size()  # Calculate size of each group
+    .reset_index(name='n')  # Reset index and name the new column 'n'
+    .sort_values(by='n', ascending=False)  # Sort by 'n' in descending order
+    .query('n > 1')  # Filter to keep only rows where 'n' > 1
 )
 
+# Step 4: Display the result
+freq_top_measures.head().reset_index()
 
-```
-
-
-```python
-joined_data = (
-    joined_mp
-    .merge(cdm_concept, left_on='measurement_concept_id', right_on='concept_id', how='left')
-    .rename(columns={'concept_name_x': 'measurement_concept_name'})
-    .merge(cdm_concept, left_on='gender_concept_id', right_on='concept_id', how='left')
-    .rename(columns={'concept_name_y': 'gender_concept_name'})
-)
-```
-
-
-```python
-freq_top_measures = (
-    joined_data
-    .groupby(['concept_name_x', 'gender_concept_name'])
-    .size()
-    .reset_index(name='n')
-    .sort_values(by='n', ascending=False)
-    .query('n > 1')
-)
-freq_top_measures.rename(columns={'concept_name_x': 'measurement_concept_name'}, inplace=True)
-
-```
-
-
-```python
-freq_top_measures.head()
 ```
 
 
@@ -1907,6 +2090,7 @@ freq_top_measures.head()
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>index</th>
       <th>measurement_concept_name</th>
       <th>gender_concept_name</th>
       <th>n</th>
@@ -1914,31 +2098,36 @@ freq_top_measures.head()
   </thead>
   <tbody>
     <tr>
-      <th>28</th>
+      <th>0</th>
+      <td>28</td>
       <td>Disabilities of the arm shoulder and hand outc...</td>
       <td>MALE</td>
       <td>3</td>
     </tr>
     <tr>
-      <th>27</th>
+      <th>1</th>
+      <td>27</td>
       <td>Direct site</td>
       <td>MALE</td>
       <td>3</td>
     </tr>
     <tr>
-      <th>80</th>
+      <th>2</th>
+      <td>80</td>
       <td>Urine orotic acid:creatinine ratio measurement</td>
       <td>FEMALE</td>
       <td>2</td>
     </tr>
     <tr>
-      <th>17</th>
+      <th>3</th>
+      <td>17</td>
       <td>Detection of lymphocytes positive for CD8 antigen</td>
       <td>MALE</td>
       <td>2</td>
     </tr>
     <tr>
-      <th>1</th>
+      <th>4</th>
+      <td>1</td>
       <td>12 month target weight</td>
       <td>MALE</td>
       <td>2</td>
@@ -1951,6 +2140,7 @@ freq_top_measures.head()
 
 
 ```python
+
 # Set up the FacetGrid
 g = sns.FacetGrid(
     freq_top_measures,
@@ -1983,7 +2173,7 @@ plt.show()
 
 
     
-![png](output_45_0.png)
+![png](output_44_0.png)
     
 
 
@@ -1994,16 +2184,3 @@ These particular synthetic data are useful to demonstrate the reading in and man
 
 person, measurement, observation & drug_exposure tables are all same length (100 rows), in real data one would expect many more measurements, observations & drug exposures than patients
 Related to 1, in these data there are a single measurement, observation and drug_exposure per patient. In reality one would expect many tens or hundreds of these other values per patient.
-
-
-```python
-destination_folder
-
-```
-
-
-
-
-    PosixPath('/Users/muhammadqummerularfeen/Documents/starter-guide/dynamic-docs/02B-Python-Omop-walkthrough-critical-care/data')
-
-
