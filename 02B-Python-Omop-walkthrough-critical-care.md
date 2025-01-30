@@ -899,7 +899,7 @@ plt.show()
 
 
     
-![png](02B-Python-Omop-walkthrough-critical-care/output_13_0.png)
+![png](02B-Python-Omop-walkthrough-critical-care/output_21_0.png)
     
 
 
