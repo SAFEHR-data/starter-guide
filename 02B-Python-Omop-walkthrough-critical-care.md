@@ -366,7 +366,7 @@ plt.show()
 
 
     
-![png](output_13_0.png)
+![png](02B-Python-Omop-walkthrough-critical-care/output_13_0.png)
     
 
 
@@ -899,7 +899,7 @@ plt.show()
 
 
     
-![png](output_21_0.png)
+![png](02B-Python-Omop-walkthrough-critical-care/output_13_0.png)
     
 
 
@@ -2008,7 +2008,7 @@ plt.show()
 
 
     
-![png](output_39_0.png)
+![png](02B-Python-Omop-walkthrough-critical-care/output_39_0.png)
     
 
 
@@ -2173,7 +2173,7 @@ plt.show()
 
 
     
-![png](output_44_0.png)
+![png](02B-Python-Omop-walkthrough-critical-care/output_44_0.png)
     
 
 
