@@ -1,0 +1,1743 @@
+drug_concept_id,drug_concept_name,n,domain_id,vocabulary_id,concept_class_id
+0,No matching concept,323674,Metadata,None,Undefined
+42479436,1000 ML Sodium Chloride 9 MG/ML Injectable Solution,82665,Drug,RxNorm Extension,Quant Clinical Drug
+41415630,100 ML Acetaminophen 10 MG/ML Injectable Solution,27258,Drug,RxNorm Extension,Quant Clinical Drug
+43648125,0.4 ML Enoxaparin 100 MG/ML Injectable Solution,25806,Drug,RxNorm Extension,Quant Clinical Drug
+42918207,1000 ML Calcium Chloride 0.268 MG/ML / Lactate 3.1 MG/ML / Potassium Chloride 0.4 MG/ML / Sodium Chloride 6 MG/ML Injectable Solution,21540,Drug,RxNorm Extension,Quant Clinical Drug
+40169944,morphine sulfate 2 MG/ML Oral Solution,19467,Drug,RxNorm,Clinical Drug
+740241,2 ML fentanyl 0.05 MG/ML Prefilled Syringe,18150,Drug,RxNorm,Quant Clinical Drug
+929889,lansoprazole 30 MG Delayed Release Oral Capsule,15634,Drug,RxNorm,Clinical Drug
+43683853,50 ML Propofol 20 MG/ML Injectable Suspension,13947,Drug,RxNorm Extension,Quant Clinical Drug
+40707795,1000 ML bicarbonate ion 0.017 MMOL/ML / POLYETHYLENE GLYCOL 3350 105 MG/ML / Potassium 0.0054 MMOL/ML / Sodium 0.065 MMOL/ML Oral Powder,13841,Drug,RxNorm Extension,Quant Clinical Drug
+43734654,1 ML Morphine 10 MG/ML Injectable Solution,12665,Drug,RxNorm Extension,Quant Clinical Drug
+43788261,1 ML Oxycodone 10 MG/ML Injectable Solution,12149,Drug,RxNorm Extension,Quant Clinical Drug
+44097638,Cefuroxime 1500 MG Injectable Solution,11929,Drug,RxNorm Extension,Clinical Drug
+19019418,omeprazole 20 MG Delayed Release Oral Capsule,11805,Drug,RxNorm,Clinical Drug
+36809522,2.5 ML Albuterol 1 MG/ML Inhalation Solution,11524,Drug,RxNorm Extension,Quant Clinical Drug
+43717778,10 ML Sodium Chloride 9 MG/ML Injectable Solution,11523,Drug,RxNorm Extension,Quant Clinical Drug
+1713694,amoxicillin 500 MG / clavulanate 125 MG Oral Tablet,11381,Drug,RxNorm,Clinical Drug
+1703745,acyclovir 200 MG Oral Tablet,10951,Drug,RxNorm,Clinical Drug
+42707774,dihydrocodeine bitartrate 30 MG Oral Tablet,10575,Drug,RxNorm,Clinical Drug
+36896495,100 ML Metronidazole 5 MG/ML Injectable Solution,10572,Drug,RxNorm Extension,Quant Clinical Drug
+40715370,"10 ML Regular Insulin, Human 100 UNT/ML Injectable Solution",9564,Drug,RxNorm Extension,Quant Clinical Drug
+40722342,Water 10000 MG Injectable Solution,9174,Drug,RxNorm Extension,Clinical Drug
+19106119,sennoside B 7.5 MG Oral Tablet,8391,Drug,RxNorm,Clinical Drug
+35777032,1 ML Cyclizine 50 MG/ML Injectable Solution,7984,Drug,RxNorm Extension,Quant Clinical Drug
+1387453,folic acid 5 MG Oral Tablet,7982,Drug,RxNorm,Clinical Drug
+1332419,amlodipine 5 MG Oral Tablet,7785,Drug,RxNorm,Clinical Drug
+40166188,bisoprolol fumarate 2.5 MG Oral Tablet,7646,Drug,RxNorm,Clinical Drug
+19105647,nystatin 100000 UNT/ML Oral Solution,7406,Drug,RxNorm,Clinical Drug
+40240688,docusate sodium 100 MG Oral Capsule,7240,Drug,RxNorm,Clinical Drug
+44123001,potassium bicarbonate 384 MG / Potassium Chloride 600 MG Disintegrating Oral Tablet,6810,Drug,RxNorm Extension,Clinical Drug
+19041844,carbocysteine 375 MG Oral Capsule,6698,Drug,RxNorm,Clinical Drug
+40897123,pantoprazole 40 MG Injectable Solution,6604,Drug,RxNorm Extension,Clinical Drug
+35778239,2 ML Ondansetron 2 MG/ML Injectable Solution,6603,Drug,RxNorm Extension,Quant Clinical Drug
+43260462,alginic acid 50 MG/ML / Calcium Carbonate 16 MG/ML / Sodium Bicarbonate 26.7 MG/ML Oral Suspension,6238,Drug,RxNorm Extension,Clinical Drug
+40232700,oxycodone hydrochloride 1 MG/ML Oral Solution,6052,Drug,RxNorm,Clinical Drug
+43684053,0.2 ML Enoxaparin 100 MG/ML Injectable Solution,6027,Drug,RxNorm Extension,Quant Clinical Drug
+19004043,aspirin 75 MG Oral Tablet,5927,Drug,RxNorm,Clinical Drug
+1545996,atorvastatin 40 MG Oral Tablet,5455,Drug,RxNorm,Clinical Drug
+36810868,"Sodium Phosphate, Dibasic 1940 MG Disintegrating Oral Tablet",5327,Drug,RxNorm Extension,Clinical Drug
+43200595,atorvastatin 20 MG Delayed Release Oral Tablet,5227,Drug,RxNorm Extension,Clinical Drug
+987250,lactulose 667 MG/ML Oral Solution,5088,Drug,RxNorm,Clinical Drug
+40702764,{(5 ML Ascorbic Acid 100 MG/ML / Glucose 200 MG/ML / Niacinamide 32 MG/ML Injectable Solution) / (5 ML pyridoxine 10 MG/ML / Riboflavin 0.8 MG/ML / Thiamine 50 MG/ML Injectable Solution) } Pack,4955,Drug,RxNorm Extension,Clinical Pack
+36809579,2 ML Ipratropium 0.25 MG/ML Inhalation Solution,4869,Drug,RxNorm Extension,Quant Clinical Drug
+21049614,100 ML Glucose 50 MG/ML Injectable Solution,4818,Drug,RxNorm Extension,Quant Clinical Drug
+19041846,carbocysteine 50 MG/ML Oral Solution,4711,Drug,RxNorm,Clinical Drug
+40169893,morphine sulfate 10 MG Extended Release Oral Tablet,4566,Drug,RxNorm,Clinical Drug
+957136,furosemide 40 MG Oral Tablet,4326,Drug,RxNorm,Clinical Drug
+43680205,1 ML Clonidine 0.15 MG/ML Injectable Solution,4272,Drug,RxNorm Extension,Quant Clinical Drug
+40166187,bisoprolol fumarate 1.25 MG Oral Tablet,4045,Drug,RxNorm,Clinical Drug
+19075601,clopidogrel 75 MG Oral Tablet,3921,Drug,RxNorm,Clinical Drug
+21157865,2.5 ML Albuterol 2 MG/ML Inhalant Solution,3827,Drug,RxNorm Extension,Quant Clinical Drug
+21149133,Cholecalciferol 800 UNT Oral Capsule,3779,Drug,RxNorm Extension,Clinical Drug
+40751804,Niacinamide 20 MG / pyridoxine 2 MG / Riboflavin 2 MG / Thiamine 5 MG Oral Tablet,3760,Drug,RxNorm Extension,Clinical Drug
+40714414,20 ML Magnesium sulfate heptahydrate 500 MG/ML Injectable Solution,3745,Drug,RxNorm Extension,Quant Clinical Drug
+36887817,Ciprofloxacin 500 MG Delayed Release Oral Tablet,3648,Drug,RxNorm Extension,Clinical Drug
+35141077,2 ML Dexamethasone 3.2 MG/ML Injectable Solution,3526,Drug,RxNorm Extension,Quant Clinical Drug
+929953,lansoprazole 15 MG Delayed Release Oral Capsule,3507,Drug,RxNorm,Clinical Drug
+19098167,lansoprazole 30 MG Disintegrating Oral Tablet,3504,Drug,RxNorm,Clinical Drug
+19106652,prednisolone 20 MG Oral Tablet,3416,Drug,RxNorm,Clinical Drug
+35775967,1 ML Metaraminol 10 MG/ML Injectable Solution,3204,Drug,RxNorm Extension,Quant Clinical Drug
+40750949,bicarbonate ion 0.017 MMOL/ML / POLYETHYLENE GLYCOL 3350 105 MG/ML / Potassium 0.0054 MMOL/ML / Sodium 0.065 MMOL/ML Oral Solution,3202,Drug,RxNorm Extension,Clinical Drug
+40175174,levothyroxine sodium 0.025 MG Oral Tablet,3173,Drug,RxNorm,Clinical Drug
+43612148,0.6 ML Enoxaparin 100 MG/ML Injectable Solution,3035,Drug,RxNorm Extension,Quant Clinical Drug
+40175210,levothyroxine sodium 0.05 MG Oral Tablet,2984,Drug,RxNorm,Clinical Drug
+43173224,Bisoprolol 5 MG Delayed Release Oral Tablet,2961,Drug,RxNorm Extension,Clinical Drug
+36895214,2 ML Furosemide 10 MG/ML Injectable Solution,2955,Drug,RxNorm Extension,Quant Clinical Drug
+40184727,loperamide hydrochloride 2 MG Oral Capsule,2879,Drug,RxNorm,Clinical Drug
+587557,tamsulosin 0.4 MG Extended Release Oral Capsule,2858,Drug,RxNorm Extension,Clinical Drug
+21168749,Beclomethasone 0.1 MG/ACTUAT / formoterol 0.006 MG/ACTUAT Inhalant Solution,2826,Drug,RxNorm Extension,Clinical Drug
+42707728,benzydamine hydrochloride 1.5 MG/ML Mouthwash,2633,Drug,RxNorm,Clinical Drug
+40169766,levothyroxine sodium 0.1 MG Oral Tablet,2595,Drug,RxNorm,Clinical Drug
+1334535,ramipril 1.25 MG Oral Capsule,2574,Drug,RxNorm,Clinical Drug
+35781491,10 ML Calcium Gluconate 100 MG/ML Injectable Solution,2523,Drug,RxNorm Extension,Quant Clinical Drug
+43184170,Loperamide 2 MG Delayed Release Oral Tablet,2468,Drug,RxNorm Extension,Clinical Drug
+36895190,2 ML Midazolam 5 MG/ML Injectable Solution,2442,Drug,RxNorm Extension,Quant Clinical Drug
+36809291,1 ML Ipratropium 0.25 MG/ML Inhalation Solution,2386,Drug,RxNorm Extension,Quant Clinical Drug
+36889718,Teicoplanin 400 MG Injectable Solution,2334,Drug,RxNorm Extension,Clinical Drug
+41348915,"3 ML Insulin, Aspart, Human 100 UNT/ML Injectable Solution",2320,Drug,RxNorm Extension,Quant Clinical Drug
+40731618,Citric Acid 25 MG/ML Oral Solution,2253,Drug,RxNorm Extension,Clinical Drug
+40166310,methadone hydrochloride 1 MG/ML Oral Solution,2240,Drug,RxNorm,Clinical Drug
+36896594,200 ML Ciprofloxacin 2 MG/ML Injectable Solution,2204,Drug,RxNorm Extension,Quant Clinical Drug
+42931130,Albuterol 0.1 MG/ACTUAT Metered Dose Inhaler,2203,Drug,RxNorm Extension,Clinical Drug
+36785204,Metformin 500 MG Delayed Release Oral Tablet,2195,Drug,RxNorm Extension,Clinical Drug
+40162672,amitriptyline hydrochloride 10 MG Oral Tablet,2172,Drug,RxNorm,Clinical Drug
+36061388,chlorhexidine 40 MG/ML Topical Solution,2141,Drug,RxNorm Extension,Clinical Drug
+36955179,3 ML insulin isophane 100 UNT/ML Injectable Suspension [Humulin I] by Eli Lilly,2128,Drug,RxNorm Extension,Marketed Product
+41345719,2 ML Metoclopramide 5 MG/ML Injectable Solution,2104,Drug,RxNorm Extension,Quant Clinical Drug
+40170025,morphine sulfate 5 MG Extended Release Oral Tablet,2076,Drug,RxNorm,Clinical Drug
+19073187,amoxicillin 500 MG Oral Capsule,2043,Drug,RxNorm,Clinical Drug
+19019307,24 HR nicotine 0.875 MG/HR Transdermal System,2038,Drug,RxNorm,Quant Clinical Drug
+36412291,500 ML Potassium Chloride 1.5 MG/ML / Sodium Chloride 9 MG/ML Injectable Solution,2009,Drug,RxNorm Extension,Quant Clinical Drug
+43720093,0.8 ML Enoxaparin 100 MG/ML Injectable Solution,2000,Drug,RxNorm Extension,Quant Clinical Drug
+19073093,amlodipine 10 MG Oral Tablet,1987,Drug,RxNorm,Clinical Drug
+36890770,Domperidone 10 MG Delayed Release Oral Tablet,1958,Drug,RxNorm Extension,Clinical Drug
+21125875,Multivitamin preparation Oral Tablet,1899,Drug,RxNorm Extension,Clinical Drug Form
+739209,sertraline 50 MG Oral Tablet,1841,Drug,RxNorm,Clinical Drug
+36895423,5 ML Midazolam 1 MG/ML Injectable Solution,1818,Drug,RxNorm Extension,Quant Clinical Drug
+40232704,oxycodone hydrochloride 10 MG Extended Release Oral Tablet,1802,Drug,RxNorm,Clinical Drug
+35779832,4 ML Norepinephrine 1 MG/ML Injectable Solution,1785,Drug,RxNorm Extension,Quant Clinical Drug
+40232753,oxycodone hydrochloride 5 MG Extended Release Oral Tablet,1736,Drug,RxNorm,Clinical Drug
+929924,lansoprazole 15 MG Disintegrating Oral Tablet,1729,Drug,RxNorm,Clinical Drug
+21085381,Magnesium glycerophosphate 97.2 MG Chewable Tablet,1720,Drug,RxNorm Extension,Clinical Drug
+44058614,Hydrocortisone 100 MG Injectable Solution,1682,Drug,RxNorm Extension,Clinical Drug
+40169988,morphine sulfate 30 MG Extended Release Oral Tablet,1679,Drug,RxNorm,Clinical Drug
+44785831,dapagliflozin 10 MG Oral Tablet,1667,Drug,RxNorm,Clinical Drug
+43012036,chlorpheniramine maleate 4 MG Oral Tablet,1660,Drug,RxNorm,Clinical Drug
+35776479,1 ML Chlorpheniramine 10 MG/ML Injectable Solution,1654,Drug,RxNorm Extension,Quant Clinical Drug
+43699629,5 ML Rocuronium 10 MG/ML Injectable Solution,1624,Drug,RxNorm Extension,Quant Clinical Drug
+932749,bumetanide 1 MG Oral Tablet,1602,Drug,RxNorm,Clinical Drug
+35790054,1000 ML Potassium Chloride 3 MG/ML / Sodium Chloride 9 MG/ML Injectable Solution,1578,Drug,RxNorm Extension,Quant Clinical Drug
+41336278,1 ML Methotrimeprazine 25 MG/ML Injectable Solution,1578,Drug,RxNorm Extension,Quant Clinical Drug
+19133943,chlorhexidine gluconate 2 MG/ML Mouthwash,1523,Drug,RxNorm,Clinical Drug
+19079171,ondansetron 8 MG Oral Tablet,1517,Drug,RxNorm,Clinical Drug
+40739137,sennoside B 1.5 MG/ML Oral Solution,1510,Drug,RxNorm Extension,Clinical Drug
+1334460,ramipril 5 MG Oral Capsule,1475,Drug,RxNorm,Clinical Drug
+41342636,2 ML Clindamycin 150 MG/ML Injectable Solution,1431,Drug,RxNorm Extension,Quant Clinical Drug
+789581,carbidopa 25 MG / levodopa 100 MG Oral Tablet,1408,Drug,RxNorm,Clinical Drug
+19054961,floxacillin 500 MG Oral Capsule,1407,Drug,RxNorm,Clinical Drug
+19102504,levetiracetam 100 MG/ML Oral Solution,1342,Drug,RxNorm,Clinical Drug
+739207,sertraline 100 MG Oral Tablet,1317,Drug,RxNorm,Clinical Drug
+19022946,melatonin 2 MG Extended Release Oral Tablet,1298,Drug,RxNorm,Clinical Drug
+40744089,Aluminum Hydroxide 40 MG/ML / Magnesium Hydroxide 20 MG/ML / Oxetacaine 2 MG/ML Oral Suspension,1286,Drug,RxNorm Extension,Clinical Drug
+42918124,1000 ML Glucose 100 MG/ML Injectable Solution,1284,Drug,RxNorm Extension,Quant Clinical Drug
+40234427,fentanyl 0.1 MG Sublingual Tablet,1270,Drug,RxNorm,Clinical Drug
+40185280,losartan potassium 25 MG Oral Tablet,1267,Drug,RxNorm,Clinical Drug
+43187989,Simvastatin 20 MG Delayed Release Oral Tablet,1264,Drug,RxNorm Extension,Clinical Drug
+44045974,Cefuroxime 750 MG Injectable Solution,1263,Drug,RxNorm Extension,Clinical Drug
+36896001,50 ML Midazolam 2 MG/ML Injectable Solution,1240,Drug,RxNorm Extension,Quant Clinical Drug
+40719211,0.6 ML carbomer homopolymer type c 2 MG/ML Ophthalmic Solution,1231,Drug,RxNorm Extension,Quant Clinical Drug
+35780880,5 ML Furosemide 10 MG/ML Injectable Solution,1218,Drug,RxNorm Extension,Quant Clinical Drug
+1593510,1 ML haloperidol 5 MG/ML Prefilled Syringe,1207,Drug,RxNorm,Quant Clinical Drug
+21078067,5 ML Tranexamic Acid 100 MG/ML Prefilled Syringe,1197,Drug,RxNorm Extension,Quant Clinical Drug
+40244448,rivaroxaban 20 MG Oral Tablet,1193,Drug,RxNorm,Clinical Drug
+19020053,acetaminophen 500 MG Oral Tablet,1191,Drug,RxNorm,Clinical Drug
+41119476,Acyclovir 250 MG Injectable Solution,1182,Drug,RxNorm Extension,Clinical Drug
+40162717,amitriptyline hydrochloride 25 MG Oral Tablet,1112,Drug,RxNorm,Clinical Drug
+44785056,posaconazole 100 MG Delayed Release Oral Tablet,1058,Drug,RxNorm,Clinical Drug
+40184084,hydroxychloroquine sulfate 200 MG Oral Tablet,1056,Drug,RxNorm,Clinical Drug
+43860658,1 ML Enoxaparin 100 MG/ML Injectable Solution,1039,Drug,RxNorm Extension,Quant Clinical Drug
+43698009,1 ML butylscopolamine 20 MG/ML Injectable Solution,1033,Drug,RxNorm Extension,Quant Clinical Drug
+36403559,temocillin 1000 MG Injectable Solution,1011,Drug,RxNorm Extension,Clinical Drug
+40185304,losartan potassium 50 MG Oral Tablet,1011,Drug,RxNorm,Clinical Drug
+1799141,oseltamivir 75 MG Oral Capsule,1007,Drug,RxNorm,Clinical Drug
+40751548,Cholecalciferol 20000 UNT Oral Capsule,1004,Drug,RxNorm Extension,Clinical Drug
+35781483,10 ML Dexmedetomidine 0.1 MG/ML Injectable Solution,995,Drug,RxNorm Extension,Quant Clinical Drug
+36411772,0.5 ML Filgrastim 60000000 UNT/ML Injectable Solution,964,Drug,RxNorm Extension,Quant Clinical Drug
+1377163,hydroxyurea 500 MG Oral Capsule,953,Drug,RxNorm,Clinical Drug
+19012776,mineral oil 0.5 MG/MG / petrolatum 0.5 MG/MG Topical Ointment,941,Drug,RxNorm,Clinical Drug
+41351799,5 ML Levetiracetam 100 MG/ML Injectable Solution,936,Drug,RxNorm Extension,Quant Clinical Drug
+41397521,50 ML Glucose 500 MG/ML Injectable Solution,933,Drug,RxNorm Extension,Quant Clinical Drug
+42482687,"50 ML Albumin Human, USP 200 MG/ML Injectable Solution",933,Drug,RxNorm Extension,Quant Clinical Drug
+19063316,acetaminophen 50 MG/ML Oral Suspension,928,Drug,RxNorm,Clinical Drug
+36405820,umeclidinium 0.0625 MG/ACTUAT / vilanterol 0.022 MG/ACTUAT Inhalant Powder,914,Drug,RxNorm Extension,Clinical Drug
+19073777,azithromycin 250 MG Oral Tablet,901,Drug,RxNorm,Clinical Drug
+40238015,valproic acid 40 MG/ML Oral Solution,900,Drug,RxNorm,Clinical Drug
+41338355,2 ML Gentamicin 40 MG/ML Injectable Solution,886,Drug,RxNorm Extension,Quant Clinical Drug
+21139291,Cholecalciferol 800 UNT Oral Tablet,862,Drug,RxNorm Extension,Clinical Drug
+40164881,metformin hydrochloride 100 MG/ML Oral Solution,859,Drug,RxNorm,Clinical Drug
+40232727,oxycodone hydrochloride 20 MG Extended Release Oral Tablet,854,Drug,RxNorm,Clinical Drug
+19077241,famotidine 20 MG Oral Tablet,850,Drug,RxNorm,Clinical Drug
+21021441,Beclomethasone 0.2 MG/ACTUAT / formoterol 0.006 MG/ACTUAT Inhalant Solution,841,Drug,RxNorm Extension,Clinical Drug
+36895264,3 ML Amiodarone 50 MG/ML Injectable Solution,835,Drug,RxNorm Extension,Quant Clinical Drug
+45892860,edoxaban 60 MG Oral Tablet,828,Drug,RxNorm,Clinical Drug
+1334459,ramipril 2.5 MG Oral Capsule,823,Drug,RxNorm,Clinical Drug
+43189530,mycophenolate mofetil 500 MG Delayed Release Oral Tablet,822,Drug,RxNorm Extension,Clinical Drug
+1383862,isosorbide mononitrate 60 MG Extended Release Oral Tablet,805,Drug,RxNorm,Clinical Drug
+715292,duloxetine hydrochloride 60 MG Extended Release Oral Capsule,804,Drug,RxNorm,Clinical Drug
+36410804,10 ML Sodium Chloride 300 MG/ML Injectable Solution,795,Drug,RxNorm Extension,Quant Clinical Drug
+19023368,montelukast 10 MG Oral Tablet,781,Drug,RxNorm,Clinical Drug
+42483274,Nitrofurantoin 100 MG Extended Release Oral Capsule,772,Drug,RxNorm Extension,Clinical Drug
+21058192,3 ML Insulin Glargine 100 UNT/ML Prefilled Syringe,771,Drug,RxNorm Extension,Quant Clinical Drug
+36057429,glycerin 2800 MG Rectal Suppository,770,Drug,RxNorm Extension,Clinical Drug
+1309992,amiodarone hydrochloride 200 MG Oral Tablet,769,Drug,RxNorm,Clinical Drug
+35782076,10 ML Potassium Chloride 150 MG/ML Injectable Solution,753,Drug,RxNorm Extension,Quant Clinical Drug
+36895209,2 ML Alfentanil 0.5 MG/ML Injectable Solution,750,Drug,RxNorm Extension,Quant Clinical Drug
+41348684,"3 ML insulin, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension",741,Drug,RxNorm Extension,Quant Clinical Drug
+19077546,furosemide 20 MG Oral Tablet,740,Drug,RxNorm,Clinical Drug
+36411017,20 ML GLYCERYL PHOSPHATE 216 MG/ML Injectable Solution,730,Drug,RxNorm Extension,Quant Clinical Drug
+19019306,24 HR nicotine 0.583 MG/HR Transdermal System,710,Drug,RxNorm,Quant Clinical Drug
+41371286,10 ML Acyclovir 25 MG/ML Injectable Solution,710,Drug,RxNorm Extension,Quant Clinical Drug
+41343189,2 ML Amikacin 250 MG/ML Injectable Solution,705,Drug,RxNorm Extension,Quant Clinical Drug
+44191033,"3 ML Insulin, Aspart Protamine, Human 70 UNT/ML / Insulin, Aspart, Human 30 UNT/ML Injectable Suspension",705,Drug,RxNorm Extension,Quant Clinical Drug
+19062760,carbidopa 12.5 MG / levodopa 50 MG Oral Tablet,701,Drug,RxNorm,Clinical Drug
+43287231,Acyclovir 400 MG Disintegrating Oral Tablet,698,Drug,RxNorm Extension,Clinical Drug
+42708429,docusate sodium 10 MG/ML Oral Solution,678,Drug,RxNorm,Clinical Drug
+36939221,"500 ML Potassium dihydrogen phosphate 1.3 MG/ML / sodium phosphate, dibasic 5.75 MG/ML Injectable Solution",675,Drug,RxNorm Extension,Quant Clinical Drug
+36892820,Calcium Carbonate 1500 MG / Cholecalciferol 400 UNT Disintegrating Oral Tablet,662,Drug,RxNorm Extension,Clinical Drug
+1797515,ciprofloxacin 250 MG Oral Tablet,659,Drug,RxNorm,Clinical Drug
+19096455,itraconazole 10 MG/ML Oral Solution,656,Drug,RxNorm,Clinical Drug
+41362296,10 ML Aminophylline 24 MG/ML Injectable Solution,640,Drug,RxNorm Extension,Quant Clinical Drug
+42708590,sodium hyaluronate 2 MG/ML Ophthalmic Solution,639,Drug,RxNorm,Clinical Drug
+19027103,potassium bicarbonate 20 MG/ML / sodium alginate 100 MG/ML Oral Suspension,633,Drug,RxNorm,Clinical Drug
+36883004,Budesonide 0.2 MG/ACTUAT / formoterol 0.006 MG/ACTUAT Inhalant Powder,629,Drug,RxNorm Extension,Clinical Drug
+43178713,atorvastatin 10 MG Delayed Release Oral Tablet,629,Drug,RxNorm Extension,Clinical Drug
+36895602,10 ML Lidocaine 10 MG/ML Injectable Solution,628,Drug,RxNorm Extension,Quant Clinical Drug
+40162729,amitriptyline hydrochloride 50 MG Oral Tablet,605,Drug,RxNorm,Clinical Drug
+40244444,rivaroxaban 15 MG Oral Tablet,600,Drug,RxNorm,Clinical Drug
+35783074,20 ML Ketamine 10 MG/ML Injectable Solution,599,Drug,RxNorm Extension,Quant Clinical Drug
+1539407,simvastatin 40 MG Oral Tablet,596,Drug,RxNorm,Clinical Drug
+43260339,Benserazide 25 MG / Levodopa 100 MG Disintegrating Oral Tablet,596,Drug,RxNorm Extension,Clinical Drug
+44161223,fluticasone 0.25 MG/ACTUAT / salmeterol 0.025 MG/ACTUAT Dry Powder Inhaler,594,Drug,RxNorm Extension,Clinical Drug
+41398137,50 ML Acetaminophen 10 MG/ML Injectable Solution,584,Drug,RxNorm Extension,Quant Clinical Drug
+36809064,"133 ML Dibasic potassium phosphate 80 MG/ML / Sodium Phosphate, Monobasic 180 MG/ML Rectal Solution",578,Drug,RxNorm Extension,Quant Clinical Drug
+21127753,0.4 ML hypromellose 3 MG/ML Ophthalmic Solution,568,Drug,RxNorm Extension,Quant Clinical Drug
+41336943,1 ML glycopyrronium 0.2 MG/ML Injectable Solution,563,Drug,RxNorm Extension,Quant Clinical Drug
+21041045,Beclomethasone 0.2 MG/ACTUAT Inhalant Solution,553,Drug,RxNorm Extension,Clinical Drug
+36954883,3 ML insulin glargine 100 UNT/ML Prefilled Syringe [Abasaglar] by Eli Lilly,549,Drug,RxNorm Extension,Marketed Product
+40958388,Urokinase 10000 UNT Injectable Solution,546,Drug,RxNorm Extension,Clinical Drug
+40962883,Amphotericin B 50 MG Injectable Solution,544,Drug,RxNorm Extension,Clinical Drug
+19102189,omeprazole 20 MG Delayed Release Oral Tablet,535,Drug,RxNorm,Clinical Drug
+21059417,100 ML Morphine 1 MG/ML Injectable Solution,535,Drug,RxNorm Extension,Quant Clinical Drug
+36811049,tiotropium 0.01 MG Inhalation Powder,535,Drug,RxNorm Extension,Clinical Drug
+40165329,ursodiol 250 MG Oral Capsule,535,Drug,RxNorm,Clinical Drug
+21088435,50 ML Glucose 50 MG/ML Injectable Solution,524,Drug,RxNorm Extension,Quant Clinical Drug
+36895077,1 ML Vitamin K 1 10 MG/ML Injectable Solution,518,Drug,RxNorm Extension,Quant Clinical Drug
+35777064,1 ML Lorazepam 4 MG/ML Injectable Solution,517,Drug,RxNorm Extension,Quant Clinical Drug
+44025244,Calcium Carbonate 1820 MG / calcium lactate 2300 MG Disintegrating Oral Tablet,507,Drug,RxNorm Extension,Clinical Drug
+36889835,Budesonide 0.1 MG/ACTUAT / formoterol 0.006 MG/ACTUAT Inhalant Powder,503,Drug,RxNorm Extension,Clinical Drug
+19064067,baclofen 1 MG/ML Oral Solution,499,Drug,RxNorm,Clinical Drug
+1237261,theophylline 200 MG Extended Release Oral Tablet,498,Drug,RxNorm,Clinical Drug
+36895697,20 ML Propofol 10 MG/ML Injectable Suspension,486,Drug,RxNorm Extension,Quant Clinical Drug
+40172649,pregabalin 20 MG/ML Oral Solution,479,Drug,RxNorm,Clinical Drug
+19005929,metoclopramide 1 MG/ML Oral Solution,478,Drug,RxNorm,Clinical Drug
+40163210,phenytoin sodium 100 MG Oral Capsule,476,Drug,RxNorm,Clinical Drug
+783971,Albuterol 0.1 MG/ACTUAT Inhalation Solution,475,Drug,RxNorm Extension,Clinical Drug
+1595997,ferrous fumarate 28 MG/ML Oral Solution,475,Drug,RxNorm,Clinical Drug
+1759879,amoxicillin 50 MG/ML / clavulanate 12.5 MG/ML Oral Suspension,459,Drug,RxNorm,Clinical Drug
+19022053,mebeverine 135 MG Oral Tablet,448,Drug,RxNorm,Clinical Drug
+36896045,50 ML Nitroglycerin 1 MG/ML Injectable Solution,448,Drug,RxNorm Extension,Quant Clinical Drug
+46275725,sacubitril 24 MG / valsartan 26 MG Oral Tablet,448,Drug,RxNorm,Clinical Drug
+40171778,ritonavir 100 MG Oral Tablet,443,Drug,RxNorm,Clinical Drug
+40239218,linagliptin 5 MG Oral Tablet,442,Drug,RxNorm,Clinical Drug
+1755001,fluconazole 50 MG Oral Capsule,432,Drug,RxNorm,Clinical Drug
+40232750,oxycodone hydrochloride 40 MG Extended Release Oral Tablet,426,Drug,RxNorm,Clinical Drug
+40224822,norethindrone acetate 5 MG Oral Tablet,424,Drug,RxNorm,Clinical Drug
+43294253,Lidocaine 10 MG/ACTUAT Nasal Spray,424,Drug,RxNorm Extension,Clinical Drug
+36407525,Beclomethasone 0.2 MG/ACTUAT / formoterol 0.006 MG/ACTUAT Inhalant Powder,423,Drug,RxNorm Extension,Clinical Drug
+21029669,0.4 ML Dexamethasone 1 MG/ML Ophthalmic Solution,418,Drug,RxNorm Extension,Quant Clinical Drug
+40175394,pravastatin sodium 20 MG Oral Tablet,417,Drug,RxNorm,Clinical Drug
+19106002,tranexamic acid 50 MG/ML Mouthwash,415,Drug,RxNorm,Clinical Drug
+19010484,cyclosporine 25 MG Oral Capsule,409,Drug,RxNorm,Clinical Drug
+36408230,Beclomethasone 0.1 MG/ACTUAT / formoterol 0.006 MG/ACTUAT Inhalant Powder,408,Drug,RxNorm Extension,Clinical Drug
+1711248,entecavir 0.5 MG Oral Tablet,405,Drug,RxNorm,Clinical Drug
+21034845,Nitroglycerin 0.4 MG/ACTUAT Oral Spray,405,Drug,RxNorm Extension,Clinical Drug
+19009352,cefuroxime 50 MG/ML Ophthalmic Solution,396,Drug,RxNorm,Clinical Drug
+36895525,10 ML Bupivacaine 5 MG/ML Injectable Solution,395,Drug,RxNorm Extension,Quant Clinical Drug
+40241333,rivaroxaban 10 MG Oral Tablet,393,Drug,RxNorm,Clinical Drug
+42873446,mirabegron 50 MG Extended Release Oral Tablet,385,Drug,RxNorm,Clinical Drug
+36119477,azelastine 0.137 MG/ACTUAT / fluticasone 0.05 MG/ACTUAT Nasal Spray,384,Drug,RxNorm Extension,Clinical Drug
+2930866,fluticasone 0.125 MG/ACTUAT / salmeterol 0.025 MG/ACTUAT Inhalation Solution,383,Drug,RxNorm Extension,Clinical Drug
+40238256,divalproex sodium 500 MG Extended Release Oral Tablet,382,Drug,RxNorm,Clinical Drug
+43705600,8.5 ML terlipressin 0.118 MG/ML Injectable Solution,380,Drug,RxNorm Extension,Quant Clinical Drug
+44785833,dapagliflozin 5 MG Oral Tablet,380,Drug,RxNorm,Clinical Drug
+41334968,1 ML Epinephrine 1 MG/ML Injectable Solution,379,Drug,RxNorm Extension,Quant Clinical Drug
+44168810,Ipratropium 0.02 MG/ACTUAT Inhalant Solution,379,Drug,RxNorm Extension,Clinical Drug
+35413459,5 ML Sulfamethoxazole 80 MG/ML / Trimethoprim 16 MG/ML Injectable Solution,376,Drug,RxNorm Extension,Quant Clinical Drug
+36075115,fluticasone 0.184 MG/ACTUAT / vilanterol 0.022 MG/ACTUAT Inhalation Powder,375,Drug,RxNorm Extension,Clinical Drug
+45774630,naloxegol 12.5 MG Oral Tablet,364,Drug,RxNorm,Clinical Drug
+21138228,500 ML Sodium Bicarbonate 13.1 MG/ML Injectable Solution,362,Drug,RxNorm Extension,Quant Clinical Drug
+44132974,0.8 ML Enoxaparin 150 MG/ML Injectable Solution,362,Drug,RxNorm Extension,Quant Clinical Drug
+42479124,Ciprofloxacin 3 MG/ML / Dexamethasone 1 MG/ML Otic Solution,361,Drug,RxNorm Extension,Clinical Drug
+36809748,3 ML insulin degludec 100 UNT/ML Injectable Solution,357,Drug,RxNorm Extension,Quant Clinical Drug
+43206012,Bisoprolol 10 MG Delayed Release Oral Tablet,356,Drug,RxNorm Extension,Clinical Drug
+36885788,Teicoplanin 200 MG Injectable Solution,355,Drug,RxNorm Extension,Clinical Drug
+41369692,10 ML Fentanyl 0.05 MG/ML Injectable Solution,355,Drug,RxNorm Extension,Quant Clinical Drug
+797415,gabapentin 50 MG/ML Oral Solution,354,Drug,RxNorm,Clinical Drug
+40837466,Caspofungin 50 MG Injectable Solution,351,Drug,RxNorm Extension,Clinical Drug
+19029028,lamivudine 100 MG Oral Tablet,348,Drug,RxNorm,Clinical Drug
+43770958,3 ML Diclofenac 25 MG/ML Injectable Solution,347,Drug,RxNorm Extension,Quant Clinical Drug
+45774616,naloxegol 25 MG Oral Tablet,347,Drug,RxNorm,Clinical Drug
+1545959,atorvastatin 80 MG Oral Tablet,346,Drug,RxNorm,Clinical Drug
+40173612,alendronic acid 70 MG Oral Tablet,344,Drug,RxNorm,Clinical Drug
+43180800,valacyclovir 500 MG Delayed Release Oral Tablet,343,Drug,RxNorm Extension,Clinical Drug
+35770666,Glucose 380 MG/ML Oral Gel,339,Drug,RxNorm Extension,Clinical Drug
+40232713,oxycodone hydrochloride 10 MG/ML Oral Solution,338,Drug,RxNorm,Clinical Drug
+45774754,empagliflozin 10 MG Oral Tablet,338,Drug,RxNorm,Clinical Drug
+36059627,peppermint oil 200 MG Delayed Release Oral Capsule,337,Drug,RxNorm Extension,Clinical Drug
+40223098,codeine phosphate 3 MG/ML Oral Solution,337,Drug,RxNorm,Clinical Drug
+19019050,ibuprofen 20 MG/ML Oral Suspension,334,Drug,RxNorm,Clinical Drug
+43770957,3 ML Glycopyrrolate 0.2 MG/ML Injectable Solution,334,Drug,RxNorm Extension,Quant Clinical Drug
+35773128,Tacrolimus 1 MG Extended Release Oral Capsule [Adoport] by Sandoz,333,Drug,RxNorm Extension,Marketed Product
+36881159,Bisacodyl 5 MG Extended Release Oral Tablet,332,Drug,RxNorm Extension,Clinical Drug
+1334494,ramipril 10 MG Oral Capsule,330,Drug,RxNorm,Clinical Drug
+19004934,betahistine 8 MG Oral Tablet,330,Drug,RxNorm,Clinical Drug
+36412675,1000 ML Potassium Chloride 1.5 MG/ML / Sodium Chloride 9 MG/ML Injectable Solution,330,Drug,RxNorm Extension,Quant Clinical Drug
+19112761,tiotropium 0.018 MG Inhalation Powder,327,Drug,RxNorm,Clinical Drug
+43160339,Losartan 100 MG Delayed Release Oral Tablet,327,Drug,RxNorm Extension,Clinical Drug
+19102471,moxifloxacin 5 MG/ML Ophthalmic Solution,326,Drug,RxNorm,Clinical Drug
+36958105,budesonide 0.2 MG/ACTUAT / formoterol 0.006 MG/ACTUAT Inhalation Powder [DUORESP SPIROMAX] by TEVA,325,Drug,RxNorm Extension,Marketed Product
+43560387,dolutegravir 50 MG Oral Tablet,322,Drug,RxNorm,Clinical Drug
+41377080,20 ML Labetalol 5 MG/ML Injectable Solution,314,Drug,RxNorm Extension,Quant Clinical Drug
+36896428,100 ML Ciprofloxacin 2 MG/ML Injectable Solution,313,Drug,RxNorm Extension,Quant Clinical Drug
+1115678,beclomethasone 0.05 MG/ACTUAT Nasal Spray,310,Drug,RxNorm,Clinical Drug
+1351583,candesartan cilexetil 16 MG Oral Tablet,306,Drug,RxNorm,Clinical Drug
+19122148,duloxetine 30 MG Delayed Release Oral Capsule,305,Drug,RxNorm,Clinical Drug
+43610123,10 ML Midazolam 5 MG/ML Injectable Solution,304,Drug,RxNorm Extension,Quant Clinical Drug
+21094354,hyaluronate 1 MG/ML Ophthalmic Solution,299,Drug,RxNorm Extension,Clinical Drug
+21065713,olive oil Otic Solution,294,Drug,RxNorm Extension,Clinical Drug Form
+35604208,venetoclax 100 MG Oral Tablet,293,Drug,RxNorm,Clinical Drug
+41344082,2 ML Sugammadex 100 MG/ML Injectable Solution,286,Drug,RxNorm Extension,Quant Clinical Drug
+1036233,sucralfate 1000 MG Oral Tablet,284,Drug,RxNorm,Clinical Drug
+40837464,Caspofungin 70 MG Injectable Solution,284,Drug,RxNorm Extension,Clinical Drug
+42902404,fentanyl 0.012 MG/HR Transdermal System,284,Drug,RxNorm,Clinical Drug
+42902413,buprenorphine 0.005 MG/HR Transdermal System,279,Drug,RxNorm,Clinical Drug
+19003088,aspirin 75 MG Delayed Release Oral Tablet,278,Drug,RxNorm,Clinical Drug
+35604225,emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet,276,Drug,RxNorm,Clinical Drug
+36403569,Heroin 5 MG Injectable Solution,276,Drug,RxNorm Extension,Clinical Drug
+978557,indapamide 2.5 MG Oral Tablet,274,Drug,RxNorm,Clinical Drug
+35412933,Acyclovir 0.05 MG/MG Topical Cream,274,Drug,RxNorm Extension,Clinical Drug
+19102490,carbidopa 37.5 MG / entacapone 200 MG / levodopa 150 MG Oral Tablet,272,Drug,RxNorm,Clinical Drug
+36411748,0.5 ML Filgrastim 96000000 UNT/ML Injectable Solution,272,Drug,RxNorm Extension,Quant Clinical Drug
+40241188,ticagrelor 90 MG Oral Tablet,264,Drug,RxNorm,Clinical Drug
+21144049,tiotropium 0.0025 MG/ACTUAT Inhalant Solution,263,Drug,RxNorm Extension,Clinical Drug
+36064066,sodium zirconium cyclosilicate 10000 MG Oral Powder,262,Drug,RxNorm Extension,Clinical Drug
+40163312,propranolol hydrochloride 10 MG Oral Tablet,261,Drug,RxNorm,Clinical Drug
+40163342,propranolol hydrochloride 40 MG Oral Tablet,261,Drug,RxNorm,Clinical Drug
+19019308,24 HR nicotine 0.292 MG/HR Transdermal System,260,Drug,RxNorm,Quant Clinical Drug
+40165253,rosuvastatin calcium 20 MG Oral Tablet,258,Drug,RxNorm,Clinical Drug
+19133610,diltiazem hydrochloride 60 MG Extended Release Oral Tablet,256,Drug,RxNorm,Clinical Drug
+21029634,0.2 ML latanoprost 0.05 MG/ML Ophthalmic Solution,256,Drug,RxNorm Extension,Quant Clinical Drug
+42902803,fentanyl 0.025 MG/HR Transdermal System,255,Drug,RxNorm,Clinical Drug
+19063847,lithium citrate 104 MG/ML Oral Solution,253,Drug,RxNorm,Clinical Drug
+35416076,0.67 ML anakinra 149 MG/ML Injectable Solution,249,Drug,RxNorm Extension,Quant Clinical Drug
+36885859,fluticasone 0.5 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Inhalant Powder,248,Drug,RxNorm Extension,Clinical Drug
+964362,sulfasalazine 500 MG Oral Tablet,243,Drug,RxNorm,Clinical Drug
+42903228,fentanyl 0.05 MG/HR Transdermal System,243,Drug,RxNorm,Clinical Drug
+21041796,Ispaghula husk 3500 MG Oral Granules,237,Drug,RxNorm Extension,Clinical Drug
+40234439,fentanyl 0.6 MG Sublingual Tablet,229,Drug,RxNorm,Clinical Drug
+43180013,carvedilol 6.25 MG Delayed Release Oral Tablet,229,Drug,RxNorm Extension,Clinical Drug
+21047082,levothyroxine 0.01 MG/ML Oral Solution,226,Drug,RxNorm Extension,Clinical Drug
+1351559,candesartan cilexetil 8 MG Oral Tablet,225,Drug,RxNorm,Clinical Drug
+964015,bictegravir 50 MG / emtricitabine 200 MG / tenofovir alafenamide 25 MG Oral Tablet,224,Drug,RxNorm,Clinical Drug
+40165789,enalapril maleate 5 MG Oral Tablet,221,Drug,RxNorm,Clinical Drug
+19062181,domperidone 1 MG/ML Oral Suspension,220,Drug,RxNorm,Clinical Drug
+35411311,isavuconazole 100 MG Oral Capsule,220,Drug,RxNorm Extension,Clinical Drug
+40170056,morphine sulfate 60 MG Extended Release Oral Tablet,220,Drug,RxNorm,Clinical Drug
+19122179,doxycycline monohydrate 100 MG Disintegrating Oral Tablet,219,Drug,RxNorm,Clinical Drug
+43625906,1 ML Hydroxocobalamin 1 MG/ML Injectable Solution,218,Drug,RxNorm Extension,Quant Clinical Drug
+43516794,Chlorhexidine 0.5 MG/ML / Lidocaine 20 MG/ML Topical Gel,217,Drug,RxNorm Extension,Clinical Drug
+40222473,lacosamide 10 MG/ML Oral Solution,216,Drug,RxNorm,Clinical Drug
+36895375,5 ML Atracurium 10 MG/ML Injectable Solution,213,Drug,RxNorm Extension,Quant Clinical Drug
+40165328,ursodiol 150 MG Oral Tablet,213,Drug,RxNorm,Clinical Drug
+19007008,prednisolone 5 MG Disintegrating Oral Tablet,212,Drug,RxNorm,Clinical Drug
+41354458,5 ML Metoprolol 1 MG/ML Injectable Solution,211,Drug,RxNorm Extension,Quant Clinical Drug
+36060406,calcium carbonate 1500 MG / cholecalciferol 400 UNT Oral Tablet,209,Drug,RxNorm Extension,Clinical Drug
+41350631,4 ML Clindamycin 150 MG/ML Injectable Solution,204,Drug,RxNorm Extension,Quant Clinical Drug
+19021102,mycophenolate mofetil 250 MG Oral Capsule,203,Drug,RxNorm,Clinical Drug
+36884792,Indapamide 1.5 MG Oral Tablet,203,Drug,RxNorm Extension,Clinical Drug
+40162723,amitriptyline hydrochloride 5 MG/ML Oral Solution,203,Drug,RxNorm,Clinical Drug
+36891746,fluticasone 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Inhalant Powder,202,Drug,RxNorm Extension,Clinical Drug
+36411032,20 ML ferric carboxymaltose 50 MG/ML Injectable Solution,201,Drug,RxNorm Extension,Quant Clinical Drug
+40162680,amitriptyline hydrochloride 10 MG/ML Oral Solution,201,Drug,RxNorm,Clinical Drug
+36781348,2 ML Budesonide 0.5 MG/ML Inhalant Powder,200,Drug,RxNorm Extension,Quant Clinical Drug
+42483391,100 ML Fluconazole 2 MG/ML Injectable Solution,200,Drug,RxNorm Extension,Quant Clinical Drug
+35781481,10 ML Ephedrine 3 MG/ML Injectable Solution,199,Drug,RxNorm Extension,Quant Clinical Drug
+42873442,mirabegron 25 MG Extended Release Oral Tablet,199,Drug,RxNorm,Clinical Drug
+19063696,flupenthixol 1 MG Oral Tablet,197,Drug,RxNorm,Clinical Drug
+40752668,Cholecalciferol 3000 UNT/ML Oral Solution,197,Drug,RxNorm Extension,Clinical Drug
+19018811,atenolol 25 MG Oral Tablet,196,Drug,RxNorm,Clinical Drug
+36119421,fluticasone 0.05 MG/ACTUAT Nasal Spray,196,Drug,RxNorm Extension,Clinical Drug
+42482702,3 ML Insulin Lispro 100 UNT/ML Prefilled Syringe,196,Drug,RxNorm Extension,Quant Clinical Drug
+19079160,ondansetron 0.8 MG/ML Oral Solution,194,Drug,RxNorm,Clinical Drug
+21049312,0.2 ML dorzolamide 20 MG/ML Ophthalmic Solution,194,Drug,RxNorm Extension,Quant Clinical Drug
+46234440,ivabradine 5 MG Oral Tablet,194,Drug,RxNorm,Clinical Drug
+36895563,10 ML Milrinone 1 MG/ML Injectable Solution,193,Drug,RxNorm Extension,Quant Clinical Drug
+21029632,0.2 ML dorzolamide 20 MG/ML / Timolol 5 MG/ML Ophthalmic Solution,190,Drug,RxNorm Extension,Quant Clinical Drug
+36895064,1 ML Naloxone 0.4 MG/ML Injectable Solution,190,Drug,RxNorm Extension,Quant Clinical Drug
+19127259,oseltamivir 30 MG Oral Capsule,189,Drug,RxNorm,Clinical Drug
+40741422,Clobetasone 0.0005 MG/MG / Nystatin 100 UNT/MG / Oxytetracycline 0.03 MG/MG Topical Cream,189,Drug,RxNorm Extension,Clinical Drug
+1356045,prucalopride 2 MG Oral Tablet,187,Drug,RxNorm,Clinical Drug
+36881132,Budesonide 0.4 MG/ACTUAT / formoterol 0.012 MG/ACTUAT Inhalant Powder,187,Drug,RxNorm Extension,Clinical Drug
+41331503,1 ML Oxycodone 50 MG/ML Injectable Solution,187,Drug,RxNorm Extension,Quant Clinical Drug
+42480739,Aspirin 300 MG Disintegrating Oral Tablet,184,Drug,RxNorm Extension,Clinical Drug
+21095827,Nicotine 15 MG Inhalant Solution,183,Drug,RxNorm Extension,Clinical Drug
+19127952,sevelamer carbonate 800 MG Oral Tablet,182,Drug,RxNorm,Clinical Drug
+36408155,Heroin 10 MG Injectable Solution,182,Drug,RxNorm Extension,Clinical Drug
+42902544,buprenorphine 0.01 MG/HR Transdermal System,182,Drug,RxNorm,Clinical Drug
+1346990,carvedilol 3.125 MG Oral Tablet,181,Drug,RxNorm,Clinical Drug
+40226429,bimatoprost 0.1 MG/ML Ophthalmic Solution,180,Drug,RxNorm,Clinical Drug
+36895271,"3 ML insulin, isophane 100 UNT/ML Injectable Suspension",179,Drug,RxNorm Extension,Quant Clinical Drug
+43202495,rosuvastatin 5 MG Delayed Release Oral Tablet,178,Drug,RxNorm Extension,Clinical Drug
+40745136,avibactam 500 MG / Ceftazidime 2000 MG Injectable Solution,176,Drug,RxNorm Extension,Clinical Drug
+1152774,cromolyn sodium 100 MG Oral Capsule,175,Drug,RxNorm,Clinical Drug
+19080217,pantoprazole 40 MG Delayed Release Oral Tablet,175,Drug,RxNorm,Clinical Drug
+21159108,Cholecalciferol 2740 UNT/ML Oral Solution,175,Drug,RxNorm Extension,Clinical Drug
+19102476,risperidone 0.5 MG Disintegrating Oral Tablet,174,Drug,RxNorm,Clinical Drug
+35776513,1 ML Enoxaparin 150 MG/ML Injectable Solution,174,Drug,RxNorm Extension,Quant Clinical Drug
+36949762,{(nirmatrelvir 150 MG Oral Tablet) / (Ritonavir 100 MG Delayed Release Oral Tablet) } Pack [Paxlovid] by Pfizer,174,Drug,RxNorm Extension,Marketed Product
+21029665,0.4 ML Carboxymethylcellulose 10 MG/ML Ophthalmic Solution,172,Drug,RxNorm Extension,Quant Clinical Drug
+46221237,deferasirox 360 MG Oral Tablet,171,Drug,RxNorm,Clinical Drug
+725177,mirtazapine 45 MG Disintegrating Oral Tablet,169,Drug,RxNorm,Clinical Drug
+21077648,1 ML Hydrocortisone 100 MG/ML Prefilled Syringe,168,Drug,RxNorm Extension,Quant Clinical Drug
+35776511,1 ML Glycopyrrolate 0.5 MG/ML / Neostigmine 2.5 MG/ML Injectable Solution,168,Drug,RxNorm Extension,Quant Clinical Drug
+35782248,10 ML Bupivacaine 5 MG/ML / Epinephrine 0.005 MG/ML Injectable Solution,168,Drug,RxNorm Extension,Quant Clinical Drug
+42480110,Mometasone 0.05 MG/ACTUAT Nasal Spray,168,Drug,RxNorm Extension,Clinical Drug
+43291933,50 ML Propofol 10 MG/ML Injectable Suspension,168,Drug,RxNorm Extension,Quant Clinical Drug
+36964953,mineral oil 0.425 MG/MG / petrolatum 0.573 MG/MG / sheep wool preparation 0.002 MG/MG Ophthalmic Ointment [Lacri-Lube] by Abbvie,167,Drug,RxNorm Extension,Marketed Product
+1539463,simvastatin 10 MG Oral Tablet,165,Drug,RxNorm,Clinical Drug
+44109972,Methylprednisolone 40 MG Injectable Solution,162,Drug,RxNorm Extension,Clinical Drug
+1177512,ibuprofen 0.05 MG/MG Topical Gel,161,Drug,RxNorm,Clinical Drug
+43518254,"3 ML Insulin Lispro 50 UNT/ML / Insulin, Protamine Lispro, Human 50 UNT/ML Injectable Suspension",161,Drug,RxNorm Extension,Quant Clinical Drug
+19010639,dexamethasone 0.4 MG/ML Oral Solution,160,Drug,RxNorm,Clinical Drug
+19050451,etilefrine 5 MG Oral Tablet,160,Drug,RxNorm,Clinical Drug
+36895499,10 ML Bupivacaine 2.5 MG/ML Injectable Solution,160,Drug,RxNorm Extension,Quant Clinical Drug
+948079,pantoprazole 20 MG Delayed Release Oral Tablet,158,Drug,RxNorm,Clinical Drug
+36074351,docosahexaenoate 380 MG / eicosapentaenoate 460 MG Oral Capsule,156,Drug,RxNorm Extension,Clinical Drug
+965777,72 HR scopolamine 0.0139 MG/HR Transdermal System,155,Drug,RxNorm,Quant Clinical Drug
+19134558,nifedipine 10 MG Extended Release Oral Tablet,154,Drug,RxNorm,Clinical Drug
+21025670,clobazam 2 MG/ML Oral Suspension,153,Drug,RxNorm Extension,Clinical Drug
+43282131,Benserazide 12.5 MG / Levodopa 50 MG Disintegrating Oral Tablet,153,Drug,RxNorm Extension,Clinical Drug
+21065752,ranolazine 375 MG Extended Release Oral Tablet,152,Drug,RxNorm Extension,Clinical Drug
+36074659,sodium zirconium cyclosilicate 5000 MG Oral Powder,152,Drug,RxNorm Extension,Clinical Drug
+40228203,cetirizine hydrochloride 1 MG/ML Oral Solution,152,Drug,RxNorm,Clinical Drug
+44097374,ertapenem 1000 MG Injectable Solution,152,Drug,RxNorm Extension,Clinical Drug
+36059324,cholecalciferol 1000 UNT Oral Tablet,151,Drug,RxNorm Extension,Clinical Drug
+42480234,Budesonide 3 MG Extended Release Oral Capsule,150,Drug,RxNorm Extension,Clinical Drug
+36407417,tigecycline 50 MG Injectable Solution,148,Drug,RxNorm Extension,Clinical Drug
+1314008,atenolol 50 MG Oral Tablet,147,Drug,RxNorm,Clinical Drug
+1036231,sucralfate 200 MG/ML Oral Suspension,146,Drug,RxNorm,Clinical Drug
+41349876,3 ML liraglutide 6 MG/ML Injectable Solution,146,Drug,RxNorm Extension,Quant Clinical Drug
+36059336,cholecalciferol 1000 UNT Oral Capsule,143,Drug,RxNorm Extension,Clinical Drug
+44132611,0.5 ML fondaparinux 5 MG/ML Injectable Solution,142,Drug,RxNorm Extension,Quant Clinical Drug
+19059244,sodium chloride 600 MG Extended Release Oral Tablet,139,Drug,RxNorm,Clinical Drug
+40754981,fluticasone 0.093 MG/ACTUAT / vilanterol 0.022 MG/ACTUAT Inhalant Powder,139,Drug,RxNorm Extension,Clinical Drug
+1351558,candesartan cilexetil 4 MG Oral Tablet,137,Drug,RxNorm,Clinical Drug
+43717036,4 ML Valproate 100 MG/ML Injectable Solution,137,Drug,RxNorm Extension,Quant Clinical Drug
+19014880,azathioprine 50 MG Oral Tablet,136,Drug,RxNorm,Clinical Drug
+36950580,tacrolimus 1 MG Oral Capsule [Prograf] by Astellas,136,Drug,RxNorm Extension,Marketed Product
+40167216,metoprolol succinate 50 MG Extended Release Oral Tablet,136,Drug,RxNorm,Clinical Drug
+45892856,edoxaban 30 MG Oral Tablet,136,Drug,RxNorm,Clinical Drug
+19105840,folic acid 0.5 MG/ML Oral Solution,135,Drug,RxNorm,Clinical Drug
+1755000,fluconazole 200 MG Oral Capsule,134,Drug,RxNorm,Clinical Drug
+19124335,candesartan cilexetil 2 MG Oral Tablet,134,Drug,RxNorm,Clinical Drug
+19134554,diltiazem 120 MG Extended Release Oral Tablet,134,Drug,RxNorm,Clinical Drug
+36404298,Diltiazem 0.02 MG/MG Topical Cream,134,Drug,RxNorm Extension,Clinical Drug
+43590952,2 ML Oxycodone 10 MG/ML Injectable Solution,134,Drug,RxNorm Extension,Quant Clinical Drug
+35413095,1 ML Cyclosporine 50 MG/ML Injectable Solution,133,Drug,RxNorm Extension,Quant Clinical Drug
+40836854,Daptomycin 350 MG Injectable Solution,133,Drug,RxNorm Extension,Clinical Drug
+43842428,1 ML Octreotide 0.05 MG/ML Injectable Solution,133,Drug,RxNorm Extension,Quant Clinical Drug
+785842,olanzapine 5 MG Disintegrating Oral Tablet,132,Drug,RxNorm,Clinical Drug
+21147427,0.3 ML Cyclosporine 1 MG/ML Ophthalmic Solution,132,Drug,RxNorm Extension,Quant Clinical Drug
+40746551,Paraffin 0.1 MG/MG / Petrolatum 0.132 MG/MG Topical Cream [Cetraben] by Thornton & Ross,131,Drug,RxNorm Extension,Marketed Product
+1355774,gilteritinib 40 MG Oral Tablet,130,Drug,RxNorm,Clinical Drug
+1308251,lisinopril 5 MG Oral Tablet,129,Drug,RxNorm,Clinical Drug
+35781793,10 ML Acetylcysteine 200 MG/ML Injectable Solution,129,Drug,RxNorm Extension,Quant Clinical Drug
+35777049,1 ML Argipressin 20 UNT/ML Injectable Solution,128,Drug,RxNorm Extension,Quant Clinical Drug
+44097966,Beclomethasone 0.25 MG/ACTUAT Metered Dose Inhaler,127,Drug,RxNorm Extension,Clinical Drug
+904458,esomeprazole 40 MG Delayed Release Oral Tablet,126,Drug,RxNorm,Clinical Drug
+721728,nortriptyline 10 MG Oral Tablet,125,Drug,RxNorm,Clinical Drug
+1356037,prucalopride 1 MG Oral Tablet,125,Drug,RxNorm,Clinical Drug
+1713671,amoxicillin 250 MG / clavulanate 125 MG Oral Tablet,125,Drug,RxNorm,Clinical Drug
+19078728,itraconazole 100 MG Oral Capsule,125,Drug,RxNorm,Clinical Drug
+923647,omeprazole 10 MG Delayed Release Oral Capsule,124,Drug,RxNorm,Clinical Drug
+35790091,1000 ML Glucose 50 MG/ML / Potassium Chloride 3 MG/ML Injectable Solution,124,Drug,RxNorm Extension,Quant Clinical Drug
+19101620,ganciclovir 0.0015 MG/MG Ophthalmic Gel,123,Drug,RxNorm,Clinical Drug
+19074721,carbidopa 25 MG / levodopa 100 MG Extended Release Oral Tablet,122,Drug,RxNorm,Clinical Drug
+43133241,Carbidopa 25 MG / entacapone 200 MG / Levodopa 100 MG Delayed Release Oral Tablet,122,Drug,RxNorm Extension,Clinical Drug
+19103819,venlafaxine 75 MG Extended Release Oral Capsule,121,Drug,RxNorm,Clinical Drug
+21135457,Potassium Chloride 75 MG/ML Oral Solution,121,Drug,RxNorm Extension,Clinical Drug
+36891793,Cholestyramine Resin 4000 MG Oral Powder,121,Drug,RxNorm Extension,Clinical Drug
+19015603,nefopam 30 MG Oral Tablet,119,Drug,RxNorm,Clinical Drug
+44135078,100 ML Immunoglobulin G 100 MG/ML Injectable Solution,119,Drug,RxNorm Extension,Quant Clinical Drug
+19003883,isosorbide mononitrate 25 MG Extended Release Oral Capsule,118,Drug,RxNorm,Clinical Drug
+19075034,cephalexin 500 MG Oral Capsule,118,Drug,RxNorm,Clinical Drug
+36410519,5 ML Potassium Chloride 200 MG/ML Injectable Solution,118,Drug,RxNorm Extension,Quant Clinical Drug
+40163271,perindopril erbumine 4 MG Oral Tablet,118,Drug,RxNorm,Clinical Drug
+40837092,Clotrimazole 0.01 MG/MG / Hydrocortisone 0.01 MG/MG Topical Cream,118,Drug,RxNorm Extension,Clinical Drug
+43026953,letermovir 240 MG Delayed Release Oral Tablet,118,Drug,RxNorm Extension,Clinical Drug
+21105909,Colistin 1000000 UNT Inhalant Powder,117,Drug,RxNorm Extension,Clinical Drug
+40837430,Cefazolin 2000 MG Injectable Solution,117,Drug,RxNorm Extension,Clinical Drug
+36069790,ondansetron 4 MG Buccal Film,116,Drug,RxNorm Extension,Clinical Drug
+41354965,5 ML Ketamine 10 MG/ML Injectable Solution,115,Drug,RxNorm Extension,Quant Clinical Drug
+43169449,rosuvastatin 10 MG Delayed Release Oral Tablet,115,Drug,RxNorm Extension,Clinical Drug
+36120276,valproate 200 MG Extended Release Oral Tablet,114,Drug,RxNorm Extension,Clinical Drug
+44109973,Methylprednisolone 500 MG Injectable Solution,114,Drug,RxNorm Extension,Clinical Drug
+19127019,24 HR rivastigmine 0.192 MG/HR Transdermal System,113,Drug,RxNorm,Quant Clinical Drug
+46275732,sacubitril 49 MG / valsartan 51 MG Oral Tablet,113,Drug,RxNorm,Clinical Drug
+40722627,Deferoxamine 500 MG Injectable Solution [Desferal] by Novartis,112,Drug,RxNorm Extension,Marketed Product
+1747204,erythromycin 25 MG/ML Oral Suspension,111,Drug,RxNorm,Clinical Drug
+21158865,Timolol 5 MG/ML / travoprost 0.04 MG/ML Ophthalmic Solution,110,Drug,RxNorm Extension,Clinical Drug
+36809394,200 ML Sodium Bicarbonate 84 MG/ML Injectable Solution,110,Drug,RxNorm Extension,Quant Clinical Drug
+40724343,Peppermint oil 0.5 MG/ML Topical Solution,110,Drug,RxNorm Extension,Clinical Drug
+19023551,omeprazole 40 MG Delayed Release Oral Capsule,109,Drug,RxNorm,Clinical Drug
+42900511,linaclotide 0.29 MG Oral Capsule,108,Drug,RxNorm,Clinical Drug
+44045246,salmeterol 0.025 MG/ACTUAT Metered Dose Inhaler,108,Drug,RxNorm Extension,Clinical Drug
+41338363,2 ML Digoxin 0.25 MG/ML Injectable Solution,106,Drug,RxNorm Extension,Quant Clinical Drug
+19101778,deferiprone 500 MG Oral Tablet,104,Drug,RxNorm,Clinical Drug
+36074354,bentonite 30 MG/ML / calamine 145 MG/ML / glycerin 50 MG/ML / phenol 5 MG/ML / sodium citrate 5 MG/ML / zinc oxide 50 MG/ML Topical Solution,104,Drug,RxNorm Extension,Clinical Drug
+36928375,mesalamine 400 MG Delayed Release Oral Tablet [Asacol] by Abbvie,104,Drug,RxNorm Extension,Marketed Product
+21175876,1 ML Prochlorperazine 12.5 MG/ML Prefilled Syringe,102,Drug,RxNorm Extension,Quant Clinical Drug
+43210160,Azathioprine 25 MG Delayed Release Oral Tablet,102,Drug,RxNorm Extension,Clinical Drug
+41365087,10 ML Ketamine 50 MG/ML Injectable Solution,100,Drug,RxNorm Extension,Quant Clinical Drug
+43158415,irbesartan 300 MG Delayed Release Oral Tablet,100,Drug,RxNorm Extension,Clinical Drug
+588700,2.5 ML Sodium Chloride 9 MG/ML Inhalant Solution,99,Drug,RxNorm Extension,Quant Clinical Drug
+789654,benserazide 25 MG / levodopa 100 MG Extended Release Oral Capsule,99,Drug,RxNorm,Clinical Drug
+19010890,zuclopenthixol 10 MG Oral Tablet,99,Drug,RxNorm,Clinical Drug
+36054909,20 ML remdesivir 5 MG/ML Injectable Solution,99,Drug,RxNorm Extension,Quant Clinical Drug
+40754399,Fosfomycin 3000 MG Oral Granules,98,Drug,RxNorm Extension,Clinical Drug
+46221231,deferasirox 180 MG Oral Tablet,98,Drug,RxNorm,Clinical Drug
+702296,maribavir 200 MG Oral Tablet,96,Drug,RxNorm,Clinical Drug
+42479243,Valproate 300 MG Extended Release Oral Tablet,96,Drug,RxNorm Extension,Clinical Drug
+40170682,dalfampridine 10 MG Extended Release Oral Tablet,95,Drug,RxNorm,Clinical Drug
+40865534,Rasburicase 1.5 MG Injectable Solution,95,Drug,RxNorm Extension,Clinical Drug
+43526467,canagliflozin 100 MG Oral Tablet,95,Drug,RxNorm,Clinical Drug
+904457,esomeprazole 20 MG Delayed Release Oral Tablet,94,Drug,RxNorm,Clinical Drug
+43192191,Carbidopa 18.75 MG / entacapone 200 MG / Levodopa 75 MG Delayed Release Oral Tablet,94,Drug,RxNorm Extension,Clinical Drug
+743752,venlafaxine 75 MG Oral Tablet,93,Drug,RxNorm,Clinical Drug
+21136739,3 ML insulin detemir 100 UNT/ML Prefilled Syringe,93,Drug,RxNorm Extension,Quant Clinical Drug
+42482686,100 ML Levofloxacin 5 MG/ML Injectable Solution,93,Drug,RxNorm Extension,Quant Clinical Drug
+44071670,Deferoxamine 500 MG Injectable Solution,93,Drug,RxNorm Extension,Clinical Drug
+46275809,sacubitril 97 MG / valsartan 103 MG Oral Tablet,93,Drug,RxNorm,Clinical Drug
+939574,sodium bicarbonate 50 MG/ML Otic Solution,91,Drug,RxNorm,Clinical Drug
+950669,tacrolimus 0.001 MG/MG Topical Ointment,91,Drug,RxNorm,Clinical Drug
+36257199,emtricitabine 200 MG / tenofovir disoproxil 250 MG Oral Tablet,91,Drug,RxNorm Extension,Clinical Drug
+36405058,umeclidinium 0.0625 MG/ACTUAT Inhalant Powder,91,Drug,RxNorm Extension,Clinical Drug
+36920201,1000 ML glucose 40 MG/ML / sodium chloride 1.8 MG/ML Injection,91,Drug,RxNorm Extension,Quant Clinical Drug
+36967163,fluticasone 0.4 MG Nasal Solution,90,Drug,RxNorm Extension,Clinical Drug
+1713370,amoxicillin 50 MG/ML Oral Suspension,89,Drug,RxNorm,Clinical Drug
+36928128,clozapine 100 MG Oral Tablet [Clozaril] by Viatris Healthcare,89,Drug,RxNorm Extension,Marketed Product
+743720,venlafaxine 37.5 MG Oral Tablet,88,Drug,RxNorm,Clinical Drug
+40164024,alfuzosin hydrochloride 10 MG Extended Release Oral Tablet,88,Drug,RxNorm,Clinical Drug
+46221241,deferasirox 90 MG Oral Tablet,88,Drug,RxNorm,Clinical Drug
+1154195,montelukast 5 MG Chewable Tablet,86,Drug,RxNorm,Clinical Drug
+19062880,riboflavin 50 MG Oral Capsule,86,Drug,RxNorm,Clinical Drug
+40224944,glycopyrrolate 0.2 MG/ML Oral Solution,86,Drug,RxNorm,Clinical Drug
+40709790,400 MG Timolol 0.001 MG/MG Ophthalmic Solution,86,Drug,RxNorm Extension,Quant Clinical Drug
+950438,citric acid 50 MG/ML / potassium citrate 300 MG/ML Oral Solution,85,Drug,RxNorm,Clinical Drug
+19063848,betamethasone 1 MG/ML Topical Solution,85,Drug,RxNorm,Clinical Drug
+36896679,250 ML Flucytosine 10 MG/ML Injectable Solution,85,Drug,RxNorm Extension,Quant Clinical Drug
+19101729,gliclazide 30 MG Extended Release Oral Tablet,84,Drug,RxNorm,Clinical Drug
+36814353,Diclofenac 11.6 MG/ML Topical Gel,84,Drug,RxNorm Extension,Clinical Drug
+19021711,carbamazepine 400 MG Extended Release Oral Tablet,83,Drug,RxNorm,Clinical Drug
+19067291,progesterone 100 MG Oral Capsule,83,Drug,RxNorm,Clinical Drug
+36281431,1.8 ML Epinephrine 0.0125 MG/ML / Lidocaine 20 MG/ML Injectable Solution,83,Drug,RxNorm Extension,Quant Clinical Drug
+1436683,tamoxifen 20 MG Oral Tablet,82,Drug,RxNorm,Clinical Drug
+19075032,cephalexin 250 MG Oral Capsule,82,Drug,RxNorm,Clinical Drug
+41242641,Daptomycin 500 MG Injectable Solution,82,Drug,RxNorm Extension,Clinical Drug
+41351601,4 ML Bupivacaine 5 MG/ML / Glucose 80 MG/ML Injectable Solution,82,Drug,RxNorm Extension,Quant Clinical Drug
+43862275,10 ML Cytarabine 100 MG/ML Injectable Solution,82,Drug,RxNorm Extension,Quant Clinical Drug
+40166190,bisoprolol fumarate 3.75 MG Oral Tablet,81,Drug,RxNorm,Clinical Drug
+36810848,Albuterol 0.2 MG/ACTUAT Inhalation Powder,80,Drug,RxNorm Extension,Clinical Drug
+40169908,morphine sulfate 100 MG Extended Release Oral Tablet,80,Drug,RxNorm,Clinical Drug
+19077380,fluconazole 10 MG/ML Oral Suspension,79,Drug,RxNorm,Clinical Drug
+19080129,lisinopril 20 MG Oral Tablet,79,Drug,RxNorm,Clinical Drug
+19134561,nifedipine 20 MG Extended Release Oral Capsule,79,Drug,RxNorm,Clinical Drug
+42707773,dihydrocodeine bitartrate 2 MG/ML Oral Solution,79,Drug,RxNorm,Clinical Drug
+44097477,Deferoxamine 2000 MG Injectable Solution,79,Drug,RxNorm Extension,Clinical Drug
+740302,carbamazepine 200 MG Extended Release Oral Tablet,78,Drug,RxNorm,Clinical Drug
+1145650,opicapone 50 MG Oral Capsule,78,Drug,RxNorm,Clinical Drug
+19077401,fluconazole 40 MG/ML Oral Suspension,78,Drug,RxNorm,Clinical Drug
+35781945,10 ML Calcium Chloride 100 MG/ML Injectable Solution,78,Drug,RxNorm Extension,Quant Clinical Drug
+43859104,"diphtheria toxoid vaccine, inactivated / poliovirus vaccine inactivated, type 1 (Mahoney) / poliovirus vaccine inactivated, type 2 (MEF-1) / poliovirus vaccine inactivated, type 3 (Saukett) / ... Injectable Suspension",78,Drug,RxNorm Extension,Clinical Drug Form
+40169960,morphine sulfate 20 MG/ML Oral Solution,77,Drug,RxNorm,Clinical Drug
+42903345,buprenorphine 0.02 MG/HR Transdermal System,77,Drug,RxNorm,Clinical Drug
+43292611,Acyclovir 800 MG Disintegrating Oral Tablet,76,Drug,RxNorm Extension,Clinical Drug
+21111050,Vancomycin 50 MG/ML Ophthalmic Solution,75,Drug,RxNorm Extension,Clinical Drug
+35778379,2 ML Gentamicin 10 MG/ML Injectable Solution,75,Drug,RxNorm Extension,Quant Clinical Drug
+1337109,ranolazine 500 MG Extended Release Oral Tablet,74,Drug,RxNorm,Clinical Drug
+41240936,mycophenolate mofetil 500 MG Injectable Solution,74,Drug,RxNorm Extension,Clinical Drug
+42480800,Loperamide 2 MG Disintegrating Oral Tablet,74,Drug,RxNorm Extension,Clinical Drug
+43290905,Calcium polystyrene sulfonate product 0.999 MG/MG Topical Powder,74,Drug,RxNorm Extension,Clinical Drug
+36896691,250 ML Foscarnet 24 MG/ML Injectable Solution,73,Drug,RxNorm Extension,Quant Clinical Drug
+40234430,fentanyl 0.2 MG Sublingual Tablet,73,Drug,RxNorm,Clinical Drug
+21170488,voriconazole 10 MG/ML Ophthalmic Solution,72,Drug,RxNorm Extension,Clinical Drug
+1436651,mercaptopurine 50 MG Oral Tablet,71,Drug,RxNorm,Clinical Drug
+21021370,bimatoprost 0.3 MG/ML / Timolol 5 MG/ML Ophthalmic Solution,71,Drug,RxNorm Extension,Clinical Drug
+35200878,rivaroxaban 2.5 MG Oral Tablet,71,Drug,RxNorm,Clinical Drug
+36886853,Ciprofloxacin 750 MG Delayed Release Oral Tablet,71,Drug,RxNorm Extension,Clinical Drug
+40241038,nitroglycerin 0.004 MG/MG Rectal Ointment,71,Drug,RxNorm,Clinical Drug
+43138437,voriconazole 200 MG Delayed Release Oral Tablet,71,Drug,RxNorm Extension,Clinical Drug
+40166446,oxybutynin chloride 5 MG Extended Release Oral Tablet,70,Drug,RxNorm,Clinical Drug
+42708201,budesonide 3 MG Delayed Release Oral Capsule,70,Drug,RxNorm,Clinical Drug
+1353780,felodipine 2.5 MG Extended Release Oral Tablet,69,Drug,RxNorm,Clinical Drug
+19007332,methotrexate 2.5 MG Oral Tablet,69,Drug,RxNorm,Clinical Drug
+36403625,Hydralazine 20 MG Injectable Solution,69,Drug,RxNorm Extension,Clinical Drug
+19125036,posaconazole 40 MG/ML Oral Suspension,68,Drug,RxNorm,Clinical Drug
+718757,nicotine 2 MG Oral Lozenge,67,Drug,RxNorm,Clinical Drug
+19022284,mercaptopurine 10 MG Oral Tablet,67,Drug,RxNorm,Clinical Drug
+19079152,olanzapine 10 MG Disintegrating Oral Tablet,67,Drug,RxNorm,Clinical Drug
+35140114,500 ML Glucose 200 MG/ML Injectable Solution,67,Drug,RxNorm Extension,Quant Clinical Drug
+35790157,1000 ML Glucose 50 MG/ML / Potassium Chloride 1.5 MG/ML Injectable Solution,67,Drug,RxNorm Extension,Quant Clinical Drug
+35782557,"10 ML Insulin, Aspart, Human 100 UNT/ML Injectable Solution",65,Drug,RxNorm Extension,Quant Clinical Drug
+40175390,pravastatin sodium 10 MG Oral Tablet,65,Drug,RxNorm,Clinical Drug
+42480836,tiotropium 0.018 MG Dry Powder Inhaler,65,Drug,RxNorm Extension,Clinical Drug
+42481945,mesalamine 1200 MG Extended Release Oral Tablet,65,Drug,RxNorm Extension,Clinical Drug
+43137340,exemestane 25 MG Delayed Release Oral Tablet,65,Drug,RxNorm Extension,Clinical Drug
+43290291,Terbutaline 0.5 MG/ACTUAT Inhalant Powder,65,Drug,RxNorm Extension,Clinical Drug
+19075379,ciprofloxacin 50 MG/ML Oral Suspension,64,Drug,RxNorm,Clinical Drug
+21045906,olodaterol 0.0025 MG/ACTUAT / tiotropium 0.0025 MG/ACTUAT Inhalant Solution,64,Drug,RxNorm Extension,Clinical Drug
+40184187,hydrochlorothiazide 12.5 MG / losartan potassium 50 MG Oral Tablet,64,Drug,RxNorm,Clinical Drug
+41208927,Tacrolimus 1 MG Oral Granules,64,Drug,RxNorm Extension,Clinical Drug
+19063506,picosulfate sodium 1 MG/ML Oral Solution,63,Drug,RxNorm,Clinical Drug
+36411882,0.6 ML epoetin beta 50000 UNT/ML Injectable Solution,63,Drug,RxNorm Extension,Quant Clinical Drug
+40163267,perindopril erbumine 2 MG Oral Tablet,63,Drug,RxNorm,Clinical Drug
+43012034,chlorpheniramine maleate 0.4 MG/ML Oral Solution,63,Drug,RxNorm,Clinical Drug
+35787124,100 ML Levobupivacaine 1.25 MG/ML Injectable Solution,62,Drug,RxNorm Extension,Quant Clinical Drug
+40174880,levothyroxine sodium 0.075 MG Oral Tablet,62,Drug,RxNorm,Clinical Drug
+43532305,dabrafenib 75 MG Oral Capsule,62,Drug,RxNorm,Clinical Drug
+967242,simethicone 40 MG/ML Oral Suspension,61,Drug,RxNorm,Clinical Drug
+19088224,amdinocillin pivoxil 200 MG Oral Tablet,61,Drug,RxNorm,Clinical Drug
+21030282,500 ML Sodium Chloride 18 MG/ML Injectable Solution,61,Drug,RxNorm Extension,Quant Clinical Drug
+21053457,Carbidopa 43.8 MG / entacapone 200 MG / Levodopa 175 MG Oral Tablet,61,Drug,RxNorm Extension,Clinical Drug
+21174481,Agomelatine 25 MG Oral Tablet,61,Drug,RxNorm Extension,Clinical Drug
+44097290,Glucagon 1 MG Injectable Solution,60,Drug,RxNorm Extension,Clinical Drug
+19103820,venlafaxine 150 MG Extended Release Oral Capsule,59,Drug,RxNorm,Clinical Drug
+21109951,Calcium Carbonate 750 MG / Cholecalciferol 200 UNT Oral Tablet,59,Drug,RxNorm Extension,Clinical Drug
+35407406,silver sulfadiazine 0.01 MG/MG Topical Cream,59,Drug,RxNorm Extension,Clinical Drug
+36403642,Beclomethasone 0.2 MG/ACTUAT Inhalant Powder,59,Drug,RxNorm Extension,Clinical Drug
+36882934,fluticasone 0.1 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Inhalant Powder,59,Drug,RxNorm Extension,Clinical Drug
+44097107,Methylprednisolone 125 MG Injectable Solution,59,Drug,RxNorm Extension,Clinical Drug
+19006961,betamethasone 0.5 MG Disintegrating Oral Tablet,58,Drug,RxNorm,Clinical Drug
+19008700,ketoconazole 20 MG/ML Medicated Shampoo,58,Drug,RxNorm,Clinical Drug
+35789347,500 ML Potassium Chloride 3 MG/ML / Sodium Chloride 9 MG/ML Injectable Solution,58,Drug,RxNorm Extension,Quant Clinical Drug
+42480123,Glucose Topical Solution,58,Drug,RxNorm Extension,Clinical Drug Form
+35782396,10 ML Bupivacaine 2.5 MG/ML / Epinephrine 0.005 MG/ML Injectable Solution,57,Drug,RxNorm Extension,Quant Clinical Drug
+43843471,5 ML sodium citrate 90 MG/ML Rectal Solution,57,Drug,RxNorm Extension,Quant Clinical Drug
+36060445,calcium carbonate 1250 MG / cholecalciferol 440 UNT Oral Granules,56,Drug,RxNorm Extension,Clinical Drug
+36404386,Fosfomycin 4000 MG Injectable Solution,56,Drug,RxNorm Extension,Clinical Drug
+36411857,0.6 ML epoetin beta 33300 UNT/ML Injectable Solution,56,Drug,RxNorm Extension,Quant Clinical Drug
+42481992,brimonidine 2 MG/ML / brinzolamide 10 MG/ML Ophthalmic Solution,56,Drug,RxNorm Extension,Clinical Drug
+45774893,empagliflozin 25 MG Oral Tablet,56,Drug,RxNorm,Clinical Drug
+19020127,betahistine 16 MG Oral Tablet,55,Drug,RxNorm,Clinical Drug
+36508019,Metformin 1000 MG Delayed Release Oral Tablet,55,Drug,RxNorm Extension,Clinical Drug
+789612,carbidopa 25 MG / levodopa 250 MG Oral Tablet,54,Drug,RxNorm,Clinical Drug
+21059725,500 ML Sodium Chloride 4.5 MG/ML Injectable Solution,54,Drug,RxNorm Extension,Quant Clinical Drug
+36896808,300 ML linezolid 2 MG/ML Injectable Solution,54,Drug,RxNorm Extension,Quant Clinical Drug
+40175400,pravastatin sodium 40 MG Oral Tablet,54,Drug,RxNorm,Clinical Drug
+19080128,lisinopril 10 MG Oral Tablet,53,Drug,RxNorm,Clinical Drug
+35781639,10 ML Epinephrine 0.1 MG/ML Injectable Solution,53,Drug,RxNorm Extension,Quant Clinical Drug
+44110809,Azacitidine 100 MG Injectable Suspension,53,Drug,RxNorm Extension,Clinical Drug
+782489,fluticasone 0.25 MG/ACTUAT / formoterol 0.01 MG/ACTUAT Inhalation Solution,52,Drug,RxNorm Extension,Clinical Drug
+793998,olaparib 150 MG Oral Tablet,52,Drug,RxNorm,Clinical Drug
+956876,furosemide 8 MG/ML Oral Solution,52,Drug,RxNorm,Clinical Drug
+1353818,felodipine 5 MG Extended Release Oral Tablet,52,Drug,RxNorm,Clinical Drug
+19131403,venlafaxine 225 MG Extended Release Oral Tablet,52,Drug,RxNorm,Clinical Drug
+21125876,Multivitamin preparation Oral Tablet [Renavit],52,Drug,RxNorm Extension,Branded Drug Form
+36966253,budesonide 0.4 MG/ACTUAT / formoterol 0.012 MG/ACTUAT Inhalation Powder [DUORESP SPIROMAX] by TEVA,52,Drug,RxNorm Extension,Marketed Product
+1593813,abiraterone acetate 500 MG Oral Tablet,51,Drug,RxNorm,Clinical Drug
+21035173,mesalamine 800 MG Delayed Release Oral Tablet [Octasa] by Tillotts,51,Drug,RxNorm Extension,Marketed Product
+35606208,dabigatran etexilate 110 MG Oral Capsule,51,Drug,RxNorm,Clinical Drug
+35786039,1.5 ML Insulin Glargine 300 UNT/ML Injectable Solution,51,Drug,RxNorm Extension,Quant Clinical Drug
+19078859,mesalamine 400 MG Delayed Release Oral Tablet,50,Drug,RxNorm,Clinical Drug
+35781796,10 ML Sodium Bicarbonate 85 MG/ML Injectable Solution,50,Drug,RxNorm Extension,Quant Clinical Drug
+718670,nicotine 2 MG Chewing Gum,49,Drug,RxNorm,Clinical Drug
+1107927,loratadine 1 MG/ML Oral Solution,49,Drug,RxNorm,Clinical Drug
+36888689,Metformin 750 MG Delayed Release Oral Tablet,49,Drug,RxNorm Extension,Clinical Drug
+40069100,petrolatum Topical Ointment,49,Drug,RxNorm,Clinical Drug Form
+40166192,bisoprolol fumarate 7.5 MG Oral Tablet,49,Drug,RxNorm,Clinical Drug
+43202317,irbesartan 150 MG Delayed Release Oral Tablet,49,Drug,RxNorm Extension,Clinical Drug
+43608342,1 ML Octreotide 0.1 MG/ML Injectable Solution,49,Drug,RxNorm Extension,Quant Clinical Drug
+715294,duloxetine 20 MG Delayed Release Oral Capsule,48,Drug,RxNorm,Clinical Drug
+1328613,diltiazem hydrochloride 240 MG Extended Release Oral Capsule,48,Drug,RxNorm,Clinical Drug
+19022750,carvedilol 12.5 MG Oral Tablet,48,Drug,RxNorm,Clinical Drug
+21157497,0.5 ML Atropine 10 MG/ML Ophthalmic Solution,48,Drug,RxNorm Extension,Quant Clinical Drug
+40163356,propranolol hydrochloride 80 MG Extended Release Oral Capsule,48,Drug,RxNorm,Clinical Drug
+19125704,felodipine 10 MG Extended Release Oral Tablet,47,Drug,RxNorm,Clinical Drug
+21095877,Nicotine 1 MG/ACTUAT Nasal Spray,47,Drug,RxNorm Extension,Clinical Drug
+42481485,Clindamycin 15 MG/ML Oral Suspension,47,Drug,RxNorm Extension,Clinical Drug
+19105024,dibucaine 0.005 MG/MG / hydrocortisone 0.005 MG/MG Topical Ointment,46,Drug,RxNorm,Clinical Drug
+36809755,3 ML semaglutide 1.34 MG/ML Injectable Solution,46,Drug,RxNorm Extension,Quant Clinical Drug
+40244466,ruxolitinib 10 MG Oral Tablet,46,Drug,RxNorm,Clinical Drug
+743760,venlafaxine 37.5 MG Extended Release Oral Tablet,45,Drug,RxNorm,Clinical Drug
+19101780,ibuprofen 0.1 MG/MG Topical Gel,45,Drug,RxNorm,Clinical Drug
+36063501,estradiol 0.01 MG Vaginal Suppository,45,Drug,RxNorm Extension,Clinical Drug
+36411858,0.6 ML epoetin beta 16700 UNT/ML Injectable Solution,45,Drug,RxNorm Extension,Quant Clinical Drug
+36788086,pirfenidone 267 MG Delayed Release Oral Tablet,45,Drug,RxNorm Extension,Clinical Drug
+36894629,Flupenthixol 0.5 MG Delayed Release Oral Tablet,45,Drug,RxNorm Extension,Clinical Drug
+37496840,semaglutide 3 MG Oral Tablet,45,Drug,RxNorm,Clinical Drug
+44132132,16 HR Nicotine 1.56 MG/HR Transdermal System,45,Drug,RxNorm Extension,Quant Clinical Drug
+1237184,theophylline 400 MG Extended Release Oral Tablet,44,Drug,RxNorm,Clinical Drug
+1301154,melatonin 3 MG Oral Tablet,44,Drug,RxNorm,Clinical Drug
+21108240,0.4 ML Carboxymethylcellulose 5 MG/ML Ophthalmic Solution,44,Drug,RxNorm Extension,Quant Clinical Drug
+19075422,clarithromycin 50 MG/ML Oral Suspension,43,Drug,RxNorm,Clinical Drug
+19115110,miconazole 0.02 MG/MG Oral Gel,43,Drug,RxNorm,Clinical Drug
+36811109,Sodium Fluoride 0.005 MG/MG Paste,43,Drug,RxNorm Extension,Clinical Drug
+40163793,tolterodine tartrate 4 MG Extended Release Oral Capsule,43,Drug,RxNorm,Clinical Drug
+40173995,sotalol hydrochloride 40 MG Oral Tablet,43,Drug,RxNorm,Clinical Drug
+40232769,oxycodone hydrochloride 80 MG Extended Release Oral Tablet,43,Drug,RxNorm,Clinical Drug
+40707323,1250 MG Estradiol 0.0006 MG/MG Topical Gel,43,Drug,RxNorm Extension,Quant Clinical Drug
+925018,bisacodyl 5 MG Rectal Suppository,42,Drug,RxNorm,Clinical Drug
+1383870,isosorbide mononitrate 40 MG Extended Release Oral Tablet,42,Drug,RxNorm,Clinical Drug
+2910465,salicylate choline 0.087 MG/MG Oral Gel,42,Drug,RxNorm Extension,Clinical Drug
+19012348,eltrombopag 25 MG Oral Tablet,42,Drug,RxNorm,Clinical Drug
+35756286,Tacrolimus 0.5 MG Extended Release Oral Capsule [Prograf] by Astellas,42,Drug,RxNorm Extension,Marketed Product
+36809148,1.5 ML semaglutide 1.34 MG/ML Injectable Solution,42,Drug,RxNorm Extension,Quant Clinical Drug
+36882989,fludarabine 50 MG Injectable Solution,42,Drug,RxNorm Extension,Clinical Drug
+36895346,5 ML Phenytoin 50 MG/ML Injectable Solution,42,Drug,RxNorm Extension,Quant Clinical Drug
+40169683,labetalol hydrochloride 100 MG Oral Tablet,42,Drug,RxNorm,Clinical Drug
+40243494,carboxymethylcellulose sodium 5 MG/ML Ophthalmic Solution,42,Drug,RxNorm,Clinical Drug
+41378157,20 ML lacosamide 10 MG/ML Injectable Solution,42,Drug,RxNorm Extension,Quant Clinical Drug
+36781331,2 ML Budesonide 0.25 MG/ML Inhalant Powder,41,Drug,RxNorm Extension,Quant Clinical Drug
+1734134,azithromycin 500 MG Oral Tablet,40,Drug,RxNorm,Clinical Drug
+36065920,dolutegravir 50 MG / lamivudine 300 MG Oral Tablet [Dovato] by ViiV,40,Drug,RxNorm Extension,Marketed Product
+36895858,25 ML Furosemide 10 MG/ML Injectable Solution,40,Drug,RxNorm Extension,Quant Clinical Drug
+40244482,ruxolitinib 5 MG Oral Tablet,40,Drug,RxNorm,Clinical Drug
+40709655,500 MG Testosterone 0.02 MG/MG Topical Gel [Tostran] by Kyowa Kirin,40,Drug,RxNorm Extension,Marketed Product
+43278193,mesalamine 1000 MG Oral Granules,40,Drug,RxNorm Extension,Clinical Drug
+1362392,24 HR nitroglycerin 0.4 MG/HR Transdermal System,39,Drug,RxNorm,Quant Clinical Drug
+21128048,100 ML zoledronic acid 0.04 MG/ML Injectable Solution,39,Drug,RxNorm Extension,Quant Clinical Drug
+35898304,formoterol 0.005 MG/ACTUAT / glycopyrronium 0.0072 MG/ACTUAT Inhalation Powder,39,Drug,RxNorm Extension,Clinical Drug
+41379704,20 ML Cytarabine 100 MG/ML Injectable Solution,39,Drug,RxNorm Extension,Quant Clinical Drug
+908951,betamethasone 0.0005 MG/MG / calcipotriene 0.00005 MG/MG Topical Ointment,38,Drug,RxNorm,Clinical Drug
+1703065,valganciclovir 450 MG Oral Tablet,38,Drug,RxNorm,Clinical Drug
+19008455,urea 100 MG/ML Topical Cream,38,Drug,RxNorm,Clinical Drug
+19072967,aluminum chloride 200 MG/ML Topical Solution,38,Drug,RxNorm,Clinical Drug
+21078060,5 ML Midazolam 2 MG/ML Prefilled Syringe,38,Drug,RxNorm Extension,Quant Clinical Drug
+36897182,1000 ML Glucose 50 MG/ML / Sodium Chloride 9 MG/ML Injectable Solution,38,Drug,RxNorm Extension,Quant Clinical Drug
+40712886,59 ML mesalamine 33.3 MG/ML Rectal Solution,38,Drug,RxNorm Extension,Quant Clinical Drug
+43169082,tenofovir disoproxil 250 MG Delayed Release Oral Tablet,38,Drug,RxNorm Extension,Clinical Drug
+43174069,capecitabine 500 MG Delayed Release Oral Tablet,38,Drug,RxNorm Extension,Clinical Drug
+751284,lithium carbonate 400 MG Extended Release Oral Tablet,37,Drug,RxNorm,Clinical Drug
+2929366,fluticasone 0.125 MG/ACTUAT / formoterol 0.005 MG/ACTUAT Inhalation Solution,37,Drug,RxNorm Extension,Clinical Drug
+36892743,salmeterol 0.05 MG/ACTUAT Inhalant Powder,37,Drug,RxNorm Extension,Clinical Drug
+41146799,Rasburicase 7.5 MG Injectable Solution,37,Drug,RxNorm Extension,Clinical Drug
+42902282,darunavir 800 MG Oral Tablet,37,Drug,RxNorm,Clinical Drug
+43147192,irbesartan 75 MG Delayed Release Oral Tablet,37,Drug,RxNorm Extension,Clinical Drug
+1334461,ramipril 2.5 MG Oral Tablet,36,Drug,RxNorm,Clinical Drug
+19018903,cyclophosphamide 50 MG Oral Tablet,36,Drug,RxNorm,Clinical Drug
+19061915,praziquantel 500 MG Oral Tablet,36,Drug,RxNorm,Clinical Drug
+36813581,Lithium Carbonate 200 MG Extended Release Oral Tablet [Priadel] by Essential,36,Drug,RxNorm Extension,Marketed Product
+19101573,nebivolol 5 MG Oral Tablet,35,Drug,RxNorm,Clinical Drug
+36407390,ceftolozane 1000 MG / tazobactam 500 MG Injectable Solution,35,Drug,RxNorm Extension,Clinical Drug
+40708177,1000 ML POLYETHYLENE GLYCOL 3350 85 MG/ML Oral Powder,35,Drug,RxNorm Extension,Quant Clinical Drug
+21157814,150 ML Sodium Chloride 9 MG/ML Injectable Solution,34,Drug,RxNorm Extension,Quant Clinical Drug
+35785346,0.4 ML darbepoetin alfa 0.1 MG/ML Injectable Solution,34,Drug,RxNorm Extension,Quant Clinical Drug
+40165773,enalapril maleate 20 MG Oral Tablet,34,Drug,RxNorm,Clinical Drug
+40239259,menthol 20 MG/ML Topical Cream,34,Drug,RxNorm,Clinical Drug
+40244474,ruxolitinib 20 MG Oral Tablet,34,Drug,RxNorm,Clinical Drug
+40714099,50 ML rituximab 10 MG/ML Injectable Solution [Rixathon] by Sandoz,34,Drug,RxNorm Extension,Marketed Product
+1742254,levofloxacin 250 MG Oral Tablet,33,Drug,RxNorm,Clinical Drug
+19073183,amoxicillin 250 MG Oral Capsule,33,Drug,RxNorm,Clinical Drug
+40719630,0.25 ML Ciprofloxacin 2 MG/ML Otic Solution,33,Drug,RxNorm Extension,Quant Clinical Drug
+43532507,trametinib 2 MG Oral Tablet,33,Drug,RxNorm,Clinical Drug
+44071319,Methylprednisolone 1000 MG Injectable Solution,33,Drug,RxNorm Extension,Clinical Drug
+1308250,lisinopril 2.5 MG Oral Tablet,32,Drug,RxNorm,Clinical Drug
+1314162,atenolol 5 MG/ML Oral Solution,32,Drug,RxNorm,Clinical Drug
+19075428,clindamycin 10 MG/ML Topical Solution,32,Drug,RxNorm,Clinical Drug
+19107762,albendazole 400 MG Chewable Tablet,32,Drug,RxNorm,Clinical Drug
+19133729,quetiapine 50 MG Extended Release Oral Tablet,32,Drug,RxNorm,Clinical Drug
+21055907,Magnesium glycerophosphate 24.3 MG/ML Oral Suspension,32,Drug,RxNorm Extension,Clinical Drug
+40165767,enalapril maleate 2.5 MG Oral Tablet,32,Drug,RxNorm,Clinical Drug
+40243120,tapentadol 50 MG Extended Release Oral Tablet,32,Drug,RxNorm,Clinical Drug
+42939099,Sodium Chloride 9 MG/ML Irrigation Solution,32,Drug,RxNorm Extension,Clinical Drug
+1154279,fentanyl 0.2 MG Buccal Tablet,31,Drug,RxNorm,Clinical Drug
+19064967,mesalamine 500 MG Extended Release Oral Tablet,31,Drug,RxNorm,Clinical Drug
+19134551,diltiazem 300 MG Extended Release Oral Capsule,31,Drug,RxNorm,Clinical Drug
+21035576,Gliclazide 40 MG Oral Tablet,31,Drug,RxNorm Extension,Clinical Drug
+40165762,enalapril maleate 10 MG Oral Tablet,31,Drug,RxNorm,Clinical Drug
+40708413,1000 MG Lidocaine 0.05 MG/MG Transdermal System,31,Drug,RxNorm Extension,Quant Clinical Drug
+43140686,regorafenib 40 MG Delayed Release Oral Tablet,31,Drug,RxNorm Extension,Clinical Drug
+44191029,3 ML Insulin Glargine 100 UNT/ML Injectable Suspension,31,Drug,RxNorm Extension,Quant Clinical Drug
+1331271,dipyridamole 200 MG Extended Release Oral Capsule,30,Drug,RxNorm,Clinical Drug
+1548802,dydrogesterone 5 MG / estradiol 1 MG Oral Tablet,30,Drug,RxNorm,Clinical Drug
+19112979,nifedipine 30 MG Extended Release Oral Tablet,30,Drug,RxNorm,Clinical Drug
+19127021,24 HR rivastigmine 0.396 MG/HR Transdermal System,30,Drug,RxNorm,Quant Clinical Drug
+21079457,500 ML Potassium Chloride 6 MG/ML / Sodium Chloride 9 MG/ML Injectable Solution,30,Drug,RxNorm Extension,Quant Clinical Drug
+35606470,elbasvir 50 MG / grazoprevir 100 MG Oral Tablet,30,Drug,RxNorm,Clinical Drug
+35782236,10 ML Insulin Glargine 100 UNT/ML Injectable Solution,30,Drug,RxNorm Extension,Quant Clinical Drug
+40751074,Mineral Oil 0.2 MG/MG / Petrolatum 0.5 MG/MG / POLAWAX POLYSORBATE 0.3 MG/MG Topical Ointment,30,Drug,RxNorm Extension,Clinical Drug
+43560032,buprenorphine 0.015 MG/HR Transdermal System,30,Drug,RxNorm,Clinical Drug
+1592274,raltegravir 600 MG Oral Tablet,29,Drug,RxNorm,Clinical Drug
+36892790,formoterol 0.012 MG/ACTUAT Inhalant Powder,29,Drug,RxNorm Extension,Clinical Drug
+40169689,labetalol hydrochloride 200 MG Oral Tablet,29,Drug,RxNorm,Clinical Drug
+40717353,"3 ML Insulin, Aspart, Human 100 UNT/ML Injectable Solution [Novorapid] by Novo Nordisk",29,Drug,RxNorm Extension,Marketed Product
+43526401,doxylamine succinate 10 MG / pyridoxine hydrochloride 10 MG Delayed Release Oral Tablet,29,Drug,RxNorm,Clinical Drug
+19020131,bisacodyl 10 MG Rectal Suppository,28,Drug,RxNorm,Clinical Drug
+21033755,calcium acetate 450 MG / magnesium carbonate 232 MG Oral Tablet,28,Drug,RxNorm Extension,Clinical Drug
+21091518,brinzolamide 10 MG/ML / Timolol 5 MG/ML Ophthalmic Solution,28,Drug,RxNorm Extension,Clinical Drug
+21143222,mesalamine 1000 MG/ACTUAT Rectal Foam,28,Drug,RxNorm Extension,Clinical Drug
+35605535,osimertinib 80 MG Oral Tablet,28,Drug,RxNorm,Clinical Drug
+35758207,Dutasteride 0.5 MG Extended Release Oral Capsule,28,Drug,RxNorm Extension,Clinical Drug
+36895014,1 ML Meperidine 50 MG/ML Injectable Solution,28,Drug,RxNorm Extension,Quant Clinical Drug
+36895547,10 ML Lidocaine 20 MG/ML Injectable Solution,28,Drug,RxNorm Extension,Quant Clinical Drug
+40164894,metformin hydrochloride 1000 MG Extended Release Oral Tablet,28,Drug,RxNorm,Clinical Drug
+42481597,Valproate 100 MG Extended Release Oral Tablet,28,Drug,RxNorm Extension,Clinical Drug
+19010913,zuclopenthixol 2 MG Oral Tablet,27,Drug,RxNorm,Clinical Drug
+19012350,eltrombopag 50 MG Oral Tablet,27,Drug,RxNorm,Clinical Drug
+19054940,floxacillin 250 MG Oral Capsule,27,Drug,RxNorm,Clinical Drug
+19075035,cephalexin 250 MG Oral Tablet,27,Drug,RxNorm,Clinical Drug
+21118059,0.5 ML Cyclopentolate 5 MG/ML Ophthalmic Solution,27,Drug,RxNorm Extension,Quant Clinical Drug
+36935819,clozapine 25 MG Oral Tablet [Clozaril] by Viatris Healthcare,27,Drug,RxNorm Extension,Marketed Product
+40221929,acetaminophen 500 MG / codeine phosphate 15 MG Oral Tablet,27,Drug,RxNorm,Clinical Drug
+40931924,Acyclovir 500 MG Injectable Solution,27,Drug,RxNorm Extension,Clinical Drug
+43664366,10 ML Mesna 100 MG/ML Injectable Solution,27,Drug,RxNorm Extension,Quant Clinical Drug
+43753513,5 ML Doxorubicin 2 MG/ML Injectable Solution,27,Drug,RxNorm Extension,Quant Clinical Drug
+953113,famotidine 40 MG Oral Tablet,26,Drug,RxNorm,Clinical Drug
+1310037,amiodarone hydrochloride 100 MG Oral Tablet,26,Drug,RxNorm,Clinical Drug
+19021720,nortriptyline 25 MG Oral Tablet,26,Drug,RxNorm,Clinical Drug
+19123605,amoxicillin 80 MG/ML / clavulanate 11.4 MG/ML Oral Suspension,26,Drug,RxNorm,Clinical Drug
+21146479,2 ML Midazolam 5 MG/ML Oral Solution,26,Drug,RxNorm Extension,Quant Clinical Drug
+21152695,Sodium Chloride 292 MG/ML Oral Solution,26,Drug,RxNorm Extension,Clinical Drug
+36895406,5 ML Nitroglycerin 1 MG/ML Injectable Solution,26,Drug,RxNorm Extension,Quant Clinical Drug
+40163331,propranolol hydrochloride 2 MG/ML Oral Solution,26,Drug,RxNorm,Clinical Drug
+40222850,memantine hydrochloride 20 MG Oral Tablet,26,Drug,RxNorm,Clinical Drug
+41357629,5 ML Albuterol 1 MG/ML Injectable Solution,26,Drug,RxNorm Extension,Quant Clinical Drug
+1351587,candesartan cilexetil 32 MG Oral Tablet,25,Drug,RxNorm,Clinical Drug
+1510632,baricitinib 2 MG Oral Tablet,25,Drug,RxNorm,Clinical Drug
+1712891,raltegravir 400 MG Oral Tablet,25,Drug,RxNorm,Clinical Drug
+19010210,trimethoprim 10 MG/ML Oral Suspension,25,Drug,RxNorm,Clinical Drug
+19018875,cimetidine 400 MG Oral Tablet,25,Drug,RxNorm,Clinical Drug
+19124392,dasatinib 50 MG Oral Tablet,25,Drug,RxNorm,Clinical Drug
+21065513,etoricoxib 30 MG Oral Tablet,25,Drug,RxNorm Extension,Clinical Drug
+35885672,cefiderocol 1000 MG Injectable Solution,25,Drug,RxNorm Extension,Clinical Drug
+35896770,5 ML ferric derisomaltose 100 MG/ML Injectable Solution,25,Drug,RxNorm Extension,Quant Clinical Drug
+36067296,ascorbic acid 60 MG / biotin 0.1 MG / calcium 100 MG / chromium 0.2 MG / copper 2 MG / ergocalciferol 400 UNT / folic acid 0.4 MG / iodine 0.14 MG / iron 12 MG / magnesium 30 MG / manganese 3 MG / ... Oral Capsule [Forceval] by Forum Products,25,Drug,RxNorm Extension,Marketed Product
+36068858,diclofenac 0.0232 MG/MG Topical Gel,25,Drug,RxNorm Extension,Clinical Drug
+36405076,artesunate 60 MG Injectable Solution,25,Drug,RxNorm Extension,Clinical Drug
+36410708,10 ML ferric carboxymaltose 50 MG/ML Injectable Solution,25,Drug,RxNorm Extension,Quant Clinical Drug
+40169924,morphine sulfate 15 MG Extended Release Oral Tablet,25,Drug,RxNorm,Clinical Drug
+43011939,mexiletine hydrochloride 100 MG Oral Capsule,25,Drug,RxNorm,Clinical Drug
+778296,imipramine hydrochloride 25 MG Oral Tablet,24,Drug,RxNorm,Clinical Drug
+35768764,Tacrolimus 5 MG Extended Release Oral Capsule [Adoport] by Sandoz,24,Drug,RxNorm Extension,Marketed Product
+36894552,Omeprazole 2 MG/ML Oral Suspension,24,Drug,RxNorm Extension,Clinical Drug
+36932295,beclomethasone 0.1 MG/ACTUAT Metered Dose Inhaler [Qvar] by TEVA,24,Drug,RxNorm Extension,Marketed Product
+40171849,verapamil hydrochloride 120 MG Extended Release Oral Tablet,24,Drug,RxNorm,Clinical Drug
+40177154,0.35 ML tinzaparin sodium 10000 UNT/ML Prefilled Syringe,24,Drug,RxNorm,Quant Clinical Drug
+40733801,Timolol 2.5 MG/ML Ophthalmic Gel,24,Drug,RxNorm Extension,Clinical Drug
+40958941,romiplostim 0.25 MG Injectable Solution,24,Drug,RxNorm Extension,Clinical Drug
+44110269,emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet,24,Drug,RxNorm Extension,Clinical Drug
+1714279,voriconazole 50 MG Oral Tablet,23,Drug,RxNorm,Clinical Drug
+19010586,"cyclosporine, modified 10 MG Oral Capsule",23,Drug,RxNorm,Clinical Drug
+19123105,esomeprazole 40 MG Delayed Release Oral Capsule,23,Drug,RxNorm,Clinical Drug
+19135765,tramadol hydrochloride 50 MG Extended Release Oral Capsule,23,Drug,RxNorm,Clinical Drug
+35604219,venetoclax 50 MG Oral Tablet,23,Drug,RxNorm,Clinical Drug
+36059800,gliclazide 160 MG Oral Tablet,23,Drug,RxNorm Extension,Clinical Drug
+36958371,ferric maltol 30 MG Oral Capsule [Feraccru] by Norgine,23,Drug,RxNorm Extension,Marketed Product
+40240820,ephedrine sulfate 15 MG Oral Tablet,23,Drug,RxNorm,Clinical Drug
+40751016,cetostearyl alcohol 0.072 MG/MG / chlorocresol 0.001 MG/MG / Macrogol cetostearyl ether 22 0.018 MG/MG / Mineral Oil 0.06 MG/MG / Petrolatum 0.15 MG/MG Topical Cream,23,Drug,RxNorm Extension,Clinical Drug
+40958326,vedolizumab 300 MG Injectable Solution,23,Drug,RxNorm Extension,Clinical Drug
+41359781,5 ML zoledronic acid 0.8 MG/ML Injectable Solution,23,Drug,RxNorm Extension,Quant Clinical Drug
+41384257,25 ML Etoposide 20 MG/ML Injectable Solution,23,Drug,RxNorm Extension,Quant Clinical Drug
+42480916,1 ML desmopressin 0.004 MG/ML Prefilled Syringe,23,Drug,RxNorm Extension,Quant Clinical Drug
+975193,hydrocortisone 5 MG Oral Tablet,22,Drug,RxNorm,Clinical Drug
+1594705,sotalol hydrochloride 80 MG Oral Tablet,22,Drug,RxNorm,Clinical Drug
+19022958,bezafibrate 400 MG Extended Release Oral Tablet,22,Drug,RxNorm,Clinical Drug
+19075604,clotrimazole 10 MG/ML Topical Solution,22,Drug,RxNorm,Clinical Drug
+19078751,ivermectin 3 MG Oral Tablet,22,Drug,RxNorm,Clinical Drug
+21129887,Ispaghula husk 3500 MG / mebeverine 135 MG Oral Granules,22,Drug,RxNorm Extension,Clinical Drug
+21147414,0.2 ML Vitamin K 1 10 MG/ML Prefilled Syringe,22,Drug,RxNorm Extension,Quant Clinical Drug
+21171175,Tacrolimus 0.5 MG Oral Capsule [Adoport] by Sandoz,22,Drug,RxNorm Extension,Marketed Product
+35785689,0.5 ML Iloprost 0.1 MG/ML Injectable Solution,22,Drug,RxNorm Extension,Quant Clinical Drug
+40715112,10 ML rituximab 10 MG/ML Injectable Solution [Rixathon] by Sandoz,22,Drug,RxNorm Extension,Marketed Product
+40752690,Cholecalciferol 40000 UNT Oral Capsule,22,Drug,RxNorm Extension,Clinical Drug
+44134661,1.7 ML denosumab 70 MG/ML Injectable Solution,22,Drug,RxNorm Extension,Quant Clinical Drug
+1758613,baricitinib 4 MG Oral Tablet,21,Drug,RxNorm,Clinical Drug
+19011786,metronidazole 0.0075 MG/MG Vaginal Gel,21,Drug,RxNorm,Clinical Drug
+19028935,telmisartan 40 MG Oral Tablet,21,Drug,RxNorm,Clinical Drug
+21029690,0.5 ML Chloramphenicol 5 MG/ML Ophthalmic Solution,21,Drug,RxNorm Extension,Quant Clinical Drug
+36812911,isopropyl myristate 150 MG/ML / Mineral Oil 150 MG/ML Topical Gel,21,Drug,RxNorm Extension,Clinical Drug
+40164098,azelastine hydrochloride 0.5 MG/ML Ophthalmic Solution,21,Drug,RxNorm,Clinical Drug
+40960934,Fibrinogen 1000 MG Injectable Solution,21,Drug,RxNorm Extension,Clinical Drug
+42903081,fentanyl 0.075 MG/HR Transdermal System,21,Drug,RxNorm,Clinical Drug
+43259954,glycopyrronium / indacaterol Inhalant Powder,21,Drug,RxNorm Extension,Clinical Drug Form
+44045687,fluticasone 0.25 MG/ACTUAT Metered Dose Inhaler,21,Drug,RxNorm Extension,Clinical Drug
+44083846,Triptorelin 11.25 MG Injectable Suspension,21,Drug,RxNorm Extension,Clinical Drug
+19061326,mesalamine 1000 MG Rectal Suppository,20,Drug,RxNorm,Clinical Drug
+19128698,amitriptyline 2 MG/ML Oral Solution,20,Drug,RxNorm,Clinical Drug
+35778542,2 ML Naloxone 1 MG/ML Injectable Solution,20,Drug,RxNorm Extension,Quant Clinical Drug
+36067271,alpha tocopherol 10.2 MG / ascorbic acid 60 MG / biotin 0.1 MG / calcium 100 MG / chromium 0.2 MG / copper 2 MG / ergocalciferol 400 UNT / folic acid 0.4 MG / iodine 0.14 MG / iron 12 MG / magnesium 30 MG / ... Oral Tablet [Forceval] by Alliance,20,Drug,RxNorm Extension,Marketed Product
+36808838,100 ML Potassium Chloride 30 MG/ML Injectable Solution,20,Drug,RxNorm Extension,Quant Clinical Drug
+36886706,Omeprazole 40 MG Injectable Solution,20,Drug,RxNorm Extension,Clinical Drug
+37002537,risdiplam 0.75 MG/ML Oral Solution,20,Drug,RxNorm,Clinical Drug
+40241046,oseltamivir 6 MG/ML Oral Suspension,20,Drug,RxNorm,Clinical Drug
+40749525,Zanamivir 5 MG/ACTUAT Inhalant Powder,20,Drug,RxNorm Extension,Clinical Drug
+41212538,Budesonide 0.2 MG/ACTUAT / formoterol 0.006 MG/ACTUAT Inhalant Solution,20,Drug,RxNorm Extension,Clinical Drug
+42480508,1000 ML Glucose 40 MG/ML / Potassium Chloride 3 MG/ML / Sodium Chloride 1.8 MG/ML Injectable Solution,20,Drug,RxNorm Extension,Quant Clinical Drug
+43135842,Amorolfine 50 MG/ML Medicated Nail Polish,20,Drug,RxNorm Extension,Clinical Drug
+43212794,carvedilol 25 MG Delayed Release Oral Tablet,20,Drug,RxNorm Extension,Clinical Drug
+44132613,0.5 ML dulaglutide 3 MG/ML Injectable Solution,20,Drug,RxNorm Extension,Quant Clinical Drug
+19064203,dibucaine 5 MG / hydrocortisone 5 MG Rectal Suppository,19,Drug,RxNorm,Clinical Drug
+19133613,diltiazem hydrochloride 90 MG Extended Release Oral Capsule,19,Drug,RxNorm,Clinical Drug
+21052381,atorvastatin 60 MG Oral Tablet,19,Drug,RxNorm Extension,Clinical Drug
+21147439,0.4 ML bimatoprost 0.3 MG/ML Ophthalmic Solution,19,Drug,RxNorm Extension,Quant Clinical Drug
+21159116,Cholecalciferol 2400 UNT/ML Oral Solution,19,Drug,RxNorm Extension,Clinical Drug
+36069764,ondansetron 8 MG Buccal Film,19,Drug,RxNorm Extension,Clinical Drug
+36074201,cholecalciferol 5000 UNT Oral Capsule,19,Drug,RxNorm Extension,Clinical Drug
+36895739,20 ML Fluorouracil 50 MG/ML Injectable Solution,19,Drug,RxNorm Extension,Quant Clinical Drug
+36953917,8 ML sotrovimab 62.5 MG/ML Injectable Solution,19,Drug,RxNorm Extension,Quant Clinical Drug
+36967300,testosterone 40 MG Topical Gel [Testogel] by Besins,19,Drug,RxNorm Extension,Marketed Product
+37498814,fidaxomicin 40 MG/ML Oral Suspension,19,Drug,RxNorm,Clinical Drug
+40184712,loperamide hydrochloride 0.2 MG/ML Oral Solution,19,Drug,RxNorm,Clinical Drug
+43752745,2 ML Vincristine 1 MG/ML Injectable Solution,19,Drug,RxNorm Extension,Quant Clinical Drug
+44084909,Betamethasone 0.0005 MG/MG / calcipotriene 0.00005 MG/MG Topical Foam,19,Drug,RxNorm Extension,Clinical Drug
+752307,procyclidine 1 MG/ML Oral Solution,18,Drug,RxNorm,Clinical Drug
+963355,glycopyrrolate 1 MG Oral Tablet,18,Drug,RxNorm,Clinical Drug
+2929368,fluticasone 0.05 MG/ACTUAT / formoterol 0.005 MG/ACTUAT Inhalation Solution,18,Drug,RxNorm Extension,Clinical Drug
+19005995,acetaminophen 24 MG/ML Oral Solution,18,Drug,RxNorm,Clinical Drug
+19019239,nadolol 80 MG Oral Tablet,18,Drug,RxNorm,Clinical Drug
+19102170,ramipril 10 MG Oral Tablet,18,Drug,RxNorm,Clinical Drug
+19123103,esomeprazole 20 MG Delayed Release Oral Capsule,18,Drug,RxNorm,Clinical Drug
+21039162,24 HR Estradiol 0.00208 MG/HR / Norethindrone 0.00708 MG/HR Transdermal System,18,Drug,RxNorm Extension,Quant Clinical Drug
+21046354,Primaquine 7.5 MG Oral Tablet,18,Drug,RxNorm Extension,Clinical Drug
+21069218,100 ML Bupivacaine 1.05 MG/ML Injectable Solution,18,Drug,RxNorm Extension,Quant Clinical Drug
+21104276,hyaluronate 1.5 MG/ML Ophthalmic Solution,18,Drug,RxNorm Extension,Clinical Drug
+35776218,1 ML Zuclopenthixol 500 MG/ML Injectable Solution,18,Drug,RxNorm Extension,Quant Clinical Drug
+36249209,sofosbuvir 400 MG / velpatasvir 100 MG Oral Tablet,18,Drug,RxNorm,Clinical Drug
+36405164,Fosfomycin 2000 MG Injectable Solution,18,Drug,RxNorm Extension,Clinical Drug
+36958297,hyaluronate 1.5 MG/ML / trehalose 30 MG/ML Ophthalmic Solution,18,Drug,RxNorm Extension,Clinical Drug
+40232715,oxycodone hydrochloride 15 MG Extended Release Oral Tablet,18,Drug,RxNorm,Clinical Drug
+43699497,5 ML Leucovorin 10 MG/ML Injectable Solution,18,Drug,RxNorm Extension,Quant Clinical Drug
+43716669,2 ML Diazepam 5 MG/ML Injectable Solution,18,Drug,RxNorm Extension,Quant Clinical Drug
+45775405,nintedanib 150 MG Oral Capsule,18,Drug,RxNorm,Clinical Drug
+1351153,ubidecarenone 100 MG Oral Capsule,17,Drug,RxNorm,Clinical Drug
+1536968,sotorasib 120 MG Oral Tablet,17,Drug,RxNorm,Clinical Drug
+19065600,melatonin 1 MG/ML Oral Solution,17,Drug,RxNorm,Clinical Drug
+19102188,omeprazole 10 MG Delayed Release Oral Tablet,17,Drug,RxNorm,Clinical Drug
+19134564,nifedipine 10 MG Extended Release Oral Capsule,17,Drug,RxNorm,Clinical Drug
+21061255,Paraffin Topical Ointment,17,Drug,RxNorm Extension,Clinical Drug Form
+21130788,Ketamine 10 MG/ML Oral Solution,17,Drug,RxNorm Extension,Clinical Drug
+35885237,1 ML ergocalciferol 300000 UNT/ML Injectable Solution,17,Drug,RxNorm Extension,Quant Clinical Drug
+37498003,cenobamate 50 MG Oral Tablet,17,Drug,RxNorm,Clinical Drug
+40162359,diclofenac sodium 75 MG Delayed Release Oral Tablet,17,Drug,RxNorm,Clinical Drug
+40163326,propranolol hydrochloride 160 MG Extended Release Oral Capsule,17,Drug,RxNorm,Clinical Drug
+40169891,morphine sulfate 10 MG Extended Release Oral Capsule,17,Drug,RxNorm,Clinical Drug
+41177714,Rifampin 600 MG Injectable Solution,17,Drug,RxNorm Extension,Clinical Drug
+43155292,Carbidopa 50 MG / entacapone 200 MG / Levodopa 200 MG Delayed Release Oral Tablet,17,Drug,RxNorm Extension,Clinical Drug
+43592241,10 ML Rocuronium 10 MG/ML Injectable Solution,17,Drug,RxNorm Extension,Quant Clinical Drug
+46276153,sodium chloride 9 MG/ML,17,Drug,RxNorm,Clinical Drug Comp
+786443,24 HR rotigotine 0.167 MG/HR Transdermal System,16,Drug,RxNorm,Quant Clinical Drug
+1703868,acyclovir 40 MG/ML Oral Solution,16,Drug,RxNorm,Clinical Drug
+1704217,lamivudine 300 MG Oral Tablet,16,Drug,RxNorm,Clinical Drug
+2929376,fluticasone 0.125 MG/ACTUAT Inhalation Solution,16,Drug,RxNorm Extension,Clinical Drug
+19134632,venlafaxine 37.5 MG Extended Release Oral Capsule,16,Drug,RxNorm,Clinical Drug
+36070650,{(1000 ML ascorbic acid 7.54 MG/ML / sodium 0.59...) / (1000 ML POLYETHYLENE GLYCOL 3350 100 MG/ML / Potassium 0.0266 MMOL/ML / So...) / (1000 ML POLYETHYLENE GLYCOL 3350 40 MG/ML / Potassium 0.0322 MMOL/ML / So...) } Pack [Plenvu] by Forum Products,16,Drug,RxNorm Extension,Marketed Product
+36953976,ritonavir 100 MG Oral Tablet [Norvir] by Abbvie,16,Drug,RxNorm Extension,Marketed Product
+43773908,0.3 ML Epinephrine 1 MG/ML Injectable Solution,16,Drug,RxNorm Extension,Quant Clinical Drug
+44132495,0.4 ML Dalteparin 25000 UNT/ML Injectable Solution,16,Drug,RxNorm Extension,Quant Clinical Drug
+1237231,theophylline 300 MG Extended Release Oral Tablet,15,Drug,RxNorm,Clinical Drug
+1362360,24 HR nitroglycerin 0.2 MG/HR Transdermal System,15,Drug,RxNorm,Quant Clinical Drug
+19023665,thalidomide 50 MG Oral Capsule,15,Drug,RxNorm,Clinical Drug
+19062004,tioconazole 280 MG/ML Topical Solution,15,Drug,RxNorm,Clinical Drug
+21022292,venlafaxine 225 MG Extended Release Oral Capsule,15,Drug,RxNorm Extension,Clinical Drug
+35201738,lorlatinib 25 MG Oral Tablet,15,Drug,RxNorm,Clinical Drug
+35777671,1 ML Glatiramer 40 MG/ML Injectable Solution,15,Drug,RxNorm Extension,Quant Clinical Drug
+35777934,1 ML Alfentanil 5 MG/ML Injectable Solution,15,Drug,RxNorm Extension,Quant Clinical Drug
+35780894,5 ML Benzoate 200 MG/ML Injectable Solution,15,Drug,RxNorm Extension,Quant Clinical Drug
+37002518,enzalutamide 40 MG Oral Tablet,15,Drug,RxNorm,Clinical Drug
+40746343,Paraffin 60 MG/ML / Petrolatum 150 MG/ML Topical Cream,15,Drug,RxNorm Extension,Clinical Drug
+40750666,Estriol 0.1 MG/ML Topical Cream,15,Drug,RxNorm Extension,Clinical Drug
+42479654,Lidocaine 50 MG/ML / Phenylephrine 5 MG/ML Nasal Spray,15,Drug,RxNorm Extension,Clinical Drug
+42480933,Dibucaine 0.005 MG/MG / prednisolone 0.0019 MG/MG Topical Ointment,15,Drug,RxNorm Extension,Clinical Drug
+1154080,rizatriptan 10 MG Disintegrating Oral Tablet,14,Drug,RxNorm,Clinical Drug
+1747354,erythromycin 50 MG/ML Oral Suspension,14,Drug,RxNorm,Clinical Drug
+21161459,efavirenz 600 MG / emtricitabine 200 MG / tenofovir disoproxil 250 MG Oral Tablet,14,Drug,RxNorm Extension,Clinical Drug
+35604918,brivaracetam 100 MG Oral Tablet,14,Drug,RxNorm,Clinical Drug
+35789389,500 ML Glucose 50 MG/ML / Potassium Chloride 3 MG/ML Injectable Solution,14,Drug,RxNorm Extension,Quant Clinical Drug
+36059242,titanium dioxide 0.25 MG/MG / Titanium salicylate 0.03 MG/MG Topical Ointment,14,Drug,RxNorm Extension,Clinical Drug
+36410593,10 ML Amiodarone 30 MG/ML Injectable Solution,14,Drug,RxNorm Extension,Quant Clinical Drug
+36884790,Metformin 1000 MG / sitagliptin 50 MG Delayed Release Oral Tablet,14,Drug,RxNorm Extension,Clinical Drug
+40751744,Niacinamide 15 MG / Riboflavin 1 MG / Thiamine 1 MG Oral Tablet,14,Drug,RxNorm Extension,Clinical Drug
+40992743,Daunorubicin 20 MG Injectable Solution,14,Drug,RxNorm Extension,Clinical Drug
+41372570,10 ML tocilizumab 20 MG/ML Injectable Solution,14,Drug,RxNorm Extension,Quant Clinical Drug
+41424341,100 ML Cisplatin 1 MG/ML Injectable Solution,14,Drug,RxNorm Extension,Quant Clinical Drug
+41442481,500 ML Mannitol 150 MG/ML Injectable Solution,14,Drug,RxNorm Extension,Quant Clinical Drug
+43156638,dasatinib 20 MG Delayed Release Oral Tablet,14,Drug,RxNorm Extension,Clinical Drug
+43680949,2 ML Methotrexate 2.5 MG/ML Injectable Solution,14,Drug,RxNorm Extension,Quant Clinical Drug
+43771070,4 ML Testosterone 250 MG/ML Injectable Solution,14,Drug,RxNorm Extension,Quant Clinical Drug
+44097429,diethylamine salicylate 0.1 MG/MG Topical Cream,14,Drug,RxNorm Extension,Clinical Drug
+44097550,Clotrimazole 100 MG Vaginal Suppository,14,Drug,RxNorm Extension,Clinical Drug
+44123199,Leuprolide 11.3 MG Injectable Suspension,14,Drug,RxNorm Extension,Clinical Drug
+1334492,ramipril 5 MG Oral Tablet,13,Drug,RxNorm,Clinical Drug
+1703691,acyclovir 400 MG Oral Tablet,13,Drug,RxNorm,Clinical Drug
+19022069,furosemide 500 MG Oral Tablet,13,Drug,RxNorm,Clinical Drug
+19102190,omeprazole 40 MG Delayed Release Oral Tablet,13,Drug,RxNorm,Clinical Drug
+19102502,imatinib 400 MG Oral Tablet,13,Drug,RxNorm,Clinical Drug
+21036082,Melatonin 2 MG Oral Capsule,13,Drug,RxNorm Extension,Clinical Drug
+21128174,2.5 ML Dornase Alfa 1 MG/ML Inhalant Solution,13,Drug,RxNorm Extension,Quant Clinical Drug
+21155154,alginic acid 500 MG / potassium bicarbonate 99 MG Chewable Tablet,13,Drug,RxNorm Extension,Clinical Drug
+35782888,20 ML Epinephrine 0.005 MG/ML / Lidocaine 10 MG/ML Injectable Solution,13,Drug,RxNorm Extension,Quant Clinical Drug
+35783935,50 ML heparin 1 UNT/ML Injectable Solution,13,Drug,RxNorm Extension,Quant Clinical Drug
+36813940,Albuterol 0.1 MG/ACTUAT Inhalation Powder,13,Drug,RxNorm Extension,Clinical Drug
+36895226,2 ML Adenosine 3 MG/ML Injectable Solution,13,Drug,RxNorm Extension,Quant Clinical Drug
+40165257,rosuvastatin calcium 40 MG Oral Tablet,13,Drug,RxNorm,Clinical Drug
+40722045,pantoprazole 40 MG Injectable Solution [Protium] by Takeda,13,Drug,RxNorm Extension,Marketed Product
+42480907,nepafenac 1 MG/ML Ophthalmic Solution,13,Drug,RxNorm Extension,Clinical Drug
+42683934,Progesterone 400 MG Vaginal Suppository,13,Drug,RxNorm Extension,Clinical Drug
+43629998,0.2 ML Dalteparin 25000 UNT/ML Injectable Solution,13,Drug,RxNorm Extension,Quant Clinical Drug
+45775399,nintedanib 100 MG Oral Capsule,13,Drug,RxNorm,Clinical Drug
+782572,tapentadol 150 MG Extended Release Oral Capsule,12,Drug,RxNorm Extension,Clinical Drug
+1112839,aspirin 300 MG Rectal Suppository,12,Drug,RxNorm,Clinical Drug
+1331313,dipyridamole 100 MG Oral Tablet,12,Drug,RxNorm,Clinical Drug
+2930878,fluticasone 0.05 MG/ACTUAT / salmeterol 0.025 MG/ACTUAT Inhalation Solution,12,Drug,RxNorm Extension,Clinical Drug
+19058044,sodium fluoride 0.5 MG/ML Mouthwash,12,Drug,RxNorm,Clinical Drug
+19096679,sirolimus 1 MG Oral Tablet,12,Drug,RxNorm,Clinical Drug
+19134116,tramadol hydrochloride 50 MG Disintegrating Oral Tablet,12,Drug,RxNorm,Clinical Drug
+21089104,500 ML Gelatin 30 MG/ML Injectable Solution,12,Drug,RxNorm Extension,Quant Clinical Drug
+21145591,Arginine 400 MG/ML Oral Solution,12,Drug,RxNorm Extension,Clinical Drug
+35409802,Ivermectin 0.01 MG/MG Topical Cream,12,Drug,RxNorm Extension,Clinical Drug
+35848664,spironolactone 12 MG Oral Tablet,12,Drug,RxNorm Extension,Clinical Drug
+36059739,sodium fluoride 2.8 MG/ML Paste,12,Drug,RxNorm Extension,Clinical Drug
+36810709,Paraffin 0.728 MG/MG Topical Gel,12,Drug,RxNorm Extension,Clinical Drug
+36812439,Lithium Carbonate 400 MG Extended Release Oral Tablet [Priadel] by Essential,12,Drug,RxNorm Extension,Marketed Product
+36926785,10 ML insulin isophane 100 UNT/ML Injectable Suspension [Humulin I] by Eli Lilly,12,Drug,RxNorm Extension,Marketed Product
+36940079,dolutegravir 50 MG Oral Tablet [Tivicay] by ViiV,12,Drug,RxNorm Extension,Marketed Product
+40180029,promethazine hydrochloride 1 MG/ML Oral Solution,12,Drug,RxNorm,Clinical Drug
+41349142,3 ML Insulin Lispro 100 UNT/ML Injectable Solution,12,Drug,RxNorm Extension,Quant Clinical Drug
+42482707,1 ML Promethazine 25 MG/ML Prefilled Syringe,12,Drug,RxNorm Extension,Quant Clinical Drug
+42683461,DORAVIRINE 100 MG / Lamivudine 300 MG / tenofovir disoproxil 250 MG Oral Tablet,12,Drug,RxNorm Extension,Clinical Drug
+42709290,24 HR rotigotine 0.333 MG/HR Transdermal System,12,Drug,RxNorm,Quant Clinical Drug
+44029661,Sodium Bicarbonate Topical Powder,12,Drug,RxNorm Extension,Clinical Drug Form
+44123846,bortezomib 3.5 MG Injectable Solution,12,Drug,RxNorm Extension,Clinical Drug
+44132739,0.5 ML Sumatriptan 12 MG/ML Injectable Solution,12,Drug,RxNorm Extension,Quant Clinical Drug
+739745,tepotinib 225 MG Oral Tablet,11,Drug,RxNorm,Clinical Drug
+1754999,fluconazole 150 MG Oral Capsule,11,Drug,RxNorm,Clinical Drug
+19122306,abacavir 600 MG / lamivudine 300 MG Oral Tablet,11,Drug,RxNorm,Clinical Drug
+35407453,venetoclax 10 MG Delayed Release Oral Tablet,11,Drug,RxNorm Extension,Clinical Drug
+35781042,5 ML Isoproterenol 0.2 MG/ML Injectable Solution,11,Drug,RxNorm Extension,Quant Clinical Drug
+36074774,glycopyrronium 0.055 MG Inhalation Powder,11,Drug,RxNorm Extension,Clinical Drug
+36895575,10 ML Idarubicin 1 MG/ML Injectable Solution,11,Drug,RxNorm Extension,Quant Clinical Drug
+36895632,10 ML Fluorouracil 50 MG/ML Injectable Solution,11,Drug,RxNorm Extension,Quant Clinical Drug
+40165340,ursodiol 50 MG/ML Oral Suspension,11,Drug,RxNorm,Clinical Drug
+40165342,ursodiol 500 MG Oral Tablet,11,Drug,RxNorm,Clinical Drug
+40168948,eltrombopag 75 MG Oral Tablet,11,Drug,RxNorm,Clinical Drug
+40736861,Carboxymethylcellulose Paste,11,Drug,RxNorm Extension,Clinical Drug Form
+43205084,Sirolimus 2 MG Delayed Release Oral Tablet,11,Drug,RxNorm Extension,Clinical Drug
+43211538,ponatinib 15 MG Delayed Release Oral Tablet,11,Drug,RxNorm Extension,Clinical Drug
+43734546,1 ML Zuclopenthixol 200 MG/ML Injectable Solution,11,Drug,RxNorm Extension,Quant Clinical Drug
+44132610,0.5 ML golimumab 100 MG/ML Injectable Solution,11,Drug,RxNorm Extension,Quant Clinical Drug
+590523,Progesterone 200 MG Vaginal Suppository,10,Drug,RxNorm Extension,Clinical Drug
+743792,venlafaxine 75 MG Extended Release Oral Tablet,10,Drug,RxNorm,Clinical Drug
+964076,ibrutinib 420 MG Oral Tablet,10,Drug,RxNorm,Clinical Drug
+1360935,ivacaftor 75 MG Oral Tablet,10,Drug,RxNorm,Clinical Drug
+19022379,valsartan 80 MG Oral Capsule,10,Drug,RxNorm,Clinical Drug
+19074722,carbidopa 50 MG / levodopa 200 MG Extended Release Oral Tablet,10,Drug,RxNorm,Clinical Drug
+19129126,sodium ironedetate 5.5 MG/ML Oral Solution,10,Drug,RxNorm,Clinical Drug
+21148105,500 ML Sodium Chloride 27 MG/ML Injectable Solution,10,Drug,RxNorm Extension,Quant Clinical Drug
+35767903,Budesonide 0.1 MG/ACTUAT Inhalant Powder [Pulmicort] by Astrazeneca,10,Drug,RxNorm Extension,Marketed Product
+35782229,10 ML heparin 1000 UNT/ML Injectable Solution,10,Drug,RxNorm Extension,Quant Clinical Drug
+35785907,0.8 ML Epoetin Alfa 10000 UNT/ML Injectable Solution,10,Drug,RxNorm Extension,Quant Clinical Drug
+36059366,cholecalciferol 400 UNT Oral Tablet,10,Drug,RxNorm Extension,Clinical Drug
+36403568,Heroin 30 MG Injectable Solution,10,Drug,RxNorm Extension,Clinical Drug
+36410316,3 ML insulin degludec 200 UNT/ML Injectable Solution,10,Drug,RxNorm Extension,Quant Clinical Drug
+40163275,perindopril erbumine 8 MG Oral Tablet,10,Drug,RxNorm,Clinical Drug
+40232743,oxycodone hydrochloride 30 MG Extended Release Oral Tablet,10,Drug,RxNorm,Clinical Drug
+40751106,Mineral Oil 0.06 MG/MG / Petrolatum 0.15 MG/MG / Phenoxyethanol 0.01 MG/MG / POLAWAX POLYSORBATE 0.09 MG/MG Topical Cream,10,Drug,RxNorm Extension,Clinical Drug
+41405893,0.3 ML Methotrexate 50 MG/ML Injectable Solution,10,Drug,RxNorm Extension,Quant Clinical Drug
+42479361,1000 ML Glucose 40 MG/ML / Potassium Chloride 1.5 MG/ML / Sodium Chloride 1.8 MG/ML Injectable Solution,10,Drug,RxNorm Extension,Quant Clinical Drug
+42918836,"250 ML Albumin Human, USP 50 MG/ML Injectable Solution",10,Drug,RxNorm Extension,Quant Clinical Drug
+43014247,pomalidomide 3 MG Oral Capsule,10,Drug,RxNorm,Clinical Drug
+43526471,canagliflozin 300 MG Oral Tablet,10,Drug,RxNorm,Clinical Drug
+43662223,1 ML Flupenthixol 100 MG/ML Injectable Solution,10,Drug,RxNorm Extension,Quant Clinical Drug
+43756123,0.6 ML tinzaparin 20000 UNT/ML Injectable Solution,10,Drug,RxNorm Extension,Quant Clinical Drug
+44071743,Clotrimazole 500 MG Vaginal Suppository,10,Drug,RxNorm Extension,Clinical Drug
+19026980,lenalidomide 15 MG Oral Capsule,9,Drug,RxNorm,Clinical Drug
+19074220,bimatoprost 0.3 MG/ML Ophthalmic Solution,9,Drug,RxNorm,Clinical Drug
+19122473,lenalidomide 10 MG Oral Capsule,9,Drug,RxNorm,Clinical Drug
+19124417,lenalidomide 25 MG Oral Capsule,9,Drug,RxNorm,Clinical Drug
+21069025,0.3 ML Diclofenac 1 MG/ML Ophthalmic Solution,9,Drug,RxNorm Extension,Quant Clinical Drug
+21118590,500 ML Glucose 50 MG/ML / Sodium Chloride 4.5 MG/ML Injectable Solution,9,Drug,RxNorm Extension,Quant Clinical Drug
+35604589,paroxetine mesylate 10 MG Oral Tablet,9,Drug,RxNorm,Clinical Drug
+35776757,1 ML Atropine 0.6 MG/ML Injectable Solution,9,Drug,RxNorm Extension,Quant Clinical Drug
+35786156,"1.6 ML Insulin, Aspart, Human 100 UNT/ML Injectable Solution",9,Drug,RxNorm Extension,Quant Clinical Drug
+35789735,0.45 ML tinzaparin 10000 UNT/ML Injectable Solution,9,Drug,RxNorm Extension,Quant Clinical Drug
+35887303,Filgotinib 200 MG Oral Tablet,9,Drug,RxNorm Extension,Clinical Drug
+36037489,10 ML pamidronate 3 MG/ML Injectable Solution,9,Drug,RxNorm Extension,Quant Clinical Drug
+36060514,peanut oil 130000 MG Rectal Solution,9,Drug,RxNorm Extension,Clinical Drug
+36405124,Heroin 100 MG Injectable Solution,9,Drug,RxNorm Extension,Clinical Drug
+36410377,5 ML fulvestrant 50 MG/ML Injectable Solution,9,Drug,RxNorm Extension,Quant Clinical Drug
+40164138,brimonidine tartrate 2 MG/ML / timolol 5 MG/ML Ophthalmic Solution,9,Drug,RxNorm,Clinical Drug
+40175159,levothyroxine sodium 0.0125 MG Oral Tablet,9,Drug,RxNorm,Clinical Drug
+40753753,factor IX 500 UNT / factor VII 330 UNT / factor X 500 UNT / Protein C 380 UNT / Protein S 390 UNT / Prothrombin 500 UNT Injectable Solution [Octaplex] by Octapharma,9,Drug,RxNorm Extension,Marketed Product
+41353334,5 ML regadenoson 0.08 MG/ML Injectable Solution,9,Drug,RxNorm Extension,Quant Clinical Drug
+41385309,30 ML Leucovorin 10 MG/ML Injectable Solution,9,Drug,RxNorm Extension,Quant Clinical Drug
+42902560,fentanyl 0.1 MG/HR Transdermal System,9,Drug,RxNorm,Clinical Drug
+43136214,prasugrel 10 MG Delayed Release Oral Tablet,9,Drug,RxNorm Extension,Clinical Drug
+43217039,Atenolol 100 MG Delayed Release Oral Tablet,9,Drug,RxNorm Extension,Clinical Drug
+43264681,50 ML Paclitaxel 6 MG/ML Injection,9,Drug,RxNorm Extension,Quant Clinical Drug
+44132982,0.9 ML tocilizumab 180 MG/ML Injectable Solution,9,Drug,RxNorm Extension,Quant Clinical Drug
+718758,nicotine 4 MG Oral Lozenge,8,Drug,RxNorm,Clinical Drug
+743761,venlafaxine 150 MG Extended Release Oral Tablet,8,Drug,RxNorm,Clinical Drug
+792769,acalabrutinib 100 MG Oral Capsule,8,Drug,RxNorm,Clinical Drug
+1150926,misoprostol 0.2 MG Oral Tablet,8,Drug,RxNorm,Clinical Drug
+1350506,etoposide 50 MG Oral Capsule,8,Drug,RxNorm,Clinical Drug
+1363086,doxazosin 4 MG Extended Release Oral Tablet,8,Drug,RxNorm,Clinical Drug
+1704187,lamivudine 10 MG/ML Oral Solution,8,Drug,RxNorm,Clinical Drug
+19007009,prednisolone 2.5 MG Oral Tablet,8,Drug,RxNorm,Clinical Drug
+19078101,hydrochlorothiazide 12.5 MG / irbesartan 300 MG Oral Tablet,8,Drug,RxNorm,Clinical Drug
+19102491,hydrochlorothiazide 12.5 MG / olmesartan medoxomil 20 MG Oral Tablet,8,Drug,RxNorm,Clinical Drug
+19135017,diltiazem hydrochloride 200 MG Extended Release Oral Capsule,8,Drug,RxNorm,Clinical Drug
+21060837,Calcium Carbonate 2500 MG / Cholecalciferol 1000 UNT Chewable Tablet,8,Drug,RxNorm Extension,Clinical Drug
+36064607,polatuzumab vedotin 140 MG Injectable Solution,8,Drug,RxNorm Extension,Clinical Drug
+40171884,verapamil hydrochloride 240 MG Extended Release Oral Tablet,8,Drug,RxNorm,Clinical Drug
+40174364,ibandronic acid 150 MG Oral Tablet,8,Drug,RxNorm,Clinical Drug
+40714447,20 ML Zanamivir 10 MG/ML Injectable Solution,8,Drug,RxNorm Extension,Quant Clinical Drug
+40745187,ivabradine 2.5 MG Oral Tablet,8,Drug,RxNorm Extension,Clinical Drug
+40897992,Ifosfamide 2000 MG Injectable Solution,8,Drug,RxNorm Extension,Clinical Drug
+40930191,dalbavancin 500 MG Injectable Solution,8,Drug,RxNorm Extension,Clinical Drug
+41114584,Vecuronium 10 MG Injectable Solution,8,Drug,RxNorm Extension,Clinical Drug
+41118832,bendamustine 100 MG Injectable Solution,8,Drug,RxNorm Extension,Clinical Drug
+41147909,lenograstim 33600000 UNT Injectable Solution,8,Drug,RxNorm Extension,Clinical Drug
+41356037,5 ML Levosimendan 2.5 MG/ML Injectable Solution,8,Drug,RxNorm Extension,Quant Clinical Drug
+42481573,50 ML Sodium Chloride 9 MG/ML Injectable Solution,8,Drug,RxNorm Extension,Quant Clinical Drug
+42482030,500 ML Mannitol 100 MG/ML Injectable Solution,8,Drug,RxNorm Extension,Quant Clinical Drug
+42898243,24 HR rivastigmine 0.554 MG/HR Transdermal System,8,Drug,RxNorm,Quant Clinical Drug
+43180217,Atovaquone 250 MG / Proguanil 100 MG Delayed Release Oral Tablet,8,Drug,RxNorm Extension,Clinical Drug
+43532928,afatinib 40 MG Oral Tablet,8,Drug,RxNorm,Clinical Drug
+44097044,Paclitaxel 100 MG Injectable Suspension,8,Drug,RxNorm Extension,Clinical Drug
+1363087,doxazosin 8 MG Extended Release Oral Tablet,7,Drug,RxNorm,Clinical Drug
+19007333,methotrexate 10 MG Oral Tablet,7,Drug,RxNorm,Clinical Drug
+19016855,valsartan 40 MG Oral Capsule,7,Drug,RxNorm,Clinical Drug
+19021358,taurine 500 MG Oral Capsule,7,Drug,RxNorm,Clinical Drug
+19023529,capecitabine 150 MG Oral Tablet,7,Drug,RxNorm,Clinical Drug
+19061851,lofepramine 70 MG Oral Tablet,7,Drug,RxNorm,Clinical Drug
+19063374,bumetanide 0.2 MG/ML Oral Solution,7,Drug,RxNorm,Clinical Drug
+19065655,levocarnitine 500 MG Oral Capsule,7,Drug,RxNorm,Clinical Drug
+19075427,clindamycin 0.01 MG/MG Topical Gel,7,Drug,RxNorm,Clinical Drug
+21026476,ciclesonide 0.16 MG/ACTUAT Inhalant Solution,7,Drug,RxNorm Extension,Clinical Drug
+21064136,hydroxyurea 100 MG/ML Oral Solution,7,Drug,RxNorm Extension,Clinical Drug
+21123045,Citric Acid 17800 MG / magnesium carbonate 11600 MG Oral Powder,7,Drug,RxNorm Extension,Clinical Drug
+21149076,Flurandrenolide 0.004 MG/SQCM Topical Solution,7,Drug,RxNorm Extension,Clinical Drug
+21149199,Cholecalciferol 25000 UNT Oral Tablet,7,Drug,RxNorm Extension,Clinical Drug
+21154460,febuxostat 120 MG Oral Tablet,7,Drug,RxNorm Extension,Clinical Drug
+35775955,1 ML abatacept 125 MG/ML Injectable Solution,7,Drug,RxNorm Extension,Quant Clinical Drug
+35777034,1 ML heparin 1000 UNT/ML Injectable Solution,7,Drug,RxNorm Extension,Quant Clinical Drug
+36056967,potassium citrate 3000 MG Oral Granules,7,Drug,RxNorm Extension,Clinical Drug
+36810047,5 ML sodium citrate 90 MG/ML Rectal Solution [Relaxit] by Supra Enterprises,7,Drug,RxNorm Extension,Marketed Product
+36810925,Testosterone 50 MG Topical Gel,7,Drug,RxNorm Extension,Clinical Drug
+36896131,60 ML Carboplatin 10 MG/ML Injectable Solution,7,Drug,RxNorm Extension,Quant Clinical Drug
+40167560,pazopanib 400 MG Oral Tablet,7,Drug,RxNorm,Clinical Drug
+40741181,dolutegravir 50 MG / Rilpivirine 25 MG Oral Tablet [Juluca] by ViiV,7,Drug,RxNorm Extension,Marketed Product
+40747121,Paraffin 634 MG/ML Topical Solution,7,Drug,RxNorm Extension,Clinical Drug
+40869867,Acetazolamide 500 MG Injectable Solution,7,Drug,RxNorm Extension,Clinical Drug
+40929114,Idarubicin 5 MG Injectable Solution,7,Drug,RxNorm Extension,Clinical Drug
+41117789,Cyclophosphamide 1000 MG Injectable Solution,7,Drug,RxNorm Extension,Clinical Drug
+41328889,1 ML Etanercept 50 MG/ML Injectable Solution,7,Drug,RxNorm Extension,Quant Clinical Drug
+41350872,4 ML Ondansetron 2 MG/ML Injectable Solution,7,Drug,RxNorm Extension,Quant Clinical Drug
+41474037,52.6 ML gemcitabine 38 MG/ML Injectable Solution,7,Drug,RxNorm Extension,Quant Clinical Drug
+43184535,pazopanib 200 MG Delayed Release Oral Tablet,7,Drug,RxNorm Extension,Clinical Drug
+44132500,0.4 ML Methotrexate 50 MG/ML Injectable Solution,7,Drug,RxNorm Extension,Quant Clinical Drug
+45892084,palbociclib 125 MG Oral Capsule,7,Drug,RxNorm,Clinical Drug
+1301199,melatonin 10 MG Oral Capsule,6,Drug,RxNorm,Clinical Drug
+1308847,valsartan 160 MG Oral Capsule,6,Drug,RxNorm,Clinical Drug
+1350507,etoposide 100 MG Oral Capsule,6,Drug,RxNorm,Clinical Drug
+1367533,losartan 12.5 MG Oral Tablet,6,Drug,RxNorm,Clinical Drug
+1592435,ritonavir 100 MG Oral Powder,6,Drug,RxNorm,Clinical Drug
+1736994,abacavir 300 MG Oral Tablet,6,Drug,RxNorm,Clinical Drug
+19015804,lercanidipine 20 MG Oral Tablet,6,Drug,RxNorm,Clinical Drug
+19062757,menadiol 10 MG Oral Tablet,6,Drug,RxNorm,Clinical Drug
+19063315,budesonide 0.064 MG/ACTUAT Nasal Spray,6,Drug,RxNorm,Clinical Drug
+19075955,vitamin B12 0.1 MG Oral Tablet,6,Drug,RxNorm,Clinical Drug
+19086582,danthron 5 MG/ML / poloxamer 188 40 MG/ML Oral Suspension,6,Drug,RxNorm,Clinical Drug
+19101761,quetiapine 150 MG Oral Tablet,6,Drug,RxNorm,Clinical Drug
+19112981,nifedipine 60 MG Extended Release Oral Tablet,6,Drug,RxNorm,Clinical Drug
+21118062,0.5 ML Pilocarpine 20 MG/ML Ophthalmic Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+21155069,levothyroxine 0.005 MG/ML Oral Solution,6,Drug,RxNorm Extension,Clinical Drug
+35411338,Permethrin 0.05 MG/MG Topical Cream,6,Drug,RxNorm Extension,Clinical Drug
+35776762,1 ML Morphine 1 MG/ML Injectable Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+35778914,2 ML Succinylcholine 50 MG/ML Injectable Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+35785315,0.3 ML darbepoetin alfa 0.2 MG/ML Injectable Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+36059371,cholecalciferol 400 UNT Oral Capsule,6,Drug,RxNorm Extension,Clinical Drug
+36808620,0.8 ML adalimumab 50 MG/ML Injectable Solution [Amgevita] by Amgen,6,Drug,RxNorm Extension,Marketed Product
+36895497,10 ML Methotrexate 100 MG/ML Injectable Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+36920204,"3 ML insulin aspart, human 100 UNT/ML Injectable Solution [Fiasp] by Novo Nordisk",6,Drug,RxNorm Extension,Marketed Product
+36949740,10 ML alpha tocopherol 0.91 MG/ML / ergocalciferol 0.0005 MG/ML / vitamin E 0.1 MG/ML / vitamin K1 0.015 MG/ML Injectable Suspension [Vitlipid N Adult] by Fresenius Kabi,6,Drug,RxNorm Extension,Marketed Product
+40166434,oxybutynin chloride 10 MG Extended Release Oral Tablet,6,Drug,RxNorm,Clinical Drug
+40175208,levothyroxine sodium 0.05 MG Oral Capsule,6,Drug,RxNorm,Clinical Drug
+40222572,dutasteride 0.5 MG / tamsulosin hydrochloride 0.4 MG Oral Capsule,6,Drug,RxNorm,Clinical Drug
+40709696,500 MG Testosterone 0.02 MG/MG Topical Gel,6,Drug,RxNorm Extension,Quant Clinical Drug
+40717517,2 ML dupilumab 150 MG/ML Injectable Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+40719472,0.4 ML Hydrocortisone 3.2 MG/ML Ophthalmic Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+40756175,Ascorbic Acid 15 MG / Niacinamide 7.5 MG / Riboflavin 0.5 MG / Thiamine 1 MG / Vitamin A 2500 UNT / Vitamin D 300 UNT Oral Capsule,6,Drug,RxNorm Extension,Clinical Drug
+41116646,Ifosfamide 1000 MG Injectable Solution,6,Drug,RxNorm Extension,Clinical Drug
+41336308,1 ML Gentamicin 5 MG/ML Injectable Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+41351843,5 ML daratumumab 20 MG/ML Injectable Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+42707831,darunavir 100 MG/ML Oral Suspension,6,Drug,RxNorm,Clinical Drug
+43805612,1 ML Ephedrine 30 MG/ML Injectable Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+44134658,1.5 ML paliperidone 100 MG/ML Injectable Suspension,6,Drug,RxNorm Extension,Quant Clinical Drug
+44191562,4 ML pembrolizumab 25 MG/ML Injectable Solution,6,Drug,RxNorm Extension,Quant Clinical Drug
+718669,nicotine 4 MG Chewing Gum,5,Drug,RxNorm,Clinical Drug
+739285,sertraline 150 MG Oral Tablet,5,Drug,RxNorm,Clinical Drug
+741572,orlistat 120 MG Oral Capsule,5,Drug,RxNorm,Clinical Drug
+786428,24 HR rotigotine 0.0833 MG/HR Transdermal System,5,Drug,RxNorm,Quant Clinical Drug
+1308796,vitamin B12 1 MG Extended Release Oral Tablet,5,Drug,RxNorm,Clinical Drug
+1314614,nebivolol 2.5 MG Oral Tablet,5,Drug,RxNorm,Clinical Drug
+1361296,darolutamide 300 MG Oral Tablet,5,Drug,RxNorm,Clinical Drug
+1763256,rifampin 20 MG/ML Oral Suspension,5,Drug,RxNorm,Clinical Drug
+1769390,nevirapine 200 MG Oral Tablet,5,Drug,RxNorm,Clinical Drug
+19028249,coal tar 20 MG/ML Medicated Shampoo,5,Drug,RxNorm,Clinical Drug
+19078080,hydrochlorothiazide 12.5 MG / irbesartan 150 MG Oral Tablet,5,Drug,RxNorm,Clinical Drug
+19078403,hypromellose 3 MG/ML Ophthalmic Solution,5,Drug,RxNorm,Clinical Drug
+19101741,mebeverine 200 MG Extended Release Oral Capsule,5,Drug,RxNorm,Clinical Drug
+19105738,mebeverine 10 MG/ML Oral Suspension,5,Drug,RxNorm,Clinical Drug
+19134552,diltiazem 90 MG Extended Release Oral Tablet,5,Drug,RxNorm,Clinical Drug
+21089660,Betamethasone 0.5 MG/ML / Salicylic Acid 20 MG/ML Topical Solution,5,Drug,RxNorm Extension,Clinical Drug
+21105386,Potassium Permanganate 400 MG Topical Solution,5,Drug,RxNorm Extension,Clinical Drug
+21120423,Metformin 200 MG/ML Oral Solution,5,Drug,RxNorm Extension,Clinical Drug
+21133671,Gliclazide 60 MG Extended Release Oral Tablet,5,Drug,RxNorm Extension,Clinical Drug
+21151489,Tacrolimus 0.5 MG Extended Release Oral Capsule [Advagraf] by Astellas,5,Drug,RxNorm Extension,Marketed Product
+35200451,doravirine 100 MG Oral Tablet,5,Drug,RxNorm,Clinical Drug
+35408196,trametinib 0.5 MG Delayed Release Oral Tablet,5,Drug,RxNorm Extension,Clinical Drug
+35777631,1 ML denosumab 60 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+35778659,2 ML isoniazid 25 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+35780706,5 ML heparin 10 UNT/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+35782816,20 ML heparin 1000 UNT/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+35785231,0.3 ML Epinephrine 1 MG/ML Injectable Solution [Jext] by ALK,5,Drug,RxNorm Extension,Marketed Product
+35785262,0.3 ML Dalteparin 25000 UNT/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+35785648,0.5 ML darbepoetin alfa 0.2 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+35884607,isopropyl myristate 150 MG/ML / mineral oil 150 MG/ML Topical Gel [Epimax isomol] by Aspire,5,Drug,RxNorm Extension,Marketed Product
+35896475,10 ML ferric derisomaltose 100 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+36056888,8 ML Disodium folinate 50 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+36069678,betamethasone 0.00064 MG/MG / clotrimazole 0.01 MG/MG Topical Cream,5,Drug,RxNorm Extension,Clinical Drug
+36411762,0.5 ML Filgrastim 60000000 UNT/ML Injectable Solution [Zarzio] by Sandoz,5,Drug,RxNorm Extension,Marketed Product
+36786555,Chlorambucil 2 MG Delayed Release Oral Tablet,5,Drug,RxNorm Extension,Clinical Drug
+36811044,mucopolysaccharide polysulfate 0.002 MG/MG / Salicylic Acid 0.02 MG/MG Topical Gel,5,Drug,RxNorm Extension,Clinical Drug
+36884866,Dacarbazine 200 MG Injectable Solution,5,Drug,RxNorm Extension,Clinical Drug
+36895129,1 ML Methylprednisolone 40 MG/ML Injectable Suspension,5,Drug,RxNorm Extension,Quant Clinical Drug
+36926058,10 ML immunoglobulin G 200 MG/ML Injectable Solution [Hizentra] by Behring,5,Drug,RxNorm Extension,Marketed Product
+36941331,10 ML chromic chloride 0.001 MG/ML / copper gluconate 0.03 MG/ML / ferrous gluconate 0.1 MG/ML / manganese gluconate 0.0055 MG/ML / potassium iodide 0.013 MG/ML / selenite 0.0069 MG/ML / ... Injectable Solution [NUTRYELT] by Baxter,5,Drug,RxNorm Extension,Marketed Product
+36953242,testosterone 40 MG Topical Gel,5,Drug,RxNorm Extension,Clinical Drug
+37593335,pregabalin 25 MG Oral Tablet,5,Drug,RxNorm Extension,Clinical Drug
+40167443,buspirone hydrochloride 5 MG Oral Tablet,5,Drug,RxNorm,Clinical Drug
+40177820,amiloride hydrochloride 2.5 MG / furosemide 20 MG Oral Tablet,5,Drug,RxNorm,Clinical Drug
+40238458,nevirapine 400 MG Extended Release Oral Tablet,5,Drug,RxNorm,Clinical Drug
+40709133,500 ML Glucose 50 MG/ML / Potassium Chloride 3 MG/ML / Sodium Chloride 9 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+40725255,infliximab 100 MG Injectable Solution [FLIXABI] by Biogen,5,Drug,RxNorm Extension,Marketed Product
+40742685,Melatonin 4 MG Oral Tablet,5,Drug,RxNorm Extension,Clinical Drug
+41025343,alteplase 10 MG Injectable Solution,5,Drug,RxNorm Extension,Clinical Drug
+41337579,1 ML Ketorolac 30 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+41352289,5 ML Paclitaxel 6 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+41353882,5 ML panitumumab 20 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+41372019,10 ML Cisplatin 1 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+41378511,20 ML panitumumab 20 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+41381233,20 ML tocilizumab 20 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+43189028,efavirenz 600 MG Delayed Release Oral Tablet,5,Drug,RxNorm Extension,Clinical Drug
+43700457,10 ML Adenosine 3 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+43790022,10 ML Vinblastine 1 MG/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+44045968,cetrorelix 0.25 MG Injectable Solution,5,Drug,RxNorm Extension,Clinical Drug
+44058589,Botulinum Toxin Type A 100 UNT Injectable Solution,5,Drug,RxNorm Extension,Clinical Drug
+44132528,0.5 ML Dalteparin 25000 UNT/ML Injectable Solution,5,Drug,RxNorm Extension,Quant Clinical Drug
+44506612,vortioxetine 20 MG Oral Tablet,5,Drug,RxNorm,Clinical Drug
+723019,diazepam 0.4 MG/ML Oral Solution,4,Drug,RxNorm,Clinical Drug
+784298,3 ML Insulin Glargine 100 UNT/ML / Lixisenatide 0.05 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+789818,rosuvastatin 10 MG Oral Capsule,4,Drug,RxNorm,Clinical Drug
+792662,abemaciclib 100 MG Oral Tablet,4,Drug,RxNorm,Clinical Drug
+964080,ibrutinib 560 MG Oral Tablet,4,Drug,RxNorm,Clinical Drug
+1314009,atenolol 100 MG / chlorthalidone 25 MG Oral Tablet,4,Drug,RxNorm,Clinical Drug
+1336541,sunitinib 12.5 MG Oral Capsule,4,Drug,RxNorm,Clinical Drug
+1336624,sunitinib 25 MG Oral Capsule,4,Drug,RxNorm,Clinical Drug
+1776544,hydrogen peroxide 30 MG/ML Topical Solution,4,Drug,RxNorm,Clinical Drug
+1973074,10 ML crizanlizumab 10 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+19028936,telmisartan 80 MG Oral Tablet,4,Drug,RxNorm,Clinical Drug
+19079088,nizatidine 150 MG Oral Capsule,4,Drug,RxNorm,Clinical Drug
+19101636,nicotine 1 MG Oral Lozenge,4,Drug,RxNorm,Clinical Drug
+19137332,thiamine 25 MG Oral Tablet,4,Drug,RxNorm,Clinical Drug
+21060760,Cholecalciferol 3333 UNT Oral Capsule,4,Drug,RxNorm Extension,Clinical Drug
+21133540,hyaluronate 1 MG/ML / Pantothenic Acid 20 MG/ML Ophthalmic Solution,4,Drug,RxNorm Extension,Clinical Drug
+35602764,tipiracil 8.19 MG / trifluridine 20 MG Oral Tablet,4,Drug,RxNorm,Clinical Drug
+35777037,1 ML Morphine 30 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+35777356,1 ML evolocumab 140 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+35780199,5 ML pegaspargase 750 UNT/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+35781628,10 ML Atropine 0.3 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+35785248,0.3 ML Methotrexate 50 MG/ML Injectable Solution [Metoject] by Medac,4,Drug,RxNorm Extension,Marketed Product
+35785316,0.3 ML darbepoetin alfa 0.1 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+35789687,0.25 ML tinzaparin 10000 UNT/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+35886118,paraffin 0.1 MG/MG / petrolatum 0.132 MG/MG Topical Cream [Epimax excetra] by Aspire,4,Drug,RxNorm Extension,Marketed Product
+36060121,estriol 0.03 MG Vaginal Suppository,4,Drug,RxNorm Extension,Clinical Drug
+36064286,andexanet alfa 200 MG Injectable Solution,4,Drug,RxNorm Extension,Clinical Drug
+36121090,1.5 ML somatropin 3.33 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+36409848,1 ML omalizumab 150 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+36895872,25 ML Doxorubicin 2 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+36951912,duloxetine 90 MG Delayed Release Oral Capsule,4,Drug,RxNorm Extension,Clinical Drug
+40038495,follicle stimulating hormone / luteinizing hormone Injectable Solution,4,Drug,RxNorm,Clinical Drug Form
+40163724,prasugrel 5 MG Oral Tablet,4,Drug,RxNorm,Clinical Drug
+40164514,clobetasol propionate 0.5 MG/ML Medicated Shampoo,4,Drug,RxNorm,Clinical Drug
+40741931,Urea 100 MG/ML Topical Cream [Flexitol] by Thornton & Ross,4,Drug,RxNorm Extension,Marketed Product
+41022903,gemcitabine 200 MG Injectable Solution,4,Drug,RxNorm Extension,Clinical Drug
+41335710,1 ML alemtuzumab 30 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+42707777,dihydrocodeine bitartrate 60 MG Extended Release Oral Tablet,4,Drug,RxNorm,Clinical Drug
+42935544,Hydroxychloroquine 300 MG Oral Tablet,4,Drug,RxNorm Extension,Clinical Drug
+43148394,vortioxetine 10 MG Delayed Release Oral Tablet,4,Drug,RxNorm Extension,Clinical Drug
+43151761,sorafenib 200 MG Delayed Release Oral Tablet,4,Drug,RxNorm Extension,Clinical Drug
+43590862,2 ML Tramadol 50 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+43808712,20 ML oxaliplatin 5 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+44096764,Triptorelin 22.5 MG Injectable Suspension,4,Drug,RxNorm Extension,Clinical Drug
+44109798,Rho(D) Immune Globulin 1500 UNT Injectable Solution,4,Drug,RxNorm Extension,Clinical Drug
+44123536,alpha Tocopherol 400 UNT Oral Capsule,4,Drug,RxNorm Extension,Clinical Drug
+44132693,0.5 ML Methotrexate 50 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+44132783,0.5 ML dulaglutide 1.5 MG/ML Injectable Solution,4,Drug,RxNorm Extension,Quant Clinical Drug
+44507850,ibrutinib 140 MG Oral Capsule,4,Drug,RxNorm,Clinical Drug
+45892519,1250 MG testosterone 0.0162 MG/MG Topical Gel,4,Drug,RxNorm,Quant Clinical Drug
+46221548,lenvatinib 10 MG Oral Capsule,4,Drug,RxNorm,Clinical Drug
+786431,24 HR rotigotine 0.25 MG/HR Transdermal System,3,Drug,RxNorm,Quant Clinical Drug
+836717,temazepam 2 MG/ML Oral Solution,3,Drug,RxNorm,Clinical Drug
+993305,aluminum hydroxide 44 MG/ML / magnesium hydroxide 39 MG/ML Oral Suspension,3,Drug,RxNorm,Clinical Drug
+1103359,acetaminophen 325 MG / tramadol hydrochloride 37.5 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+1301811,atorvastatin 4 MG/ML Oral Suspension,3,Drug,RxNorm,Clinical Drug
+1511136,cladribine 10 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+1559927,encorafenib 75 MG Oral Capsule,3,Drug,RxNorm,Clinical Drug
+1713520,amoxicillin 25 MG/ML Oral Suspension,3,Drug,RxNorm,Clinical Drug
+19019302,niacinamide 500 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+19023563,simvastatin 80 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+19028902,leflunomide 20 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+19058072,clarithromycin 25 MG/ML Oral Suspension,3,Drug,RxNorm,Clinical Drug
+19061260,lithium carbonate 200 MG Extended Release Oral Tablet,3,Drug,RxNorm,Clinical Drug
+19063845,malathion 5 MG/ML Topical Solution,3,Drug,RxNorm,Clinical Drug
+19071692,etodolac 600 MG Extended Release Oral Tablet,3,Drug,RxNorm,Clinical Drug
+19075953,vitamin B12 1 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+19076734,dorzolamide 20 MG/ML Ophthalmic Solution,3,Drug,RxNorm,Clinical Drug
+19096740,olmesartan medoxomil 20 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+19102500,emtricitabine 200 MG Oral Capsule,3,Drug,RxNorm,Clinical Drug
+19102501,imatinib 100 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+19107525,carbimazole 10 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+19124360,aripiprazole 15 MG Disintegrating Oral Tablet,3,Drug,RxNorm,Clinical Drug
+19133859,penicillin V potassium 50 MG/ML Oral Solution,3,Drug,RxNorm,Clinical Drug
+19134120,tramadol hydrochloride 100 MG Extended Release Oral Capsule,3,Drug,RxNorm,Clinical Drug
+21028181,1 ML Midazolam 5 MG/ML Oral Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+21029723,0.5 ML hypromellose 3 MG/ML Ophthalmic Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+21066825,Potassium Chloride 600 MG Extended Release Oral Tablet,3,Drug,RxNorm Extension,Clinical Drug
+21083220,Piroxicam 0.005 MG/MG Vaginal Gel,3,Drug,RxNorm Extension,Clinical Drug
+21106551,1 ML Cholecalciferol 25000 UNT/ML Oral Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+21113798,mesalamine 400 MG Delayed Release Oral Tablet [Octasa] by Tillotts,3,Drug,RxNorm Extension,Marketed Product
+21148355,dimethyl fumarate 240 MG Delayed Release Oral Capsule [Tecfidera] by Biogen,3,Drug,RxNorm Extension,Marketed Product
+21149936,vinorelbine 30 MG Oral Capsule,3,Drug,RxNorm Extension,Clinical Drug
+21164636,Vitamin K 1 10 MG Oral Capsule,3,Drug,RxNorm Extension,Clinical Drug
+35776768,1 ML Ergonovine 0.5 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+35778231,2 ML Amikacin 50 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+35785098,0.2 ML Methotrexate 50 MG/ML Injectable Solution [Metoject] by Medac,3,Drug,RxNorm Extension,Marketed Product
+35785597,0.5 ML darbepoetin alfa 0.1 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+35789753,0.45 ML Methotrexate 50 MG/ML Injectable Solution [Metoject] by Medac,3,Drug,RxNorm Extension,Marketed Product
+36052866,1000 ML magnesium chloride 1.56 MG/ML / sodium chloride 9 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+36054507,1 ML medroxyprogesterone 150 MG/ML Injectable Suspension,3,Drug,RxNorm Extension,Quant Clinical Drug
+36059316,cholecalciferol 2000 UNT Oral Tablet,3,Drug,RxNorm Extension,Clinical Drug
+36060433,calcium carbonate 2500 MG / cholecalciferol 880 UNT Chewable Tablet,3,Drug,RxNorm Extension,Clinical Drug
+36062520,fluoxetine 30 MG Oral Capsule,3,Drug,RxNorm Extension,Clinical Drug
+36119766,factor VIII 250 UNT Injectable Solution [Advate] by Takeda,3,Drug,RxNorm Extension,Marketed Product
+36119782,factor VIII 2000 UNT Injectable Solution [Advate] by Takeda,3,Drug,RxNorm Extension,Marketed Product
+36119954,isosorbide 30 MG Oral Tablet,3,Drug,RxNorm Extension,Clinical Drug
+36405129,Melphalan 50 MG Injectable Solution,3,Drug,RxNorm Extension,Clinical Drug
+36405860,lenograstim 13400000 UNT Injectable Solution,3,Drug,RxNorm Extension,Clinical Drug
+36405993,"Lymphocyte Immune Globulin, Anti-Thymocyte Globulin 25 MG Injectable Solution",3,Drug,RxNorm Extension,Clinical Drug
+36407471,lauromacrogols 0.03 MG/MG / Urea 0.05 MG/MG Topical Cream,3,Drug,RxNorm Extension,Clinical Drug
+36408975,digoxin antibodies Fab fragments 40 MG Injectable Solution,3,Drug,RxNorm Extension,Clinical Drug
+36411101,20 ML gemcitabine 100 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+36887876,Betamethasone 0.0005 MG/MG / calcipotriene 0.00005 MG/MG Topical Gel,3,Drug,RxNorm Extension,Clinical Drug
+36892686,loteprednol etabonate 5 MG/ML Ophthalmic Solution,3,Drug,RxNorm Extension,Clinical Drug
+36895194,2 ML Meperidine 50 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+36895198,2 ML Verapamil 2.5 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+36934609,0.4 ML hyaluronate 3.75 MG/ML / trehalose 75 MG/ML Ophthalmic Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+37499129,cenobamate 150 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+40055280,meningococcal group A polysaccharide / meningococcal group C polysaccharide / meningococcal polysaccharide vaccine group W-135 / meningococcal polysaccharide vaccine group Y Injectable Solution,3,Drug,RxNorm,Clinical Drug Form
+40162335,diclofenac sodium 25 MG Delayed Release Oral Tablet,3,Drug,RxNorm,Clinical Drug
+40163361,propranolol hydrochloride 80 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+40167202,metoprolol tartrate 100 MG Oral Tablet,3,Drug,RxNorm,Clinical Drug
+40177208,0.5 ML tinzaparin sodium 20000 UNT/ML Prefilled Syringe,3,Drug,RxNorm,Quant Clinical Drug
+40222065,bupropion hydrochloride 150 MG Extended Release Oral Tablet,3,Drug,RxNorm,Clinical Drug
+40232765,oxycodone hydrochloride 60 MG Extended Release Oral Tablet,3,Drug,RxNorm,Clinical Drug
+40714187,25 ML bicarbonate ion 0.085 MMOL/ML / POLYETHYLENE GLYCOL 3350 525 MG/ML / Potassium 0.027 MMOL/ML / Sodium 0.325 MMOL/ML Oral Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+40718606,1 ML benralizumab 30 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+40728015,lauromacrogols 150 MG/ML / Soybean Oil 830 MG/ML Topical Solution,3,Drug,RxNorm Extension,Clinical Drug
+40731028,"Dibasic potassium phosphate 236 MG/ML / Sodium Phosphate, Monobasic 542 MG/ML Oral Solution",3,Drug,RxNorm Extension,Clinical Drug
+40733365,Metformin 500 MG Oral Powder,3,Drug,RxNorm Extension,Clinical Drug
+40748068,Gemtuzumab ozogamicin 5 MG Injectable Solution,3,Drug,RxNorm Extension,Clinical Drug
+40752678,Cholecalciferol 4000 UNT/ML Oral Solution,3,Drug,RxNorm Extension,Clinical Drug
+41086147,Epoprostenol 0.5 MG Injectable Solution,3,Drug,RxNorm Extension,Clinical Drug
+41274757,Atovaquone 150 MG/ML Oral Solution,3,Drug,RxNorm Extension,Clinical Drug
+41334883,1 ML Albuterol 0.5 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+41341003,2 ML irinotecan 20 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+41348212,3 ML Insulin Lispro 200 UNT/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+41350805,4 ML tocilizumab 20 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+41368187,10 ML Busulfan 6 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+41371160,"10 ML insulin, isophane 70 UNT/ML / Regular Insulin, Human 30 UNT/ML Injectable Suspension",3,Drug,RxNorm Extension,Quant Clinical Drug
+41384856,26 ML ustekinumab 5 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+41388969,30 ML eculizumab 10 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+41389920,40 ML obinutuzumab 25 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+41399526,50 ML rituximab 10 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+41404895,0.2 ML Methotrexate 50 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+41437171,250 ML moxifloxacin 1.6 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+42921515,5 ML Protamine Sulfate (USP) 10 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+43014251,pomalidomide 4 MG Oral Capsule,3,Drug,RxNorm,Clinical Drug
+43611946,0.4 ML adalimumab 100 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+43789143,5 ML Prilocaine 20 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+43809444,50 ML Methotrexate 100 MG/ML Injectable Solution,3,Drug,RxNorm Extension,Quant Clinical Drug
+44032180,Somatropin 2 MG Injectable Solution,3,Drug,RxNorm Extension,Clinical Drug
+44083845,Triptorelin 3.75 MG Injectable Suspension,3,Drug,RxNorm Extension,Clinical Drug
+44085053,Ascorbic Acid 1000 MG Disintegrating Oral Tablet,3,Drug,RxNorm Extension,Clinical Drug
+44132649,0.5 ML paliperidone 100 MG/ML Injectable Suspension,3,Drug,RxNorm Extension,Quant Clinical Drug
+742308,topiramate 50 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+779262,upadacitinib 45 MG Extended Release Oral Tablet,2,Drug,RxNorm,Clinical Drug
+903649,tretinoin 10 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+907240,urea 50 MG/ML Topical Cream,2,Drug,RxNorm,Clinical Drug
+942385,torsemide 5 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+950667,tacrolimus 0.0003 MG/MG Topical Ointment,2,Drug,RxNorm,Clinical Drug
+964068,ibrutinib 140 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+964188,roflumilast 0.25 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+1112923,aspirin 300 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+1301158,melatonin 5 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+1317675,telmisartan 20 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+1337103,ambrisentan 5 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+1351781,procarbazine 50 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+1356193,sevoflurane Inhalation Solution,2,Drug,RxNorm,Clinical Drug Form
+1377170,hydroxyurea 1000 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+1383817,isosorbide mononitrate 50 MG Extended Release Oral Capsule,2,Drug,RxNorm,Clinical Drug
+1741402,terbinafine 250 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+19008692,erythromycin 40 MG/ML / zinc acetate 12 MG/ML Topical Solution,2,Drug,RxNorm,Clinical Drug
+19019412,nortriptyline 10 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+19027494,ibuprofen 40 MG/ML Oral Suspension,2,Drug,RxNorm,Clinical Drug
+19027945,coal tar 50 MG/ML Medicated Shampoo,2,Drug,RxNorm,Clinical Drug
+19055986,flupenthixol 3 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+19062303,carbocysteine 750 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+19063196,tetracaine 0.04 MG/MG Topical Gel,2,Drug,RxNorm,Clinical Drug
+19069293,melatonin 2 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+19074137,benzoyl peroxide 0.05 MG/MG Topical Gel,2,Drug,RxNorm,Clinical Drug
+19074271,bismuth subsalicylate 262 MG Chewable Tablet,2,Drug,RxNorm,Clinical Drug
+19079497,sertraline 25 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+19101879,mineral oil 0.05 MG/MG / petrolatum 0.95 MG/MG Topical Ointment,2,Drug,RxNorm,Clinical Drug
+19106033,benzalkonium 5 MG/ML Medicated Shampoo,2,Drug,RxNorm,Clinical Drug
+19125745,temozolomide 140 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+19133948,chlorhexidine gluconate 10 MG/ML Topical Cream,2,Drug,RxNorm,Clinical Drug
+21029689,0.5 ML Phenylephrine 25 MG/ML Ophthalmic Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+21039571,0.5 ML hyaluronate 2 MG/ML Ophthalmic Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+21047229,Cyclizine 10 MG/ML Oral Solution,2,Drug,RxNorm Extension,Clinical Drug
+21055502,zopiclone 0.75 MG/ML Oral Solution,2,Drug,RxNorm Extension,Clinical Drug
+21059121,0.4 ML Cyclosporine 0.5 MG/ML Ophthalmic Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+21068670,24 HR oxybutynin 0.162 MG/HR Transdermal System,2,Drug,RxNorm Extension,Quant Clinical Drug
+21078858,0.5 ML Tropicamide 5 MG/ML Ophthalmic Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+21082737,Tacrolimus 3 MG Extended Release Oral Capsule,2,Drug,RxNorm Extension,Clinical Drug
+21084581,hyaluronate 0.3 MG/ML Ophthalmic Solution,2,Drug,RxNorm Extension,Clinical Drug
+21120987,atorvastatin 30 MG Oral Tablet,2,Drug,RxNorm Extension,Clinical Drug
+21141332,Amlodipine 5 MG / valsartan 80 MG Oral Tablet,2,Drug,RxNorm Extension,Clinical Drug
+21147493,0.5 ML Sodium Chloride 9 MG/ML Ophthalmic Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+21168163,tamsulosin 0.08 MG/ML Oral Solution,2,Drug,RxNorm Extension,Clinical Drug
+21169719,Metformin 1000 MG / vildagliptin 50 MG Oral Tablet,2,Drug,RxNorm Extension,Clinical Drug
+21170634,Mirtazapine 15 MG/ML Oral Solution,2,Drug,RxNorm Extension,Clinical Drug
+35413526,5 ML Cyclosporine 50 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+35602761,tipiracil 6.14 MG / trifluridine 15 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+35606236,ixazomib 3 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+35771836,Clobetasol 0.0005 MG/MG Topical Cream [Dermovate] by Glaxosmithkline,2,Drug,RxNorm Extension,Marketed Product
+35776790,1 ML Phenobarbital 30 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+35777810,1 ML Etanercept 50 MG/ML Injectable Solution [Benepali] by Biogen,2,Drug,RxNorm Extension,Marketed Product
+35785437,0.5 ML Epinephrine 1 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+35785647,0.5 ML darbepoetin alfa 0.04 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+35885960,cholecalciferol 10000 UNT/ML Oral Solution,2,Drug,RxNorm Extension,Clinical Drug
+35897689,estradiol 0.01 MG Vaginal Suppository [Vagirux] by Gedeon Richter,2,Drug,RxNorm Extension,Marketed Product
+36052349,0.36 ML buprenorphine 356 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+36053391,10 ML calcium chloride 147 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+36057450,glycerin 1400 MG Rectal Suppository,2,Drug,RxNorm Extension,Clinical Drug
+36057986,budesonide 1 MG Disintegrating Oral Tablet,2,Drug,RxNorm Extension,Clinical Drug
+36059381,cholecalciferol 2000 UNT/ML Oral Solution,2,Drug,RxNorm Extension,Clinical Drug
+36063333,progesterone 100 MG Vaginal Suppository,2,Drug,RxNorm Extension,Clinical Drug
+36066102,factor IX 1000 UNT / factor VII 660 UNT / factor X 960 UNT / protein C 880 UNT / protein S 880 UNT / prothrombin 1040 UNT Injectable Solution [Octaplex] by Octapharma,2,Drug,RxNorm Extension,Marketed Product
+36069086,naproxen 250 MG Disintegrating Oral Tablet,2,Drug,RxNorm Extension,Clinical Drug
+36069177,ipratropium 0.021 MG/ACTUAT Nasal Spray,2,Drug,RxNorm Extension,Clinical Drug
+36119184,chlorhexidine 2 MG/ML / lidocaine 0.5 MG/ML Nasal Spray,2,Drug,RxNorm Extension,Clinical Drug
+36405154,Bleomycin 15000 UNT Injectable Solution,2,Drug,RxNorm Extension,Clinical Drug
+36407442,Lidocaine 0.007 MG/MG / Zinc Oxide 0.066 MG/MG Topical Cream,2,Drug,RxNorm Extension,Clinical Drug
+36412967,12.5 ML sildenafil 0.8 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+36808878,10 ML durvalumab 50 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+36811124,isopropyl myristate 150 MG/ML / Mineral Oil 150 MG/ML Topical Gel [Zerodouble] by Thornton & Ross,2,Drug,RxNorm Extension,Marketed Product
+36812915,Citric Acid 250 MG / potassium citrate 1500 MG Disintegrating Oral Tablet,2,Drug,RxNorm Extension,Clinical Drug
+36813852,Penicillin G 2400000 UNT Injectable Suspension,2,Drug,RxNorm Extension,Clinical Drug
+36882817,aripiprazole 400 MG Injectable Suspension,2,Drug,RxNorm Extension,Clinical Drug
+36885850,Triptorelin 3 MG Injectable Suspension,2,Drug,RxNorm Extension,Clinical Drug
+36895308,5 ML Cytarabine 20 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+36895951,45 ML Carboplatin 10 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+36896055,50 ML Nimodipine 0.2 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+36896460,100 ML Soybean Oil 200 MG/ML Injectable Suspension,2,Drug,RxNorm Extension,Quant Clinical Drug
+36896708,250 ML esmolol 10 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+36944652,alpha tocopherol 11 UNT / ascorbic acid 125 MG / biotin 0.069 MG / cholecalciferol 220 UNT / dexpanthenol 17.3 MG / folic acid 0.4 MG / niacinamide 46 MG / pyridoxine 4.53 MG / riboflavin 4 MG / ... Injectable Solution [Cernevit] by Baxter,2,Drug,RxNorm Extension,Marketed Product
+36964445,mesalamine 800 MG Delayed Release Oral Tablet [Asacol] by Abbvie,2,Drug,RxNorm Extension,Marketed Product
+36968515,68 ML axicabtagene ciloleucel 1760000 CELLS/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+37496460,entrectinib 200 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+37499125,cenobamate 100 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+37499133,cenobamate 200 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+37499174,palbociclib 125 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+40162315,diclofenac sodium 0.03 MG/MG Topical Gel,2,Drug,RxNorm,Clinical Drug
+40163457,trazodone hydrochloride 10 MG/ML Oral Solution,2,Drug,RxNorm,Clinical Drug
+40164525,clobetasol propionate 0.5 MG/ML Topical Solution,2,Drug,RxNorm,Clinical Drug
+40165337,ursodiol 300 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+40165771,enalapril maleate 20 MG / hydrochlorothiazide 12.5 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+40184184,hydrochlorothiazide 12.5 MG / losartan potassium 100 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+40226629,hydrocortisone acetate 0.00275 MG/MG / lidocaine hydrochloride 0.05 MG/MG Topical Ointment,2,Drug,RxNorm,Clinical Drug
+40233205,1 ML triamcinolone acetonide 40 MG/ML Prefilled Syringe,2,Drug,RxNorm,Quant Clinical Drug
+40236469,methylphenidate hydrochloride 36 MG Extended Release Oral Tablet,2,Drug,RxNorm,Clinical Drug
+40242677,crizotinib 200 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+40243106,tapentadol 100 MG Extended Release Oral Tablet,2,Drug,RxNorm,Clinical Drug
+40715973,10 ML Adenosine 3 MG/ML Injectable Solution [Adenoscan] by Sanofi,2,Drug,RxNorm Extension,Marketed Product
+40716441,3 ML liraglutide 6 MG/ML Injectable Solution [Saxenda] by Novo Nordisk,2,Drug,RxNorm Extension,Marketed Product
+40719061,"1 ML tetanus toxoid vaccine, inactivated 250 UNT/ML Injectable Solution",2,Drug,RxNorm Extension,Quant Clinical Drug
+40723783,Menthol 20 MG/ML Topical Cream [Arjun] by Arjun,2,Drug,RxNorm Extension,Marketed Product
+40725827,carbomer homopolymer type c 0.002 MG/MG Ophthalmic Solution [Clinitas] by Altacor,2,Drug,RxNorm Extension,Marketed Product
+40746352,Paraffin 0.1 MG/MG / Petrolatum 0.132 MG/MG Topical Cream [Enopen] by Ennogen,2,Drug,RxNorm Extension,Marketed Product
+40746931,cobicistat 150 MG / darunavir 800 MG / emtricitabine 200 MG / tenofovir alafenamide 10 MG Oral Tablet [Symtuza] by Janssen,2,Drug,RxNorm Extension,Marketed Product
+40747658,Magnesium Aspartate 250 MG Oral Powder,2,Drug,RxNorm Extension,Clinical Drug
+40751528,Cholecalciferol 20000 UNT Oral Tablet,2,Drug,RxNorm Extension,Clinical Drug
+41084373,pemetrexed 500 MG Injectable Solution,2,Drug,RxNorm Extension,Clinical Drug
+41085826,fosaprepitant 150 MG Injectable Solution,2,Drug,RxNorm Extension,Clinical Drug
+41212578,brentuximab vedotin 50 MG Injectable Solution,2,Drug,RxNorm Extension,Clinical Drug
+41302942,Mifamurtide 4 MG Injectable Suspension,2,Drug,RxNorm Extension,Clinical Drug
+41332257,1 ML docetaxel 20 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+41374766,15 ML irinotecan 20 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+41404616,0.1 ML aflibercept 40 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+42480148,Tramadol 50 MG Extended Release Oral Tablet,2,Drug,RxNorm Extension,Clinical Drug
+42480277,5 ML iron sucrose 20 MG/ML Prefilled Syringe,2,Drug,RxNorm Extension,Quant Clinical Drug
+43013637,glucosamine sulfate 500 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+43172151,Cimetidine 200 MG Delayed Release Oral Tablet,2,Drug,RxNorm Extension,Clinical Drug
+43181666,leflunomide 10 MG Delayed Release Oral Tablet,2,Drug,RxNorm Extension,Clinical Drug
+43519463,100 ML prednisolone 0.2 MG/ML Rectal Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+43532972,tacrolimus 1 MG Extended Release Oral Capsule,2,Drug,RxNorm,Clinical Drug
+43611937,0.4 ML tinzaparin 20000 UNT/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+43630065,0.4 ML adalimumab 100 MG/ML Injection [Humira] by Abbvie,2,Drug,RxNorm Extension,Marketed Product
+43644258,1 ML Vincristine 1 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+43645717,5 ML Carboplatin 10 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+43771406,5 ML Flumazenil 0.1 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+43805603,1 ML Vitamin B 12 1 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+43842429,1 ML Octreotide 0.5 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+44032735,exenatide 2 MG Injectable Suspension,2,Drug,RxNorm Extension,Clinical Drug
+44058237,Risperidone 37.5 MG Injectable Suspension,2,Drug,RxNorm Extension,Clinical Drug
+44109689,teduglutide 5 MG Injectable Solution,2,Drug,RxNorm Extension,Clinical Drug
+44129876,1 ML ustekinumab 90 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+44130076,5 ML Atropine 0.2 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+44132740,0.5 ML peginterferon beta-1a 0.25 MG/ML Injectable Solution,2,Drug,RxNorm Extension,Quant Clinical Drug
+45892457,budesonide 2 MG/ACTUAT Rectal Foam,2,Drug,RxNorm,Clinical Drug
+45892974,cobicistat 150 MG / darunavir 800 MG Oral Tablet,2,Drug,RxNorm,Clinical Drug
+46221550,lenvatinib 4 MG Oral Capsule,2,Drug,RxNorm,Clinical Drug
+46287739,tacrolimus 1 MG Extended Release Oral Tablet,2,Drug,RxNorm,Clinical Drug
+702541,molnupiravir 200 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+702650,0.2 ML glucagon 5 MG/ML Injection,1,Drug,RxNorm,Quant Clinical Drug
+736020,risperidone 0.25 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+751282,lithium carbonate 250 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+785815,olanzapine 20 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+792654,abemaciclib 50 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+904131,triamcinolone 0.055 MG/ACTUAT Nasal Spray,1,Drug,RxNorm,Clinical Drug
+920300,nitrofurantoin 5 MG/ML Oral Suspension,1,Drug,RxNorm,Clinical Drug
+984236,isotretinoin 20 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+1126872,acetaminophen 100 MG/ML Oral Suspension,1,Drug,RxNorm,Clinical Drug
+1154197,montelukast 4 MG Chewable Tablet,1,Drug,RxNorm,Clinical Drug
+1301197,melatonin 5 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+1326437,digoxin 0.05 MG/ML Oral Solution,1,Drug,RxNorm,Clinical Drug
+1341176,temozolomide 5 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+1518490,dexamethasone phosphate 1 MG/ML Ophthalmic Solution,1,Drug,RxNorm,Clinical Drug
+1589573,levonorgestrel 1.5 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+1711272,entecavir 0.05 MG/ML Oral Solution,1,Drug,RxNorm,Clinical Drug
+1727254,atazanavir 300 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+1750299,povidone-iodine 75 MG/ML Topical Solution,1,Drug,RxNorm,Clinical Drug
+1776460,hydrogen peroxide 60 MG/ML Topical Solution,1,Drug,RxNorm,Clinical Drug
+1787125,maraviroc 300 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+1836449,sulfamethoxazole 40 MG/ML / trimethoprim 8 MG/ML Oral Suspension,1,Drug,RxNorm,Clinical Drug
+1836973,tetracycline hydrochloride 250 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+2929383,fluticasone 0.05 MG/ACTUAT Inhalation Solution,1,Drug,RxNorm Extension,Clinical Drug
+19005627,trimetazidine 20 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19005970,aspirin 300 MG Delayed Release Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19010174,diazepam 2 MG/ML Oral Suspension,1,Drug,RxNorm,Clinical Drug
+19023454,hydrochlorothiazide 12.5 MG / valsartan 160 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19036799,tolvaptan 15 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19057397,selenium sulfide 25 MG/ML Medicated Shampoo,1,Drug,RxNorm,Clinical Drug
+19057784,coal tar 25 MG/ML Medicated Shampoo,1,Drug,RxNorm,Clinical Drug
+19059358,ferrous sulfate 325 MG Extended Release Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19062573,dibucaine 1 MG / prednisolone 1.3 MG Rectal Suppository,1,Drug,RxNorm,Clinical Drug
+19062858,indoramin 20 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19062879,riboflavin 100 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+19065567,magnesium hydroxide 80 MG/ML Oral Suspension,1,Drug,RxNorm,Clinical Drug
+19073058,aminophylline 225 MG Extended Release Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19075010,cephalexin 25 MG/ML Oral Suspension,1,Drug,RxNorm,Clinical Drug
+19078756,lactic acid 167 MG/ML / salicylic acid 167 MG/ML Topical Solution,1,Drug,RxNorm,Clinical Drug
+19082374,temozolomide 100 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+19096752,olmesartan medoxomil 40 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19100680,isosorbide mononitrate 40 MG Extended Release Oral Capsule,1,Drug,RxNorm,Clinical Drug
+19101558,clonazepam 0.4 MG/ML Oral Solution,1,Drug,RxNorm,Clinical Drug
+19101635,acetaminophen 250 MG Disintegrating Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19101826,pentoxifylline 400 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19102169,ramipril 1.25 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19102171,olmesartan medoxomil 10 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19102222,atazanavir 200 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+19103496,alverine 60 MG / simethicone 300 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+19105493,acetaminophen 1000 MG Rectal Suppository,1,Drug,RxNorm,Clinical Drug
+19106241,sodium benzoate 500 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19107924,paromomycin 250 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19107935,ranitidine 300 MG Delayed Release Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19108062,trimetazidine 35 MG Extended Release Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19122475,lenalidomide 5 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+19123437,duloxetine 40 MG Delayed Release Oral Capsule,1,Drug,RxNorm,Clinical Drug
+19125747,temozolomide 180 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+19127433,amlodipine 5 MG / olmesartan medoxomil 20 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19133961,chlorhexidine gluconate 0.01 MG/MG Oral Gel,1,Drug,RxNorm,Clinical Drug
+19134124,tramadol hydrochloride 200 MG Extended Release Oral Capsule,1,Drug,RxNorm,Clinical Drug
+19134542,nifedipine 60 MG Extended Release Oral Capsule,1,Drug,RxNorm,Clinical Drug
+19134725,darifenacin 7.5 MG Extended Release Oral Tablet,1,Drug,RxNorm,Clinical Drug
+19134935,ropinirole 2 MG Extended Release Oral Tablet,1,Drug,RxNorm,Clinical Drug
+21025070,Sodium Chloride 50 MG/ML Ophthalmic Solution,1,Drug,RxNorm Extension,Clinical Drug
+21029313,24 HR Clonidine 0.00417 MG/HR Transdermal System,1,Drug,RxNorm Extension,Quant Clinical Drug
+21031145,Beclomethasone 0.1 MG/ACTUAT Dry Powder Inhaler,1,Drug,RxNorm Extension,Clinical Drug
+21032206,Naproxen 250 MG Delayed Release Oral Tablet by TEVA,1,Drug,RxNorm Extension,Marketed Product
+21032944,Ketoprofen 0.025 MG/MG Vaginal Gel,1,Drug,RxNorm Extension,Clinical Drug
+21041304,Perindopril 5 MG Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+21048956,24 HR Estradiol 0.00208 MG/HR / Levonorgestrel 0.000292 MG/HR Transdermal System,1,Drug,RxNorm Extension,Quant Clinical Drug
+21049939,500 ML Glucose 100 MG/ML / Potassium Chloride 1.5 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+21056210,Perindopril 10 MG Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+21058358,5 ML Acetaminophen 50 MG/ML Oral Suspension,1,Drug,RxNorm Extension,Quant Clinical Drug
+21070867,Indapamide 1.25 MG / Perindopril 5 MG Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+21071128,Acetic Acid 50 MG/ML Topical Solution,1,Drug,RxNorm Extension,Clinical Drug
+21082761,Tacrolimus 2 MG Oral Capsule,1,Drug,RxNorm Extension,Clinical Drug
+21098678,100 ML Alendronate 0.7 MG/ML Oral Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+21107895,24 HR Estradiol 0.000313 MG/HR Vaginal delivery system,1,Drug,RxNorm Extension,Quant Clinical Drug
+21118274,100 ML zoledronic acid 0.05 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+21127791,0.5 ML Tropicamide 10 MG/ML Ophthalmic Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+21128374,500 ML Glucose 50 MG/ML / Potassium Chloride 3 MG/ML / Sodium Chloride 4.5 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+21137160,16 HR Nicotine 0.938 MG/HR Transdermal System,1,Drug,RxNorm Extension,Quant Clinical Drug
+21149996,Azathioprine 10 MG/ML Oral Solution,1,Drug,RxNorm Extension,Clinical Drug
+21154230,ranolazine 750 MG Extended Release Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+21157007,16 HR Nicotine 0.625 MG/HR Transdermal System,1,Drug,RxNorm Extension,Quant Clinical Drug
+21167629,2.5 ML Albuterol 1 MG/ML / Ipratropium 0.2 MG/ML Inhalant Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+21167839,500 ML Sodium Bicarbonate 42 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+21167846,500 ML Glucose 25 MG/ML / Sodium Chloride 4.5 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+21172493,Digoxin 0.25 MG Oral Tablet by A A H,1,Drug,RxNorm Extension,Marketed Product
+35145008,Estradiol 1 MG Topical Gel,1,Drug,RxNorm Extension,Clinical Drug
+35157438,Budesonide 0.2 MG/ACTUAT Inhalation Powder,1,Drug,RxNorm Extension,Clinical Drug
+35408264,Minoxidil 0.05 MG/MG Topical Foam,1,Drug,RxNorm Extension,Clinical Drug
+35413917,20 ML Baclofen 0.5 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+35603140,carboxymethylcellulose sodium 10 MG/ML Ophthalmic Solution,1,Drug,RxNorm,Clinical Drug
+35748400,Budesonide 0.1 MG/ACTUAT / formoterol 0.006 MG/ACTUAT Inhalant Powder [Symbicort] by Astrazeneca,1,Drug,RxNorm Extension,Marketed Product
+35754942,Morphine 10 MG Extended Release Oral Tablet [Sevredol] by Napp,1,Drug,RxNorm Extension,Marketed Product
+35755446,Budesonide 0.2 MG/ACTUAT Inhalant Powder [Pulmicort] by Astrazeneca,1,Drug,RxNorm Extension,Marketed Product
+35776496,1 ML Flupenthixol 200 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+35777646,1 ML Scopolamine 0.4 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+35777926,1 ML Papaverine 40 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+35780718,5 ML Epinephrine 1 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+35782377,10 ML Morphine 1 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+35785384,0.4 ML Methotrexate 50 MG/ML Injectable Solution [Metoject] by Medac,1,Drug,RxNorm Extension,Marketed Product
+35785438,0.5 ML Interferon beta-1a 12000000 UNT/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+35785674,0.5 ML Methotrexate 50 MG/ML Injectable Solution [Metoject] by Medac,1,Drug,RxNorm Extension,Marketed Product
+35789497,500 ML Bupivacaine 1.05 MG/ML / Fentanyl 0.002 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+35789679,0.25 ML Follitropin Alfa 600 UNT/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+35896968,belantamab mafodotin 100 MG Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+36057753,tacrolimus 2 MG Extended Release Oral Capsule,1,Drug,RxNorm Extension,Clinical Drug
+36058997,paraffin 634 MG/ML Topical Solution [Oilatum] by Thornton & Ross,1,Drug,RxNorm Extension,Marketed Product
+36059271,cholecalciferol 50000 UNT Oral Capsule,1,Drug,RxNorm Extension,Clinical Drug
+36059301,cholecalciferol 4000 UNT Oral Capsule,1,Drug,RxNorm Extension,Clinical Drug
+36059383,cholecalciferol 400 UNT/ML Oral Solution,1,Drug,RxNorm Extension,Clinical Drug
+36059420,cholecalciferol 2200 UNT Oral Capsule,1,Drug,RxNorm Extension,Clinical Drug
+36059638,peppermint oil 200 MG Extended Release Oral Capsule,1,Drug,RxNorm Extension,Clinical Drug
+36063863,desmopressin 0.06 MG Buccal Film,1,Drug,RxNorm Extension,Clinical Drug
+36065445,caplacizumab 10 MG Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+36068527,beeswax 0.1 MG/MG / castor oil 0.5 MG/MG / cetostearyl alcohol 0.02 MG/MG / peanut oil 0.305 MG/MG / zinc oxide 0.075 MG/MG Topical Ointment,1,Drug,RxNorm Extension,Clinical Drug
+36073578,1000 MG estriol 0.00005 MG/MG Vaginal Gel,1,Drug,RxNorm Extension,Quant Clinical Drug
+36119786,dexrazoxane 500 MG Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+36121030,1 ML risankizumab 150 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+36404319,abatacept 250 MG Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+36404366,Lactate 0.05 MG/MG / Urea 0.1 MG/MG Topical Cream,1,Drug,RxNorm Extension,Clinical Drug
+36405128,Calcium Carbonate 250 MG Disintegrating Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+36412432,1.12 ML Progesterone 22.3 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+36418564,15 ML Lactulose 670 MG/ML Oral Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+36787736,ribociclib 200 MG Delayed Release Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+36808537,0.2 ML latanoprost 0.05 MG/ML / Timolol 5 MG/ML Ophthalmic Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+36809461,2.4 ML durvalumab 50 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+36813451,Solifenacin 1 MG/ML Oral Suspension,1,Drug,RxNorm Extension,Clinical Drug
+36883838,Minocycline 100 MG Delayed Release Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+36883959,Colistin 1000000 UNT Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+36885808,Glycerin 700 MG Rectal Suppository,1,Drug,RxNorm Extension,Clinical Drug
+36886790,fluticasone 0.5 MG/ACTUAT Inhalant Powder,1,Drug,RxNorm Extension,Clinical Drug
+36890701,Karaya Gum 0.62 MG/MG Oral Granules,1,Drug,RxNorm Extension,Clinical Drug
+36895078,1 ML Hepatitis B Surface Antigen Vaccine 0.02 MG/ML Injectable Suspension,1,Drug,RxNorm Extension,Quant Clinical Drug
+36895298,5 ML Baclofen 2 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+36895452,10 ML Etomidate 2 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+36895576,10 ML Alfentanil 0.5 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+36895606,10 ML oxaliplatin 5 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+36895875,25 ML Fluconazole 2 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+36896741,"250 ML Albumin Human, USP 45 MG/ML Injectable Solution",1,Drug,RxNorm Extension,Quant Clinical Drug
+36951548,1140 MG testosterone 0.02 MG/MG Topical Gel [Testavan] by Simple Company,1,Drug,RxNorm Extension,Marketed Product
+36952471,morphine 2.5 MG Disintegrating Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+36954351,2.63 ML paliperidone 200 MG/ML Injectable Suspension,1,Drug,RxNorm Extension,Quant Clinical Drug
+36966511,factor VIII 500 UNT / von Willebrand factor 1200 UNT Injectable Solution [Voncento] by Behring,1,Drug,RxNorm Extension,Marketed Product
+37496844,semaglutide 7 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+40101568,zolmitriptan Nasal Spray,1,Drug,RxNorm,Clinical Drug Form
+40162331,diclofenac sodium 12.5 MG Rectal Suppository,1,Drug,RxNorm,Clinical Drug
+40162361,diclofenac sodium 75 MG Extended Release Oral Capsule,1,Drug,RxNorm,Clinical Drug
+40167213,metoprolol tartrate 25 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+40168450,dextroamphetamine sulfate 5 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+40168549,balsalazide disodium 750 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+40174372,ibandronic acid 50 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+40175280,olsalazine sodium 250 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+40177814,amiloride hydrochloride 1 MG/ML Oral Solution,1,Drug,RxNorm,Clinical Drug
+40221552,codeine phosphate 5 MG/ML Oral Solution,1,Drug,RxNorm,Clinical Drug
+40223901,miconazole nitrate 0.02 MG/MG Topical Powder,1,Drug,RxNorm,Clinical Drug
+40226581,fingolimod 0.5 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+40232707,oxycodone hydrochloride 10 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+40234301,etravirine 200 MG Oral Tablet,1,Drug,RxNorm,Clinical Drug
+40242681,crizotinib 250 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+40243109,tapentadol 150 MG Extended Release Oral Tablet,1,Drug,RxNorm,Clinical Drug
+40243834,fluocinolone acetonide 0.00025 MG/MG Topical Gel,1,Drug,RxNorm,Clinical Drug
+40708087,1000 MG Clindamycin 0.02 MG/MG Topical Cream,1,Drug,RxNorm Extension,Quant Clinical Drug
+40708441,1000 MG imiquimod 0.05 MG/MG Topical Cream,1,Drug,RxNorm Extension,Quant Clinical Drug
+40711907,"127 ML Dibasic potassium phosphate 80 MG/ML / Sodium Phosphate, Monobasic 96.4 MG/ML Rectal Solution",1,Drug,RxNorm Extension,Quant Clinical Drug
+40719412,0.5 ML Etanercept 50 MG/ML Injectable Solution [Benepali] by Biogen,1,Drug,RxNorm Extension,Marketed Product
+40723541,Levonorgestrel 13.5 MG Intrauterine System,1,Drug,RxNorm Extension,Clinical Drug
+40725833,carbomer homopolymer type c 0.002 MG/MG Ophthalmic Solution by Medicom,1,Drug,RxNorm Extension,Marketed Product
+40732201,Carbimazole 15 MG Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+40746786,Botulinum Toxin Type A 100 UNT Injectable Solution [Xeomin] by Merz,1,Drug,RxNorm Extension,Marketed Product
+40751660,Mineral Oil 0.5 MG/MG / Petrolatum 0.5 MG/MG Topical Ointment [KreaMoint] by Essential,1,Drug,RxNorm Extension,Marketed Product
+40752526,Cholecalciferol 2500 UNT Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+40753638,calcium lactate 300 MG / calcium phosphate 150 MG / Ergocalciferol 0.01 MG Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+40866843,infliximab 100 MG Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+40927375,Tacrolimus 0.2 MG Oral Granules,1,Drug,RxNorm Extension,Clinical Drug
+40931275,bendamustine 25 MG Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+40992183,fesoterodine 4 MG Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+40993349,carfilzomib 60 MG Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+41023071,Floxacillin 2000 MG Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+41147358,Nystatin 100000 UNT Vaginal Suppository,1,Drug,RxNorm Extension,Clinical Drug
+41181859,Alprostadil 0.02 MG Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+41271223,Povidone-Iodine 100 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+41332823,1 ML Cosyntropin 0.25 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+41337606,1 ML Haloperidol 100 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+41339977,2 ML heparin 100 UNT/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+41340511,2 ML Diazepam 5 MG/ML Injectable Suspension,1,Drug,RxNorm Extension,Quant Clinical Drug
+41356564,5 ML irinotecan 20 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+41357654,5 ML pamidronate 3 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+41368049,10 ML Methylene blue 5 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+41369594,10 ML Acetaminophen 10 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+41370362,10 ML pamidronate 9 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+41390816,50 ML Dobutamine 5 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+41415644,100 ML mesalamine 10 MG/ML Rectal Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+42479168,atorvastatin 20 MG Chewable Tablet,1,Drug,RxNorm Extension,Clinical Drug
+42483375,"Estrogens, Conjugated (USP) 0.3 MG / Medroxyprogesterone 1.5 MG Extended Release Oral Tablet",1,Drug,RxNorm Extension,Clinical Drug
+42683811,3 ML Insulin Glargine 300 UNT/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+42707583,diclofenac sodium 100 MG Delayed Release Oral Tablet,1,Drug,RxNorm,Clinical Drug
+42707772,dihydrocodeine bitartrate 120 MG Extended Release Oral Tablet,1,Drug,RxNorm,Clinical Drug
+43178343,Lamivudine 150 MG Delayed Release Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+43183077,erlotinib 25 MG Delayed Release Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+43207187,Ursodeoxycholate 250 MG Delayed Release Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+43288984,mesalamine 500 MG Oral Granules,1,Drug,RxNorm Extension,Clinical Drug
+43532833,lenalidomide 20 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+43589788,1 ML Methotrexate 25 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+43590815,2 ML Flupenthixol 20 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+43632177,2.5 ML Somatropin 8 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+43663389,4 ML Mesna 100 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+43687764,0.35 ML Aviptadil 0.0714 MG/ML / Phentolamine 5.71 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+43694759,Alprostadil 0.003 MG/MG Topical Cream,1,Drug,RxNorm Extension,Clinical Drug
+43716079,1 ML Testosterone 250 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+43812816,5.5 ML Buserelin 1 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+43843445,5 ML Doxapram 20 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+43864220,0.2 ML Dalteparin 12500 UNT/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+44045540,Leuprolide 3.75 MG Injectable Suspension,1,Drug,RxNorm Extension,Clinical Drug
+44058844,degarelix 120 MG Injectable Solution,1,Drug,RxNorm Extension,Clinical Drug
+44084611,Clotrimazole 200 MG Vaginal Suppository,1,Drug,RxNorm Extension,Clinical Drug
+44094627,"diphtheria toxoid vaccine, inactivated / Pertussis Vaccine / poliovirus vaccine inactivated, type 1 (Mahoney) / poliovirus vaccine inactivated, type 2 (MEF-1) / poliovirus vaccine inactivated, type 3 (Saukett) / ... Injectable Suspension",1,Drug,RxNorm Extension,Clinical Drug Form
+44110637,bosentan monohydrate 125 MG Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+44129917,1 ML paliperidone 100 MG/ML Injectable Suspension,1,Drug,RxNorm Extension,Quant Clinical Drug
+44132782,0.5 ML ganirelix 0.5 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+44135574,0.45 ML Methotrexate 50 MG/ML Injectable Solution,1,Drug,RxNorm Extension,Quant Clinical Drug
+44187749,Acetylcysteine 600 MG Disintegrating Oral Tablet,1,Drug,RxNorm Extension,Clinical Drug
+46221438,panobinostat 10 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+46221444,panobinostat 15 MG Oral Capsule,1,Drug,RxNorm,Clinical Drug
+46221484,fentanyl 0.0375 MG/HR Transdermal System,1,Drug,RxNorm,Clinical Drug

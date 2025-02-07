@@ -1,0 +1,198 @@
+---
+title: "Outline of how drugs are coded in UCLH, standardised to OMOP and can be classified using ATC"
+output:
+  html_document:
+    keep_md: true
+author: Andy South
+date: "2024-12-03"
+---
+
+<!-- *.md is generated from `*.Rmd` in /dynamic-docs/, to update edit `*.Rmd`, re-knit, copy `*.md` & the `*_files` folder to root, delete YAML header so it displays better in Github, don't delete `.html` because that will delete folder and images used by the md. We can automate this process later. -->
+
+
+This document introduces how drug data are stored in UCLH, how they are standardised to OMOP and how they can be classified into generic groupings (e.g. ANTIBACTERIALS FOR SYSTEMIC USE) using [ATC](https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/atc.html) (Anatomical Therapeutic Chemical Classification System) a WHO drug classification incorporated within OMOP.  
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## Installing & loading required packages
+```{r packages}
+
+# install omopcept from Github if not installed
+if (!requireNamespace("omopcept", quietly=TRUE)) 
+{
+  if (!requireNamespace("remotes", quietly=TRUE)) install.packages("remotes")
+  remotes::install_github("SAFEHR-data/omopcept")
+}
+
+library(readr)
+library(dplyr)
+library(here)
+library(gh)
+library(omopcept)
+library(ggplot2)
+library(stringr)
+library(lubridate)
+library(knitr) #for kable
+
+```
+
+## Reading in OMOP drug data 
+
+Here we will read in some example drug data stored in this repository. These data are a subset of rows and columns from the OMOP `drug_exposure` table with 1 row per unique drug and only those columns that are useful here.
+
+
+```{r download-omop}
+
+#TODO copy drugs_omop_unique.csv from omop_analyses & look at it
+
+datafolder <- here("dynamic-docs/03-drugs-uclh-omop/data")
+
+#using omopcept to read in a table, could use readr
+drugs_unique <- omop_cdm_table_read("drugs_omop_unique",path = datafolder, filetype = "csv")
+
+# names() can show us names of the tables read in
+names(drugs_unique)
+
+# join on vocabulary_id for concept_id & maybe drug_source_concept_id (expect all to be dm+d)
+
+drugs_unique <- drugs_unique |> 
+  #remove concept_name temporarily due to issue in omopcept
+  select(-drug_concept_name) |> 
+  omopcept::omop_join_name(namefull="drug_concept_id",columns=c("concept_name","domain_id","vocabulary_id","concept_class_id"))
+
+
+
+#this is how file created, may be better to move join_names bit into here & make the data file closer to
+#the drug_exposure table
+# drugs_unique <- omde |> 
+#   #group_by(drug_concept_id) |> 
+#   #slice_head(n=1) #|> 
+#   #select(drug_concept_id) |> 
+#   #count replaces above 3 lines & gives num rows
+#   count(drug_concept_id, sort=TRUE) |> 
+#   omopcept::omop_join_name_all(columns=c("concept_name","domain_id","vocabulary_id","concept_class_id"))
+
+# #to use in documentation
+# write_csv(drugs_unique, "drugs_omop_unique.csv")
+
+```
+
+
+These data show us that drugs exported to OMOP from UCLH are in the vocabularies either `RxNorm` or `RxNormExtension` & concept_class_id of mostly either `Clinical Drug` or `Quant Clinical Drug`.
+
+```{r summarise drug standardisation}
+
+#note kable is a knitr function to display tables in a markdown file
+count(drugs_unique, vocabulary_id, sort=TRUE) |> kable()
+count(drugs_unique, concept_class_id, sort=TRUE)  |> kable()
+
+```
+
+These data show us that drug records come from different places and have different administration routes.
+
+```{r where drug records come from}
+
+count(drugs_unique, drug_type_concept_name, sort=TRUE) |> kable()
+#filtering the top 10
+count(drugs_unique, route_concept_name, sort=TRUE) |> filter(row_number()<11) |>  kable()
+
+```
+
+## drug standardisation process at UCLH
+
+Drug records at UCLH are stored in our Electronic Health Record (EPIC) with as a `MedicationKey` value. Our OMOP extraction system translates this to an identifier in the NHS dictionary of medicines and devices (**dm+d**). `dm+d` is included in OMOP so there are values of OMOP concept_id for each dm+d. However because dm+d is not a standard vocabulary in OMOP we need to translate it once more to get to a standard OMOP id that can potentially be used in collaborative studies. The standard vocabularies for drugs in OMOP are **RxNorm** and **RxNormExtension**. Thus the `drug_concept_id` in UCLH OMOP extracts will either be in `RxNorm` or `RxNormExtension`.
+
+Note that the OMOP vocabularies have a dated representation of `dm+d` codes so some `dm+d` codes don't map to an OMOP or `RxNorm` equivalent.
+
+## drug hierarchies
+
+Different drug vocabularies each have a hierarchy that allows them to represent and query drugs at various levels of granularity. 
+
+For example at increasing levels of granularity a vocabulary could represent, say, paracetomol as
+1. a generic active ingredient
+1. the ingredient in a particular form such as a tablet
+1. a box of tablets of a defined size
+1. a commercially available product of a defined size and manufacturer
+
+
+## Anatomical Therapeutic Chemical Classification System (ATC) for drug classification
+
+[ATC](https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/atc.html) is a WHO drug classification incorporated within OMOP. ATC has five different levels that classify according to the organ or system on which the drug acts plus therapeutic, pharmacological, and chemical properties of the drug. 	
+	
+ATC Level | Description | Number of codes | Example code | Example name
+--|-----|---|-----|-----------------
+1 |anatomical main group|14|A|Alimentary tract and metabolism
+2 |therapeutic subgroup|94|A10|Drugs used in diabetes
+3 |pharmacological subgroup|267|A10B|Blood glucose lowering drugs, excl. insulins
+4 |chemical subgroup|889|A10BA|Biguanides
+5 |chemical substance|5067|A10BA02|metformin
+
+The OMOP vocabularies contain ATC and it can be used to classify and query drugs.
+	
+The [omopcept package](https://github.com/SAFEHR-data/omopcept) developed at UCLH, and installed above, has a function for creating a drug classification lookup table using ATC.	
+
+Here we create the drug lookup and view the top rows.
+	
+```{r creating drug lookup table}
+
+drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique)
+
+drug_lookup |> head(6) |> kable()  
+
+```
+	
+We can select a single drug concept (`amoxicillin 500 MG Oral Capsule`) and see which ATC classes it appears in.	
+
+```{r amoxicillin ATC}
+
+drug_lookup |> 
+  filter(drug_concept_name == "amoxicillin 500 MG Oral Capsule") |> 
+  kable()  
+
+```
+
+Alternatively we can filter all drugs that appear in a particular ATC level and class (in this case "ANTIBACTERIALS FOR SYSTEMIC USE" from ATC level 2). 
+
+```{r ATC antibacterials}
+
+antibacterials <- drug_lookup |> 
+  filter(ATC_concept_name == "ANTIBACTERIALS FOR SYSTEMIC USE") 
+
+nrow(antibacterials)
+
+#display top 10
+antibacterials |> 
+  filter(row_number()<11) |>  kable()
+
+
+```
+
+
+TO BE CONTINUED ...
+DRAFT MATERIAL BELOW
+TODO 
+is this true : Note that the `dm+d` codes are more granular than `RxNorm` so the mapping can go from 1 to many.
+
+add link to drug_exposure table description :
+https://ohdsi.github.io/CommonDataModel/cdm54.html#drug_exposure
+
+check issue in omopcept when concept_name not included in join columns
+
+This is where uclh drugs are mapped in omop_es
+https://github.com/uclh-criu/omop_es/blob/3c36642b3a24944da7feb0fd214088241cf1990b/mapping/UCLH/epic_common/medication_component_common.R
+
+Comments there : 
+
+Maps from EPIC MedicationKey to OMOP concept_id and, if applicable, a standard drug_concept_id via the following stages:
+
+EPIC MedKey -> dm+d -> dm+d concept (OMOP Non-Std) -> RxNORM **Ext** OMOP (OMOP Std)
+
+Note that this is a 1-M-M mapping process
+
+For this reason a score is assigned that ranks full over partial mapping and devices over drugs
+
+The dm+d concept_id (omop?) should be in drug_source_concept_id
+
+also route_concept_id & route_source_concept_id should be useful
