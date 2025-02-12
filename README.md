@@ -7,7 +7,7 @@ This repository hosts a growing collection of documentation for working with UCL
 Contributions are welcome, reach out & see the guide to [contributing](CONTRIBUTING.md).
 
 Help file | language | content
--------------------------- | ------------------------------
+----------------------- | --- | ---------------------------
 [01-clinical-data-omop-intro](01-clinical-data-omop-intro.md) | agnostic | intro to clinical data & OMOP   
 [02-omop-walkthrough-critical-care](02-omop-walkthrough-critical-care.md) | R | reading in UCLH synthetic data in OMOP format & first exploration  
 [02B-Python-Omop-walkthrough-critical-care](02B-Python-Omop-walkthrough-critical-care.md) | Python | as above
