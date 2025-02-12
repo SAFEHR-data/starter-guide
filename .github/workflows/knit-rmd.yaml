@@ -1,0 +1,55 @@
+name: Knit Rmd Files
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  knit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Setup pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        # Only pull current branch, not the merge outcome so that we can commit the output
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Setup Renv
+        uses: r-lib/actions/setup-renv@v2
+        env:
+          GITHUB_PAT: ${{ secrets.READ_OMOPCEPT_PAT }}
+
+      - name: Find and knit Rmd files
+        run: |
+          Rscript -e '
+            rmd_files <- list.files(path = "dynamic-docs", pattern = "\\.Rmd$", recursive = TRUE, full.names = TRUE)
+            for (file in rmd_files) {
+              rmarkdown::render(file, output_format = "md_document", output_dir = ".")
+            }
+          '
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Knit Rmd files" || echo "No changes to commit"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          branch: ${{ github.head_ref || github.ref_name }}

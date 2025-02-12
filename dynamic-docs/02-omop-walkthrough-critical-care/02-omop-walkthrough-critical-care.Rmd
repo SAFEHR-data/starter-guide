@@ -7,7 +7,10 @@ author: Andy South
 date: "2024-12-03"
 ---
 
-<!-- *.md is generated from `*.Rmd` in /dynamic-docs/, to update edit `*.Rmd`, re-knit, copy `*.md` & the `*_files` folder to root, delete YAML header so it displays better in Github, don't delete `.html` because that will delete folder and images used by the md. We can automate this process later. -->
+<!-- 
+  *.md is generated from `*.Rmd` in /dynamic-docs/, this is updated in a github action,
+  you can regenerate this by running the "Find and knit Rmd files" step from the github action.
+-->
 
 
 This document is an introductory walkthrough, demonstrating how to read into R some OMOP data from a series of csv files, join on concept names and explore and visualise the data.
@@ -19,6 +22,10 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
 ## Installing & loading required packages
+
+If any of the `library($PACKAGE)` packages aren't installed, you can install them by running `install.packages("$PACKAGE")`,
+replacing `$PACKAGE` with the package name.
+
 ```{r packages}
 
 # install omopcept from Github if not installed
@@ -55,10 +62,10 @@ if (! file.exists(file.path(destdata,"person.csv")))
 {
   # Make GitHub API request to list contents of given path
   response <- gh::gh(glue::glue("/repos/{repo}/contents/{path}"))
-  
+
   # Download all files to the destination dir
   purrr::walk(response, ~ download.file(.x$download_url, destfile = file.path(destdata, .x$name)))
-  
+
   list.files(destdata)
 }
 
@@ -119,7 +126,7 @@ omop_named <- omop |> omop_join_name_all()
 names(omop_named$person) |> str_subset("name")
 
 # now the gender name column can be used in the plot
-ggplot(omop_named$person, aes(x=year_of_birth, fill = as.factor(gender_concept_name))) +
+ggplot(omop_named$person, aes(x=year_of_birth, fill=as.factor(gender_concept_name))) +
   geom_bar() +
   theme_minimal()
 
@@ -199,7 +206,12 @@ joined_mp <- omop_named$measurement |>
 
 freq_top_measures <- joined_mp |> 
   count(measurement_concept_name,gender_concept_name, sort=TRUE) |> 
-  filter(n > 1)
+  filter(n > 1) |> 
+  #TODO not sure why collect() needed here
+  #but without it the following ggplot erros with
+  #Error in `fortify()`:! `data` must be a <data.frame>, or an object coercible by
+  #something to do with arrow tables ?
+  collect()
 
 #plot
 freq_top_measures |> 
