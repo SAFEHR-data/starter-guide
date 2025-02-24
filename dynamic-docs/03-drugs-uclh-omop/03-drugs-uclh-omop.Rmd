@@ -35,6 +35,7 @@ library(ggplot2)
 library(stringr)
 library(lubridate)
 library(knitr) #for kable
+library(DiagrammeR)
 
 ```
 
@@ -102,9 +103,45 @@ count(drugs_unique, route_concept_name, sort=TRUE) |> filter(row_number()<11) |>
 
 ## drug standardisation process at UCLH
 
+
+```{r diagram uclh drug, echo=FALSE}
+grViz("
+digraph uclh_drug_mapping {
+
+  graph [overlap = true, fontsize = 4] #, orientation=L]
+
+  # nodes
+  node [shape = box,
+        fontname = Helvetica]
+  1[label='1. EPIC_ID'];
+  2[label='2. dm+d code'];
+  3[label='3. OMOP concept_id\ndm+d'];
+  4[label='4. OMOP concept_id\nRxNorm & Extension']
+
+  # edges
+  1->2->3->4
+}
+")
+```
+
+
 Drug records at UCLH are stored in our Electronic Health Record (EPIC) with as a `MedicationKey` value. Our OMOP extraction system translates this to an identifier in the NHS dictionary of medicines and devices (**dm+d**). `dm+d` is included in OMOP so there are values of OMOP concept_id for each dm+d. However because dm+d is not a standard vocabulary in OMOP we need to translate it once more to get to a standard OMOP id that can potentially be used in collaborative studies. The standard vocabularies for drugs in OMOP are **RxNorm** and **RxNormExtension**. Thus the `drug_concept_id` in UCLH OMOP extracts will either be in `RxNorm` or `RxNormExtension`.
 
 Note that the OMOP vocabularies have a dated representation of `dm+d` codes so some `dm+d` codes don't map to an OMOP or `RxNorm` equivalent.
+
+TODO add example with names & codes
+
+```{r table drug codes in omop, echo=FALSE}
+
+tbl1 <- tibble(
+  omop_field_name = c('drug_concept_id','drug_concept_name','drug_source_concept','drug_source_value'),
+  vocabulary = c('OMOP RxNorm/Extension ID','OMOP RxNorm/Extension Name','OMOP dm+d ID','dm+d ID'),
+  in_diagram_above = c("4","4b","3","2"),
+  example = c('?','?','?','/'))
+  
+kable(tbl1)
+  
+```
 
 ## drug hierarchies
 
@@ -173,6 +210,12 @@ antibacterials |>
 TO BE CONTINUED ...
 DRAFT MATERIAL BELOW
 TODO 
+
+~ look at drug_source_concept_name for drugs that have a drug_concept_id of 0
+~ (add to other docs about what *concept_id of 0 means)
+
+
+
 is this true : Note that the `dm+d` codes are more granular than `RxNorm` so the mapping can go from 1 to many.
 
 add link to drug_exposure table description :
