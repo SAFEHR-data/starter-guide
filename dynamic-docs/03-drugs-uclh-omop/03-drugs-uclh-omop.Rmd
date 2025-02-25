@@ -35,8 +35,6 @@ library(ggplot2)
 library(stringr)
 library(lubridate)
 library(knitr) #for kable
-library(DiagrammeR)
-
 ```
 
 ## Reading in OMOP drug data 
@@ -162,9 +160,10 @@ Here we create the drug lookup and view the top rows.
 	
 ```{r creating drug lookup table}
 
-drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique)
+drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique) |>
+  arrange(drug_concept_name, ATC_level)
 
-drug_lookup |> arrange(drug_concept_name, ATC_level) |> head(6)  |> kable()
+drug_lookup |> head(6)  |> kable()
 
 ```
 	
@@ -173,8 +172,8 @@ We can select a single drug concept (`amoxicillin 500 MG Oral Capsule`) and see 
 ```{r amoxicillin ATC}
 
 drug_lookup |> 
-  filter(drug_concept_name == "amoxicillin 500 MG Oral Capsule") |> 
-  kable()  
+  filter(drug_concept_name == "amoxicillin 500 MG Oral Capsule") |>
+  kable()
 
 ```
 
