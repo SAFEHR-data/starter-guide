@@ -236,8 +236,8 @@ different administration routes.
 
 ## drug standardisation process at UCLH
 
-<div class="grViz html-widget html-fill-item" id="htmlwidget-63023fb2d55ba36515fc" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-63023fb2d55ba36515fc">{"x":{"diagram":"\ndigraph uclh_drug_mapping {\n\n  graph [overlap = true, fontsize = 4] #, orientation=L]\n\n  # nodes\n  node [shape = box,\n        fontname = Helvetica]\n  1[label=\"1. EPIC_ID\"];\n  2[label=\"2. dm+d code\"];\n  3[label=\"3. OMOP concept_id\ndm+d\"];\n  4[label=\"4. OMOP concept_id\nRxNorm & Extension\"]\n\n  # edges\n  1->2->3->4\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-3f754268bf00922cad9a" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-3f754268bf00922cad9a">{"x":{"diagram":"\ndigraph uclh_drug_mapping {\n\n  graph [overlap = true, fontsize = 4] #, orientation=L]\n\n  # nodes\n  node [shape = box,\n        fontname = Helvetica]\n  1[label=\"1. EPIC_ID\"];\n  2[label=\"2. dm+d code\"];\n  3[label=\"3. OMOP concept_id\ndm+d\"];\n  4[label=\"4. OMOP concept_id\nRxNorm & Extension\"]\n\n  # edges\n  1->2->3->4\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
 Drug records at UCLH are stored in our Electronic Health Record (EPIC)
 with as a `MedicationKey` value. Our OMOP extraction system translates
@@ -384,7 +384,7 @@ Here we create the drug lookup and view the top rows.
 
     drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique)
 
-    drug_lookup |> head(6) |> kable()  
+    drug_lookup |> head(6) |> arrange(drug_concept_name) |> kable()
 
 <table>
 <colgroup>
@@ -409,9 +409,9 @@ Here we create the drug lookup and view the top rows.
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">4 ML Bupivacaine 5 MG/ML / Glucose 80
-MG/ML Injectable Solution</td>
-<td style="text-align: right;">41351601</td>
+<td style="text-align: left;">20 ML Labetalol 5 MG/ML Injectable
+Solution</td>
+<td style="text-align: right;">41377080</td>
 <td style="text-align: left;">Quant Clinical Drug</td>
 <td style="text-align: left;">1</td>
 <td style="text-align: left;">CARDIOVASCULAR SYSTEM</td>
@@ -419,9 +419,9 @@ MG/ML Injectable Solution</td>
 <td style="text-align: right;">21601237</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">5 ML regadenoson 0.08 MG/ML Injectable
-Solution</td>
-<td style="text-align: right;">41353334</td>
+<td style="text-align: left;">4 ML Bupivacaine 5 MG/ML / Glucose 80
+MG/ML Injectable Solution</td>
+<td style="text-align: right;">41351601</td>
 <td style="text-align: left;">Quant Clinical Drug</td>
 <td style="text-align: left;">1</td>
 <td style="text-align: left;">CARDIOVASCULAR SYSTEM</td>
@@ -439,9 +439,9 @@ Solution</td>
 <td style="text-align: right;">21601237</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">20 ML Labetalol 5 MG/ML Injectable
+<td style="text-align: left;">5 ML regadenoson 0.08 MG/ML Injectable
 Solution</td>
-<td style="text-align: right;">41377080</td>
+<td style="text-align: right;">41353334</td>
 <td style="text-align: left;">Quant Clinical Drug</td>
 <td style="text-align: left;">1</td>
 <td style="text-align: left;">CARDIOVASCULAR SYSTEM</td>
@@ -449,8 +449,9 @@ Solution</td>
 <td style="text-align: right;">21601237</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">atorvastatin 20 MG Chewable Tablet</td>
-<td style="text-align: right;">42479168</td>
+<td style="text-align: left;">Losartan 100 MG Delayed Release Oral
+Tablet</td>
+<td style="text-align: right;">43160339</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">1</td>
 <td style="text-align: left;">CARDIOVASCULAR SYSTEM</td>
@@ -458,9 +459,8 @@ Solution</td>
 <td style="text-align: right;">21601237</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Losartan 100 MG Delayed Release Oral
-Tablet</td>
-<td style="text-align: right;">43160339</td>
+<td style="text-align: left;">atorvastatin 20 MG Chewable Tablet</td>
+<td style="text-align: right;">42479168</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">1</td>
 <td style="text-align: left;">CARDIOVASCULAR SYSTEM</td>
@@ -522,21 +522,12 @@ PENICILLINS</td>
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
 <td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">amoxicillin; systemic</td>
-<td style="text-align: left;">J01CA04</td>
-<td style="text-align: right;">21602823</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
-<td style="text-align: right;">19073187</td>
-<td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">1</td>
 <td style="text-align: left;">ANTIINFECTIVES FOR SYSTEMIC USE</td>
 <td style="text-align: left;">J</td>
 <td style="text-align: right;">21602795</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
 <td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
@@ -544,6 +535,15 @@ PENICILLINS</td>
 <td style="text-align: left;">Penicillins with extended spectrum</td>
 <td style="text-align: left;">J01CA</td>
 <td style="text-align: right;">21602819</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">amoxicillin; systemic</td>
+<td style="text-align: left;">J01CA04</td>
+<td style="text-align: right;">21602823</td>
 </tr>
 </tbody>
 </table>
@@ -563,15 +563,15 @@ level 2).
     antibacterials |> 
       filter(row_number()<11) |>  kable()
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col style="width: 38%" />
-<col style="width: 9%" />
-<col style="width: 13%" />
-<col style="width: 5%" />
-<col style="width: 18%" />
-<col style="width: 5%" />
-<col style="width: 8%" />
+<col style="width: 29%" />
+<col style="width: 10%" />
+<col style="width: 14%" />
+<col style="width: 6%" />
+<col style="width: 21%" />
+<col style="width: 6%" />
+<col style="width: 10%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -586,9 +586,8 @@ level 2).
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">nitrofurantoin 5 MG/ML Oral
-Suspension</td>
-<td style="text-align: right;">920300</td>
+<td style="text-align: left;">erythromycin 25 MG/ML Oral Suspension</td>
+<td style="text-align: right;">1747204</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
@@ -596,9 +595,8 @@ Suspension</td>
 <td style="text-align: right;">21602796</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">amoxicillin 500 MG / clavulanate 125 MG
-Oral Tablet</td>
-<td style="text-align: right;">1713694</td>
+<td style="text-align: left;">ciprofloxacin 250 MG Oral Tablet</td>
+<td style="text-align: right;">1797515</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
@@ -606,9 +604,8 @@ Oral Tablet</td>
 <td style="text-align: right;">21602796</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">amoxicillin 50 MG/ML / clavulanate 12.5
-MG/ML Oral Suspension</td>
-<td style="text-align: right;">1759879</td>
+<td style="text-align: left;">trimethoprim 10 MG/ML Oral Suspension</td>
+<td style="text-align: right;">19010210</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
@@ -616,9 +613,8 @@ MG/ML Oral Suspension</td>
 <td style="text-align: right;">21602796</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">sulfamethoxazole 40 MG/ML / trimethoprim 8
-MG/ML Oral Suspension</td>
-<td style="text-align: right;">1836449</td>
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
@@ -626,8 +622,8 @@ MG/ML Oral Suspension</td>
 <td style="text-align: right;">21602796</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">floxacillin 250 MG Oral Capsule</td>
-<td style="text-align: right;">19054940</td>
+<td style="text-align: left;">cephalexin 25 MG/ML Oral Suspension</td>
+<td style="text-align: right;">19075010</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
@@ -635,8 +631,9 @@ MG/ML Oral Suspension</td>
 <td style="text-align: right;">21602796</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">floxacillin 500 MG Oral Capsule</td>
-<td style="text-align: right;">19054961</td>
+<td style="text-align: left;">amdinocillin pivoxil 200 MG Oral
+Tablet</td>
+<td style="text-align: right;">19088224</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
@@ -644,36 +641,39 @@ MG/ML Oral Suspension</td>
 <td style="text-align: right;">21602796</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">azithromycin 250 MG Oral Tablet</td>
-<td style="text-align: right;">19073777</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">cephalexin 250 MG Oral Tablet</td>
-<td style="text-align: right;">19075035</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Colistin 1000000 UNT Inhalant Powder</td>
-<td style="text-align: right;">21105909</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">cefiderocol 1000 MG Injectable
+<td style="text-align: left;">2 ML Amikacin 50 MG/ML Injectable
 Solution</td>
-<td style="text-align: right;">35885672</td>
+<td style="text-align: right;">35778231</td>
+<td style="text-align: left;">Quant Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">temocillin 1000 MG Injectable
+Solution</td>
+<td style="text-align: right;">36403559</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fosfomycin 4000 MG Injectable
+Solution</td>
+<td style="text-align: right;">36404386</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fosfomycin 2000 MG Injectable
+Solution</td>
+<td style="text-align: right;">36405164</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
