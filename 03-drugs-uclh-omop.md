@@ -1,289 +1,719 @@
-# Outline of how drugs are coded in UCLH, standardised to OMOP and can be classified using ATC
-
-author: Andy South
-date: "2024-12-03"
-
-
 <!-- *.md is generated from `*.Rmd` in /dynamic-docs/, to update edit `*.Rmd`, re-knit, copy `*.md` & the `*_files` folder to root, delete YAML header so it displays better in Github, don't delete `.html` because that will delete folder and images used by the md. We can automate this process later. -->
 
-
-This document introduces how drug data are stored in UCLH, how they are standardised to OMOP and how they can be classified into generic groupings (e.g. ANTIBACTERIALS FOR SYSTEMIC USE) using [ATC](https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/atc.html) (Anatomical Therapeutic Chemical Classification System) a WHO drug classification incorporated within OMOP.  
-
-
+This document introduces how drug data are stored in UCLH, how they are
+standardised to OMOP and how they can be classified into generic
+groupings (e.g. ANTIBACTERIALS FOR SYSTEMIC USE) using
+[ATC](https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/atc.html)
+(Anatomical Therapeutic Chemical Classification System) a WHO drug
+classification incorporated within OMOP.
 
 ## Installing & loading required packages
 
-``` r
-# install omopcept from Github if not installed
-if (!requireNamespace("omopcept", quietly=TRUE)) 
-{
-  if (!requireNamespace("remotes", quietly=TRUE)) install.packages("remotes")
-  remotes::install_github("SAFEHR-data/omopcept")
-}
+    # install omopcept from Github if not installed
+    if (!requireNamespace("omopcept", quietly=TRUE)) 
+    {
+      if (!requireNamespace("remotes", quietly=TRUE)) install.packages("remotes")
+      remotes::install_github("SAFEHR-data/omopcept")
+    }
 
-library(readr)
-library(dplyr)
-library(here)
-library(gh)
-library(omopcept)
-library(ggplot2)
-library(stringr)
-library(lubridate)
-library(knitr) #for kable
-```
+    library(readr)
+    library(dplyr)
+    library(here)
+    library(gh)
+    library(omopcept)
+    library(ggplot2)
+    library(stringr)
+    library(lubridate)
+    library(knitr) #for kable
+    library(DiagrammeR)
 
-## Reading in OMOP drug data 
+## Reading in OMOP drug data
 
-Here we will read in some example drug data stored in this repository. These data are a subset of rows and columns from the OMOP `drug_exposure` table with 1 row per unique drug and only those columns that are useful here.
+Here we will read in some example drug data stored in this repository.
+These data are a subset of rows and columns from the OMOP
+`drug_exposure` table with 1 row per unique drug and only those columns
+that are useful here.
 
+    #TODO copy drugs_omop_unique.csv from omop_analyses & look at it
 
+    datafolder <- here("dynamic-docs/03-drugs-uclh-omop/data")
 
-``` r
-#TODO copy drugs_omop_unique.csv from omop_analyses & look at it
+    #using omopcept to read in a table, could use readr
+    drugs_unique <- omop_cdm_table_read("drugs_omop_unique",path = datafolder, filetype = "csv")
 
-datafolder <- here("dynamic-docs/03-drugs-uclh-omop/data")
+    # names() can show us names of the tables read in
+    names(drugs_unique)
 
-#using omopcept to read in a table, could use readr
-drugs_unique <- omop_cdm_table_read("drugs_omop_unique",path = datafolder, filetype = "csv")
+    ##  [1] "drug_concept_id"          "drug_concept_name"       
+    ##  [3] "drug_type_concept_id"     "drug_type_concept_name"  
+    ##  [5] "quantity"                 "route_concept_id"        
+    ##  [7] "route_concept_name"       "drug_source_value"       
+    ##  [9] "drug_source_concept_id"   "drug_source_concept_name"
+    ## [11] "route_source_value"       "dose_unit_source_value"
 
-# names() can show us names of the tables read in
-names(drugs_unique)
-```
+    # join on vocabulary_id for concept_id & maybe drug_source_concept_id (expect all to be dm+d)
 
-```
-##  [1] "drug_concept_id"          "drug_concept_name"       
-##  [3] "drug_type_concept_id"     "drug_type_concept_name"  
-##  [5] "quantity"                 "route_concept_id"        
-##  [7] "route_concept_name"       "drug_source_value"       
-##  [9] "drug_source_concept_id"   "drug_source_concept_name"
-## [11] "route_source_value"       "dose_unit_source_value"
-```
-
-``` r
-# join on vocabulary_id for concept_id & maybe drug_source_concept_id (expect all to be dm+d)
-
-drugs_unique <- drugs_unique |> 
-  #remove concept_name temporarily due to issue in omopcept
-  select(-drug_concept_name) |> 
-  omopcept::omop_join_name(namefull="drug_concept_id",columns=c("concept_name","domain_id","vocabulary_id","concept_class_id"))
+    drugs_unique <- drugs_unique |> 
+      #remove concept_name temporarily due to issue in omopcept
+      select(-drug_concept_name) |> 
+      omopcept::omop_join_name(namefull="drug_concept_id",columns=c("concept_name","domain_id","vocabulary_id","concept_class_id"))
 
 
 
-#this is how file created, may be better to move join_names bit into here & make the data file closer to
-#the drug_exposure table
-# drugs_unique <- omde |> 
-#   #group_by(drug_concept_id) |> 
-#   #slice_head(n=1) #|> 
-#   #select(drug_concept_id) |> 
-#   #count replaces above 3 lines & gives num rows
-#   count(drug_concept_id, sort=TRUE) |> 
-#   omopcept::omop_join_name_all(columns=c("concept_name","domain_id","vocabulary_id","concept_class_id"))
+    #this is how file created, may be better to move join_names bit into here & make the data file closer to
+    #the drug_exposure table
+    # drugs_unique <- omde |> 
+    #   #group_by(drug_concept_id) |> 
+    #   #slice_head(n=1) #|> 
+    #   #select(drug_concept_id) |> 
+    #   #count replaces above 3 lines & gives num rows
+    #   count(drug_concept_id, sort=TRUE) |> 
+    #   omopcept::omop_join_name_all(columns=c("concept_name","domain_id","vocabulary_id","concept_class_id"))
 
-# #to use in documentation
-# write_csv(drugs_unique, "drugs_omop_unique.csv")
-```
+    # #to use in documentation
+    # write_csv(drugs_unique, "drugs_omop_unique.csv")
 
+These data show us that drugs exported to OMOP from UCLH are in the
+vocabularies either `RxNorm` or `RxNormExtension` & concept\_class\_id
+of mostly either `Clinical Drug` or `Quant Clinical Drug`.
 
-These data show us that drugs exported to OMOP from UCLH are in the vocabularies either `RxNorm` or `RxNormExtension` & concept_class_id of mostly either `Clinical Drug` or `Quant Clinical Drug`.
+    #note kable is a knitr function to display tables in a markdown file
+    count(drugs_unique, vocabulary_id, sort=TRUE) |> kable()
 
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">vocabulary_id</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">RxNorm Extension</td>
+<td style="text-align: right;">1005</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RxNorm</td>
+<td style="text-align: right;">736</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">None</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
 
-``` r
-#note kable is a knitr function to display tables in a markdown file
-count(drugs_unique, vocabulary_id, sort=TRUE) |> kable()
-```
+    count(drugs_unique, concept_class_id, sort=TRUE)  |> kable()
 
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">concept_class_id</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: right;">1164</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Quant Clinical Drug</td>
+<td style="text-align: right;">475</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Marketed Product</td>
+<td style="text-align: right;">85</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Clinical Drug Form</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Branded Drug Form</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Clinical Drug Comp</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Clinical Pack</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Undefined</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
 
+These data show us that drug records come from different places and have
+different administration routes.
 
-|vocabulary_id    |    n|
-|:----------------|----:|
-|RxNorm Extension | 1005|
-|RxNorm           |  736|
-|None             |    1|
+    count(drugs_unique, drug_type_concept_name, sort=TRUE) |> kable()
 
-``` r
-count(drugs_unique, concept_class_id, sort=TRUE)  |> kable()
-```
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">drug_type_concept_name</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">EHR administration record</td>
+<td style="text-align: right;">1135</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">EHR order</td>
+<td style="text-align: right;">472</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EHR prescription</td>
+<td style="text-align: right;">133</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Patient self-report</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
 
+    #filtering the top 10
+    count(drugs_unique, route_concept_name, sort=TRUE) |> filter(row_number()<11) |>  kable()
 
-
-|concept_class_id    |    n|
-|:-------------------|----:|
-|Clinical Drug       | 1164|
-|Quant Clinical Drug |  475|
-|Marketed Product    |   85|
-|Clinical Drug Form  |   14|
-|Branded Drug Form   |    1|
-|Clinical Drug Comp  |    1|
-|Clinical Pack       |    1|
-|Undefined           |    1|
-
-These data show us that drug records come from different places and have different administration routes.
-
-
-``` r
-count(drugs_unique, drug_type_concept_name, sort=TRUE) |> kable()
-```
-
-
-
-|drug_type_concept_name    |    n|
-|:-------------------------|----:|
-|EHR administration record | 1135|
-|EHR order                 |  472|
-|EHR prescription          |  133|
-|Patient self-report       |    2|
-
-``` r
-#filtering the top 10
-count(drugs_unique, route_concept_name, sort=TRUE) |> filter(row_number()<11) |>  kable()
-```
-
-
-
-|route_concept_name  |   n|
-|:-------------------|---:|
-|Oral                | 819|
-|Intravenous         | 306|
-|Subcutaneous        | 143|
-|Topical             |  95|
-|No matching concept |  70|
-|Respiratory trac    |  59|
-|Ophthalmic          |  51|
-|Intramuscula        |  43|
-|Transdermal         |  33|
-|Rectal              |  24|
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">route_concept_name</th>
+<th style="text-align: right;">n</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Oral</td>
+<td style="text-align: right;">819</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Intravenous</td>
+<td style="text-align: right;">306</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Subcutaneous</td>
+<td style="text-align: right;">143</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Topical</td>
+<td style="text-align: right;">95</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">No matching concept</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Respiratory trac</td>
+<td style="text-align: right;">59</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ophthalmic</td>
+<td style="text-align: right;">51</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Intramuscula</td>
+<td style="text-align: right;">43</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Transdermal</td>
+<td style="text-align: right;">33</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Rectal</td>
+<td style="text-align: right;">24</td>
+</tr>
+</tbody>
+</table>
 
 ## drug standardisation process at UCLH
 
-Drug records at UCLH are stored in our Electronic Health Record (EPIC) with as a `MedicationKey` value. Our OMOP extraction system translates this to an identifier in the NHS dictionary of medicines and devices (**dm+d**). `dm+d` is included in OMOP so there are values of OMOP concept_id for each dm+d. However because dm+d is not a standard vocabulary in OMOP we need to translate it once more to get to a standard OMOP id that can potentially be used in collaborative studies. The standard vocabularies for drugs in OMOP are **RxNorm** and **RxNormExtension**. Thus the `drug_concept_id` in UCLH OMOP extracts will either be in `RxNorm` or `RxNormExtension`.
+<div class="grViz html-widget html-fill-item" id="htmlwidget-c840fb3f6abd98f964b9" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-c840fb3f6abd98f964b9">{"x":{"diagram":"\ndigraph uclh_drug_mapping {\n\n  graph [overlap = true, fontsize = 4] #, orientation=L]\n\n  # nodes\n  node [shape = box,\n        fontname = Helvetica]\n  1[label=\"1. EPIC_ID\"];\n  2[label=\"2. dm+d code\"];\n  3[label=\"3. OMOP concept_id\ndm+d\"];\n  4[label=\"4. OMOP concept_id\nRxNorm & Extension\"]\n\n  # edges\n  1->2->3->4\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
-Note that the OMOP vocabularies have a dated representation of `dm+d` codes so some `dm+d` codes don't map to an OMOP or `RxNorm` equivalent.
+Drug records at UCLH are stored in our Electronic Health Record (EPIC)
+with as a `MedicationKey` value. Our OMOP extraction system translates
+this to an identifier in the NHS dictionary of medicines and devices
+(**dm+d**). `dm+d` is included in OMOP so there are values of OMOP
+concept\_id for each dm+d. However because dm+d is not a standard
+vocabulary in OMOP we need to translate it once more to get to a
+standard OMOP id that can potentially be used in collaborative studies.
+The standard vocabularies for drugs in OMOP are **RxNorm** and
+**RxNormExtension**. Thus the `drug_concept_id` in UCLH OMOP extracts
+will either be in `RxNorm` or `RxNormExtension`.
+
+Note that the OMOP vocabularies have a dated representation of `dm+d`
+codes so some `dm+d` codes don’t map to an OMOP or `RxNorm` equivalent.
+
+TODO add example with names & codes
+
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 37%" />
+<col style="width: 23%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">omop_field_name</th>
+<th style="text-align: left;">vocabulary</th>
+<th style="text-align: left;">in_diagram_above</th>
+<th style="text-align: left;">example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">drug_concept_id</td>
+<td style="text-align: left;">OMOP RxNorm/Extension ID</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">drug_concept_name</td>
+<td style="text-align: left;">OMOP RxNorm/Extension Name</td>
+<td style="text-align: left;">4b</td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">drug_source_concept</td>
+<td style="text-align: left;">OMOP dm+d ID</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">drug_source_value</td>
+<td style="text-align: left;">dm+d ID</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">/</td>
+</tr>
+</tbody>
+</table>
 
 ## drug hierarchies
 
-Different drug vocabularies each have a hierarchy that allows them to represent and query drugs at various levels of granularity. 
+Different drug vocabularies each have a hierarchy that allows them to
+represent and query drugs at various levels of granularity.
 
-For example at increasing levels of granularity a vocabulary could represent, say, paracetomol as
-1. a generic active ingredient
-1. the ingredient in a particular form such as a tablet
-1. a box of tablets of a defined size
-1. a commercially available product of a defined size and manufacturer
-
+For example at increasing levels of granularity a vocabulary could
+represent, say, paracetomol as 1. a generic active ingredient 1. the
+ingredient in a particular form such as a tablet 1. a box of tablets of
+a defined size 1. a commercially available product of a defined size and
+manufacturer
 
 ## Anatomical Therapeutic Chemical Classification System (ATC) for drug classification
 
-[ATC](https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/atc.html) is a WHO drug classification incorporated within OMOP. ATC has five different levels that classify according to the organ or system on which the drug acts plus therapeutic, pharmacological, and chemical properties of the drug. 	
-	
-ATC Level | Description | Number of codes | Example code | Example name
---|-----|---|-----|-----------------
-1 |anatomical main group|14|A|Alimentary tract and metabolism
-2 |therapeutic subgroup|94|A10|Drugs used in diabetes
-3 |pharmacological subgroup|267|A10B|Blood glucose lowering drugs, excl. insulins
-4 |chemical subgroup|889|A10BA|Biguanides
-5 |chemical substance|5067|A10BA02|metformin
+[ATC](https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/atc.html)
+is a WHO drug classification incorporated within OMOP. ATC has five
+different levels that classify according to the organ or system on which
+the drug acts plus therapeutic, pharmacological, and chemical properties
+of the drug.
 
-The OMOP vocabularies contain ATC and it can be used to classify and query drugs.
-	
-The [omopcept package](https://github.com/SAFEHR-data/omopcept) developed at UCLH, and installed above, has a function for creating a drug classification lookup table using ATC.	
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 15%" />
+<col style="width: 9%" />
+<col style="width: 15%" />
+<col style="width: 53%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>ATC Level</th>
+<th>Description</th>
+<th>Number of codes</th>
+<th>Example code</th>
+<th>Example name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>anatomical main group</td>
+<td>14</td>
+<td>A</td>
+<td>Alimentary tract and metabolism</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>therapeutic subgroup</td>
+<td>94</td>
+<td>A10</td>
+<td>Drugs used in diabetes</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>pharmacological subgroup</td>
+<td>267</td>
+<td>A10B</td>
+<td>Blood glucose lowering drugs, excl. insulins</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>chemical subgroup</td>
+<td>889</td>
+<td>A10BA</td>
+<td>Biguanides</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>chemical substance</td>
+<td>5067</td>
+<td>A10BA02</td>
+<td>metformin</td>
+</tr>
+</tbody>
+</table>
+
+The OMOP vocabularies contain ATC and it can be used to classify and
+query drugs.
+
+The [omopcept package](https://github.com/SAFEHR-data/omopcept)
+developed at UCLH, and installed above, has a function for creating a
+drug classification lookup table using ATC.
 
 Here we create the drug lookup and view the top rows.
-	
 
-``` r
-drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique)
+    drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique)
 
-drug_lookup |> head(6) |> kable()  
-```
+    drug_lookup |> head(6) |> kable()  
 
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 8%" />
+<col style="width: 11%" />
+<col style="width: 5%" />
+<col style="width: 24%" />
+<col style="width: 4%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">drug_concept_name</th>
+<th style="text-align: right;">drug_concept_id</th>
+<th style="text-align: left;">drug_concept_class_id</th>
+<th style="text-align: left;">ATC_level</th>
+<th style="text-align: left;">ATC_concept_name</th>
+<th style="text-align: left;">ATC_code</th>
+<th style="text-align: right;">ATC_concept_id</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Vancomycin 50 MG/ML Ophthalmic
+Solution</td>
+<td style="text-align: right;">21111050</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">vancomycin; ophthalmic</td>
+<td style="text-align: left;">S01AA28</td>
+<td style="text-align: right;">715756</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">dolutegravir 50 MG / lamivudine 300 MG
+Oral Tablet [Dovato] by ViiV</td>
+<td style="text-align: right;">36065920</td>
+<td style="text-align: left;">Marketed Product</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">lamivudine and dolutegravir; oral</td>
+<td style="text-align: left;">J05AR25</td>
+<td style="text-align: right;">715829</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">hydrogen peroxide 30 MG/ML Topical
+Solution</td>
+<td style="text-align: right;">1776544</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">hydrogen peroxide; topical
+(dermatologicals)</td>
+<td style="text-align: left;">D11AX25</td>
+<td style="text-align: right;">715878</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2 ML irinotecan 20 MG/ML Injectable
+Solution</td>
+<td style="text-align: right;">41341003</td>
+<td style="text-align: left;">Quant Clinical Drug</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Topoisomerase 1 (TOP1) inhibitors</td>
+<td style="text-align: left;">L01CE</td>
+<td style="text-align: right;">947782</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5 ML irinotecan 20 MG/ML Injectable
+Solution</td>
+<td style="text-align: right;">41356564</td>
+<td style="text-align: left;">Quant Clinical Drug</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Topoisomerase 1 (TOP1) inhibitors</td>
+<td style="text-align: left;">L01CE</td>
+<td style="text-align: right;">947782</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ibrutinib 420 MG Oral Tablet</td>
+<td style="text-align: right;">964076</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Bruton’s tyrosine kinase (BTK)
+inhibitors</td>
+<td style="text-align: left;">L01EL</td>
+<td style="text-align: right;">947783</td>
+</tr>
+</tbody>
+</table>
 
+We can select a single drug concept (`amoxicillin 500 MG Oral Capsule`)
+and see which ATC classes it appears in.
 
-|drug_concept_name                                                          | drug_concept_id|drug_concept_class_id |ATC_level |ATC_concept_name                                   |ATC_code | ATC_concept_id|
-|:--------------------------------------------------------------------------|---------------:|:---------------------|:---------|:--------------------------------------------------|:--------|--------------:|
-|10 ML immunoglobulin G 200 MG/ML Injectable Solution [Hizentra] by Behring |        36926058|Marketed Product      |1         |ANTIINFECTIVES FOR SYSTEMIC USE                    |J        |       21602795|
-|100 ML Immunoglobulin G 100 MG/ML Injectable Solution                      |        44135078|Quant Clinical Drug   |1         |ANTIINFECTIVES FOR SYSTEMIC USE                    |J        |       21602795|
-|sunitinib 12.5 MG Oral Capsule                                             |         1336541|Clinical Drug         |5         |sunitinib; oral                                    |L01EX01  |         947855|
-|osimertinib 80 MG Oral Tablet                                              |        35605535|Clinical Drug         |5         |osimertinib; oral                                  |L01EB04  |         947878|
-|ixazomib 3 MG Oral Capsule                                                 |        35606236|Clinical Drug         |5         |ixazomib; oral                                     |L01XG03  |         947997|
-|canagliflozin 100 MG Oral Tablet                                           |        43526467|Clinical Drug         |4         |Sodium-glucose co-transporter 2 (SGLT2) inhibitors |A10BK    |        1123627|
-	
-We can select a single drug concept (`amoxicillin 500 MG Oral Capsule`) and see which ATC classes it appears in.	
+    drug_lookup |> 
+      filter(drug_concept_name == "amoxicillin 500 MG Oral Capsule") |> 
+      kable()  
 
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 11%" />
+<col style="width: 15%" />
+<col style="width: 6%" />
+<col style="width: 27%" />
+<col style="width: 6%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">drug_concept_name</th>
+<th style="text-align: right;">drug_concept_id</th>
+<th style="text-align: left;">drug_concept_class_id</th>
+<th style="text-align: left;">ATC_level</th>
+<th style="text-align: left;">ATC_concept_name</th>
+<th style="text-align: left;">ATC_code</th>
+<th style="text-align: right;">ATC_concept_id</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">ANTIINFECTIVES FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J</td>
+<td style="text-align: right;">21602795</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Penicillins with extended spectrum</td>
+<td style="text-align: left;">J01CA</td>
+<td style="text-align: right;">21602819</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">amoxicillin; systemic</td>
+<td style="text-align: left;">J01CA04</td>
+<td style="text-align: right;">21602823</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">BETA-LACTAM ANTIBACTERIALS,
+PENICILLINS</td>
+<td style="text-align: left;">J01C</td>
+<td style="text-align: right;">21602818</td>
+</tr>
+</tbody>
+</table>
 
-``` r
-drug_lookup |> 
-  filter(drug_concept_name == "amoxicillin 500 MG Oral Capsule") |> 
-  kable()  
-```
+Alternatively we can filter all drugs that appear in a particular ATC
+level and class (in this case “ANTIBACTERIALS FOR SYSTEMIC USE” from ATC
+level 2).
 
+    antibacterials <- drug_lookup |> 
+      filter(ATC_concept_name == "ANTIBACTERIALS FOR SYSTEMIC USE") 
 
+    nrow(antibacterials)
 
-|drug_concept_name               | drug_concept_id|drug_concept_class_id |ATC_level |ATC_concept_name                        |ATC_code | ATC_concept_id|
-|:-------------------------------|---------------:|:---------------------|:---------|:---------------------------------------|:--------|--------------:|
-|amoxicillin 500 MG Oral Capsule |        19073187|Clinical Drug         |1         |ANTIINFECTIVES FOR SYSTEMIC USE         |J        |       21602795|
-|amoxicillin 500 MG Oral Capsule |        19073187|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE         |J01      |       21602796|
-|amoxicillin 500 MG Oral Capsule |        19073187|Clinical Drug         |3         |BETA-LACTAM ANTIBACTERIALS, PENICILLINS |J01C     |       21602818|
-|amoxicillin 500 MG Oral Capsule |        19073187|Clinical Drug         |4         |Penicillins with extended spectrum      |J01CA    |       21602819|
-|amoxicillin 500 MG Oral Capsule |        19073187|Clinical Drug         |5         |amoxicillin; systemic                   |J01CA04  |       21602823|
+    ## [1] 69
 
-Alternatively we can filter all drugs that appear in a particular ATC level and class (in this case "ANTIBACTERIALS FOR SYSTEMIC USE" from ATC level 2). 
+    #display top 10
+    antibacterials |> 
+      filter(row_number()<11) |>  kable()
 
+<table>
+<colgroup>
+<col style="width: 38%" />
+<col style="width: 9%" />
+<col style="width: 13%" />
+<col style="width: 5%" />
+<col style="width: 18%" />
+<col style="width: 5%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">drug_concept_name</th>
+<th style="text-align: right;">drug_concept_id</th>
+<th style="text-align: left;">drug_concept_class_id</th>
+<th style="text-align: left;">ATC_level</th>
+<th style="text-align: left;">ATC_concept_name</th>
+<th style="text-align: left;">ATC_code</th>
+<th style="text-align: right;">ATC_concept_id</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">nitrofurantoin 5 MG/ML Oral
+Suspension</td>
+<td style="text-align: right;">920300</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">amoxicillin 500 MG / clavulanate 125 MG
+Oral Tablet</td>
+<td style="text-align: right;">1713694</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">amoxicillin 50 MG/ML / clavulanate 12.5
+MG/ML Oral Suspension</td>
+<td style="text-align: right;">1759879</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sulfamethoxazole 40 MG/ML / trimethoprim 8
+MG/ML Oral Suspension</td>
+<td style="text-align: right;">1836449</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">floxacillin 250 MG Oral Capsule</td>
+<td style="text-align: right;">19054940</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">floxacillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19054961</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">azithromycin 250 MG Oral Tablet</td>
+<td style="text-align: right;">19073777</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cephalexin 250 MG Oral Tablet</td>
+<td style="text-align: right;">19075035</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Colistin 1000000 UNT Inhalant Powder</td>
+<td style="text-align: right;">21105909</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cefiderocol 1000 MG Injectable
+Solution</td>
+<td style="text-align: right;">35885672</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+</tbody>
+</table>
 
-``` r
-antibacterials <- drug_lookup |> 
-  filter(ATC_concept_name == "ANTIBACTERIALS FOR SYSTEMIC USE") 
+TO BE CONTINUED … DRAFT MATERIAL BELOW TODO
 
-nrow(antibacterials)
-```
+~ look at drug\_source\_concept\_name for drugs that have a drug\_concept\_id of 0  
+(add to other docs about what \*concept\_id of 0 means)
 
-```
-## [1] 69
-```
+is this true : Note that the `dm+d` codes are more granular than
+`RxNorm` so the mapping can go from 1 to many.
 
-``` r
-#display top 10
-antibacterials |> 
-  filter(row_number()<11) |>  kable()
-```
+add link to drug\_exposure table description :
+<https://ohdsi.github.io/CommonDataModel/cdm54.html#drug_exposure>
 
+check issue in omopcept when concept\_name not included in join columns
 
+This is where uclh drugs are mapped in omop\_es
+<https://github.com/uclh-criu/omop_es/blob/3c36642b3a24944da7feb0fd214088241cf1990b/mapping/UCLH/epic_common/medication_component_common.R>
 
-|drug_concept_name                                                | drug_concept_id|drug_concept_class_id |ATC_level |ATC_concept_name                |ATC_code | ATC_concept_id|
-|:----------------------------------------------------------------|---------------:|:---------------------|:---------|:-------------------------------|:--------|--------------:|
-|nitrofurantoin 5 MG/ML Oral Suspension                           |          920300|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE |J01      |       21602796|
-|amoxicillin 500 MG / clavulanate 125 MG Oral Tablet              |         1713694|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE |J01      |       21602796|
-|amoxicillin 50 MG/ML / clavulanate 12.5 MG/ML Oral Suspension    |         1759879|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE |J01      |       21602796|
-|sulfamethoxazole 40 MG/ML / trimethoprim 8 MG/ML Oral Suspension |         1836449|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE |J01      |       21602796|
-|floxacillin 250 MG Oral Capsule                                  |        19054940|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE |J01      |       21602796|
-|floxacillin 500 MG Oral Capsule                                  |        19054961|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE |J01      |       21602796|
-|azithromycin 250 MG Oral Tablet                                  |        19073777|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE |J01      |       21602796|
-|cephalexin 250 MG Oral Tablet                                    |        19075035|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE |J01      |       21602796|
-|Colistin 1000000 UNT Inhalant Powder                             |        21105909|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE |J01      |       21602796|
-|cefiderocol 1000 MG Injectable Solution                          |        35885672|Clinical Drug         |2         |ANTIBACTERIALS FOR SYSTEMIC USE |J01      |       21602796|
+Comments there :
 
+Maps from EPIC MedicationKey to OMOP concept\_id and, if applicable, a
+standard drug\_concept\_id via the following stages:
 
-TO BE CONTINUED ...
-DRAFT MATERIAL BELOW
-TODO 
-is this true : Note that the `dm+d` codes are more granular than `RxNorm` so the mapping can go from 1 to many.
-
-add link to drug_exposure table description :
-https://ohdsi.github.io/CommonDataModel/cdm54.html#drug_exposure
-
-check issue in omopcept when concept_name not included in join columns
-
-This is where uclh drugs are mapped in omop_es
-https://github.com/uclh-criu/omop_es/blob/3c36642b3a24944da7feb0fd214088241cf1990b/mapping/UCLH/epic_common/medication_component_common.R
-
-Comments there : 
-
-Maps from EPIC MedicationKey to OMOP concept_id and, if applicable, a standard drug_concept_id via the following stages:
-
-EPIC MedKey -> dm+d -> dm+d concept (OMOP Non-Std) -> RxNORM **Ext** OMOP (OMOP Std)
+EPIC MedKey -&gt; dm+d -&gt; dm+d concept (OMOP Non-Std) -&gt; RxNORM
+**Ext** OMOP (OMOP Std)
 
 Note that this is a 1-M-M mapping process
 
-For this reason a score is assigned that ranks full over partial mapping and devices over drugs
+For this reason a score is assigned that ranks full over partial mapping
+and devices over drugs
 
-The dm+d concept_id (omop?) should be in drug_source_concept_id
+The dm+d concept\_id (omop?) should be in drug\_source\_concept\_id
 
-also route_concept_id & route_source_concept_id should be useful
+also route\_concept\_id & route\_source\_concept\_id should be useful
