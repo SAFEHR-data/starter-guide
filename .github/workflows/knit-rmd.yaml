@@ -34,7 +34,7 @@ jobs:
 
   knit:
     needs: check-commit-author
-    if: needs.check-commit-authors.outputs.skip_job == 'false'
+    if: needs.check-commit-author.outputs.skip_job == 'false'
     runs-on: ubuntu-latest
     permissions:
       contents: write
