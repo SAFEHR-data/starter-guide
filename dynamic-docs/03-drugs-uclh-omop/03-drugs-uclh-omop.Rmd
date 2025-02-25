@@ -105,40 +105,13 @@ count(drugs_unique, route_concept_name, sort=TRUE) |> filter(row_number()<11) |>
 ## drug standardisation process at UCLH
 
 
-```{r diagram uclh drug, echo=FALSE}
-diagram <- grViz("
-digraph uclh_drug_mapping {
-
-  graph [overlap = true, fontsize = 4] #, orientation=L]
-
-  # nodes
-  node [shape = box,
-        fontname = Helvetica]
-  1[label='1. EPIC_ID'];
-  2[label='2. dm+d code'];
-  3[label='3. OMOP concept_id\ndm+d'];
-  4[label='4. OMOP concept_id\nRxNorm & Extension']
-
-  # edges
-  1->2->3->4
-}
-")
-
-# Override the ID manually so it doesn't change markdown file
-diagram <- htmlwidgets::onRender(diagram, "
-  function(el, x) {
-    setTimeout(function() {
-      el.id = 'uclh-drug'; // Replace 'uclh-drug' with your desired id
-      var scriptTag = el.querySelector('script');
-      if (scriptTag) {
-        scriptTag.setAttribute('data-for', 'uclh-drug'); // Ensure the script tag matches the new id
-      }
-    }, 0);
-  }
-")
-
-diagram
+```mermaid
+graph TD;
+  A[EPIC_ID] --> B[dm+d code];
+  B --> C[OMOP concept_id dm+d];
+  C --> D[OMOP concept_id RxNorm & Extension];
 ```
+
 
 
 Drug records at UCLH are stored in our Electronic Health Record (EPIC) with as a `MedicationKey` value. Our OMOP extraction system translates this to an identifier in the NHS dictionary of medicines and devices (**dm+d**). `dm+d` is included in OMOP so there are values of OMOP concept_id for each dm+d. However because dm+d is not a standard vocabulary in OMOP we need to translate it once more to get to a standard OMOP id that can potentially be used in collaborative studies. The standard vocabularies for drugs in OMOP are **RxNorm** and **RxNormExtension**. Thus the `drug_concept_id` in UCLH OMOP extracts will either be in `RxNorm` or `RxNormExtension`.
