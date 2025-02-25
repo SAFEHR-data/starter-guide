@@ -5,7 +5,6 @@ output:
     keep_md: true
 author: Andy South
 date: "2025-02-07"
-always_allow_html: true
 ---
 
 <!-- *.md is generated from `*.Rmd` in /dynamic-docs/, to update edit `*.Rmd`, re-knit, copy `*.md` & the `*_files` folder to root, delete YAML header so it displays better in Github, don't delete `.html` because that will delete folder and images used by the md. We can automate this process later. -->
@@ -165,7 +164,7 @@ Here we create the drug lookup and view the top rows.
 
 drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique)
 
-drug_lookup |> arrange(drug_concept_name) |> head(6)  |> kable()
+drug_lookup |> arrange(drug_concept_name, ATC_level) |> head(6)  |> kable()
 
 ```
 	

@@ -5,7 +5,6 @@ output:
     keep_md: true
 author: Andy South
 date: "2024-12-03"
-always_allow_html: true
 ---
 
 <!-- 
