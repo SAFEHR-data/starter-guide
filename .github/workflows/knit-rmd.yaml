@@ -8,6 +8,9 @@ on:
   workflow_dispatch:
 
 jobs:
+  # If the previous commit and the current commit are from the github actions bot
+  # don't generate markdown because we're probably in a loop where markdown files
+  # have an element of randomness in their generation
   check-commit-author:
     runs-on: ubuntu-latest
     steps:
@@ -32,13 +35,10 @@ jobs:
     outputs:
       skip_job: ${{ steps.check-authors.outputs.skip_job }}
 
-  knit:
+  generate-md:
     needs: check-commit-author
     if: needs.check-commit-author.outputs.skip_job == 'false'
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
 
     steps:
       - name: Setup pandoc
@@ -64,7 +64,7 @@ jobs:
       - name: Setup Renv
         uses: r-lib/actions/setup-renv@v2
         env:
-          GITHUB_PAT: ${{ secrets.READ_OMOPCEPT_PAT }}
+          GITHUB_PAT: ${{ steps.generate-token.outputs.token }}
       - name: Find and knit Rmd files
         run: |
           Rscript -e '
