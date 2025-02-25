@@ -127,7 +127,13 @@ digraph uclh_drug_mapping {
 # Override the ID manually so it doesn't change markdown file
 diagram <- htmlwidgets::onRender(diagram, "
   function(el, x) {
-    el.id = 'uclh-drug';
+    setTimeout(function() {
+      el.id = 'uclh-drug'; // Replace 'uclh-drug' with your desired id
+      var scriptTag = el.querySelector('script');
+      if (scriptTag) {
+        scriptTag.setAttribute('data-for', 'uclh-drug'); // Ensure the script tag matches the new id
+      }
+    }, 0);
   }
 ")
 
@@ -186,7 +192,7 @@ Here we create the drug lookup and view the top rows.
 
 drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique)
 
-drug_lookup |> head(6) |> arrange(drug_concept_name) |> kable()
+drug_lookup |> arrange(drug_concept_name) |> head(6)  |> kable()
 
 ```
 	
