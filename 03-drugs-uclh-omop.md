@@ -507,29 +507,10 @@ and see which ATC classes it appears in.
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
 <td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
-<td style="text-align: right;">19073187</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">3</td>
-<td style="text-align: left;">BETA-LACTAM ANTIBACTERIALS,
-PENICILLINS</td>
-<td style="text-align: left;">J01C</td>
-<td style="text-align: right;">21602818</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
-<td style="text-align: right;">19073187</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">amoxicillin; systemic</td>
-<td style="text-align: left;">J01CA04</td>
-<td style="text-align: right;">21602823</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Penicillins with extended spectrum</td>
+<td style="text-align: left;">J01CA</td>
+<td style="text-align: right;">21602819</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
@@ -544,10 +525,29 @@ PENICILLINS</td>
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
 <td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">Penicillins with extended spectrum</td>
-<td style="text-align: left;">J01CA</td>
-<td style="text-align: right;">21602819</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">amoxicillin; systemic</td>
+<td style="text-align: left;">J01CA04</td>
+<td style="text-align: right;">21602823</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">BETA-LACTAM ANTIBACTERIALS,
+PENICILLINS</td>
+<td style="text-align: left;">J01C</td>
+<td style="text-align: right;">21602818</td>
 </tr>
 </tbody>
 </table>
@@ -569,13 +569,13 @@ level 2).
 
 <table>
 <colgroup>
-<col style="width: 37%" />
+<col style="width: 38%" />
 <col style="width: 9%" />
 <col style="width: 13%" />
-<col style="width: 6%" />
-<col style="width: 19%" />
 <col style="width: 5%" />
-<col style="width: 9%" />
+<col style="width: 18%" />
+<col style="width: 5%" />
+<col style="width: 8%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -590,83 +590,9 @@ level 2).
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">amoxicillin 50 MG/ML Oral Suspension</td>
-<td style="text-align: right;">1713370</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">azithromycin 500 MG Oral Tablet</td>
-<td style="text-align: right;">1734134</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">levofloxacin 250 MG Oral Tablet</td>
-<td style="text-align: right;">1742254</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">erythromycin 50 MG/ML Oral Suspension</td>
-<td style="text-align: right;">1747354</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">tetracycline hydrochloride 250 MG Oral
-Tablet</td>
-<td style="text-align: right;">1836973</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">amoxicillin 250 MG Oral Capsule</td>
-<td style="text-align: right;">19073183</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">cephalexin 250 MG Oral Capsule</td>
-<td style="text-align: right;">19075032</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">ciprofloxacin 50 MG/ML Oral
+<td style="text-align: left;">nitrofurantoin 5 MG/ML Oral
 Suspension</td>
-<td style="text-align: right;">19075379</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J01</td>
-<td style="text-align: right;">21602796</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">amoxicillin 80 MG/ML / clavulanate 11.4
-MG/ML Oral Suspension</td>
-<td style="text-align: right;">19123605</td>
+<td style="text-align: right;">920300</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
@@ -674,9 +600,84 @@ MG/ML Oral Suspension</td>
 <td style="text-align: right;">21602796</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Colistin 1000000 UNT Injectable
+<td style="text-align: left;">amoxicillin 500 MG / clavulanate 125 MG
+Oral Tablet</td>
+<td style="text-align: right;">1713694</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">amoxicillin 50 MG/ML / clavulanate 12.5
+MG/ML Oral Suspension</td>
+<td style="text-align: right;">1759879</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sulfamethoxazole 40 MG/ML / trimethoprim 8
+MG/ML Oral Suspension</td>
+<td style="text-align: right;">1836449</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">floxacillin 250 MG Oral Capsule</td>
+<td style="text-align: right;">19054940</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">floxacillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19054961</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">azithromycin 250 MG Oral Tablet</td>
+<td style="text-align: right;">19073777</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cephalexin 250 MG Oral Tablet</td>
+<td style="text-align: right;">19075035</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Colistin 1000000 UNT Inhalant Powder</td>
+<td style="text-align: right;">21105909</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J01</td>
+<td style="text-align: right;">21602796</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">cefiderocol 1000 MG Injectable
 Solution</td>
-<td style="text-align: right;">36883959</td>
+<td style="text-align: right;">35885672</td>
 <td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
