@@ -10,8 +10,6 @@ on:
 jobs:
   check-commit-author:
     runs-on: ubuntu-latest
-    outputs:
-      skip_job: ${{ steps.check-authors.skip_job }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,10 +29,12 @@ jobs:
           else
             echo "skip_job=false" >> $GITHUB_OUTPUT
           fi
+    outputs:
+      skip_job: ${{ steps.check-authors.outputs.skip_job }}
 
   knit:
     needs: check-commit-author
-    if: ${{ jobs.check-commit-authors.outputs.skip_job == 'false' }}
+    if: needs.check-commit-authors.outputs.skip_job == 'false'
     runs-on: ubuntu-latest
     permissions:
       contents: write
