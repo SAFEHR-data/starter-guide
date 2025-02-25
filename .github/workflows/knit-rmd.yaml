@@ -43,7 +43,7 @@ jobs:
         uses: actions/create-github-app-token@v1
         with:
           app-id: ${{ secrets.SAFEHR_WORKER_APP_ID }}
-          private-key: ${{ secrets.SAFEHR_WORKER_APP_SECRET }}
+          private-key: ${{ secrets.SAFEHR_WORKER_APP_KEY }}
 
       - name: Find and knit Rmd files
         run: |
