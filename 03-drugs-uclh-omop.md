@@ -516,12 +516,21 @@ and see which ATC classes it appears in.
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
 <td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Penicillins with extended spectrum</td>
+<td style="text-align: left;">J01CA</td>
+<td style="text-align: right;">21602819</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
+<td style="text-align: left;">Clinical Drug</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">ANTIBACTERIALS FOR SYSTEMIC USE</td>
 <td style="text-align: left;">J01</td>
 <td style="text-align: right;">21602796</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
 <td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
@@ -530,15 +539,6 @@ and see which ATC classes it appears in.
 PENICILLINS</td>
 <td style="text-align: left;">J01C</td>
 <td style="text-align: right;">21602818</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
-<td style="text-align: right;">19073187</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">Penicillins with extended spectrum</td>
-<td style="text-align: left;">J01CA</td>
-<td style="text-align: right;">21602819</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
