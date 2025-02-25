@@ -10,6 +10,8 @@ on:
 jobs:
   check-commit-author:
     runs-on: ubuntu-latest
+    outputs:
+      skip_job: ${{ steps.check-authors.skip_job }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -23,7 +25,7 @@ jobs:
           current_commit_author=$(git log -1 --pretty=format:"%an")
           previous_commit_author=$(git log -2 --pretty=format:"%an" | tail -n 1)
           echo "current commit by '$current_commit_author'"
-          echo "previous commit by 'previous_commit_author'"
+          echo "previous commit by '$previous_commit_author'"
           if [ "$current_commit_author" = "$github_bot_account" ] && [ "$previous_commit_author" = "$github_bot_account" ]; then
             echo "skip_job=true" >> $GITHUB_OUTPUT
           else
