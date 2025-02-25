@@ -11,7 +11,7 @@ always_allow_html: true
 <!-- *.md is generated from `*.Rmd` in /dynamic-docs/, to update edit `*.Rmd`, re-knit, copy `*.md` & the `*_files` folder to root, delete YAML header so it displays better in Github, don't delete `.html` because that will delete folder and images used by the md. We can automate this process later. -->
 
 
-This document introduces how drug data are stored in UCLH, how they are standardised to OMOP and how they can be classified into generic groupings (e.g. ANTIBACTERIALS FOR SYSTEMIC USE) using [ATC](https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/atc.html) (Anatomical Therapeutic Chemical Classification System) a WHO drug classification incorporated within OMOP.  
+This document introduces how drug data are stored in UCLH, how they are standardised to OMOP and how they can be classified into generic groupings (e.g. ANTIBACTERIALS FOR SYSTEMIC USE) using [ATC](https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/atc.html) (Anatomical Therapeutic Chemical Classification System), a WHO drug classification incorporated within OMOP.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
