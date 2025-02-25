@@ -177,7 +177,7 @@ Here we create the drug lookup and view the top rows.
 
 drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique)
 
-drug_lookup |> head(6) |> kable()  
+drug_lookup |> head(6) |> arrange(drug_concept_name) |> kable()
 
 ```
 	
