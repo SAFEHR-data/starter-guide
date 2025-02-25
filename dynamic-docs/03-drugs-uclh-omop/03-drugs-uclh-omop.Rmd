@@ -106,7 +106,7 @@ count(drugs_unique, route_concept_name, sort=TRUE) |> filter(row_number()<11) |>
 
 
 ```{r diagram uclh drug, echo=FALSE}
-grViz("
+diagram <- grViz("
 digraph uclh_drug_mapping {
 
   graph [overlap = true, fontsize = 4] #, orientation=L]
@@ -123,6 +123,15 @@ digraph uclh_drug_mapping {
   1->2->3->4
 }
 ")
+
+# Override the ID manually so it doesn't change markdown file
+diagram <- htmlwidgets::onRender(diagram, "
+  function(el, x) {
+    el.id = 'uclh-drug';
+  }
+")
+
+diagram
 ```
 
 
