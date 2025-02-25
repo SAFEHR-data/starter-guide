@@ -236,8 +236,8 @@ different administration routes.
 
 ## drug standardisation process at UCLH
 
-<div class="grViz html-widget html-fill-item" id="htmlwidget-fecd41fad6627e2d1163" style="width:672px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-fecd41fad6627e2d1163">{"x":{"diagram":"\ndigraph uclh_drug_mapping {\n\n  graph [overlap = true, fontsize = 4] #, orientation=L]\n\n  # nodes\n  node [shape = box,\n        fontname = Helvetica]\n  1[label=\"1. EPIC_ID\"];\n  2[label=\"2. dm+d code\"];\n  3[label=\"3. OMOP concept_id\ndm+d\"];\n  4[label=\"4. OMOP concept_id\nRxNorm & Extension\"]\n\n  # edges\n  1->2->3->4\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":{"render":[{"code":"\n  function(el, x) {\n    el.id = 'uclh-drug';\n  }\n","data":null}]}}</script>
+<div class="grViz html-widget html-fill-item" id="htmlwidget-20363be0002777aecee4" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-20363be0002777aecee4">{"x":{"diagram":"\ndigraph uclh_drug_mapping {\n\n  graph [overlap = true, fontsize = 4] #, orientation=L]\n\n  # nodes\n  node [shape = box,\n        fontname = Helvetica]\n  1[label=\"1. EPIC_ID\"];\n  2[label=\"2. dm+d code\"];\n  3[label=\"3. OMOP concept_id\ndm+d\"];\n  4[label=\"4. OMOP concept_id\nRxNorm & Extension\"]\n\n  # edges\n  1->2->3->4\n}\n","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":{"render":[{"code":"\n  function(el, x) {\n    setTimeout(function() {\n      el.id = 'uclh-drug'; // Replace 'uclh-drug' with your desired id\n      var scriptTag = el.querySelector('script');\n      if (scriptTag) {\n        scriptTag.setAttribute('data-for', 'uclh-drug'); // Ensure the script tag matches the new id\n      }\n    }, 0);\n  }\n","data":null}]}}</script>
 
 Drug records at UCLH are stored in our Electronic Health Record (EPIC)
 with as a `MedicationKey` value. Our OMOP extraction system translates
@@ -384,17 +384,17 @@ Here we create the drug lookup and view the top rows.
 
     drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique)
 
-    drug_lookup |> head(6) |> arrange(drug_concept_name) |> kable()
+    drug_lookup |> arrange(drug_concept_name) |> head(6)  |> kable()
 
 <table>
 <colgroup>
-<col style="width: 37%" />
-<col style="width: 8%" />
-<col style="width: 11%" />
-<col style="width: 5%" />
+<col style="width: 30%" />
+<col style="width: 9%" />
+<col style="width: 13%" />
+<col style="width: 6%" />
 <col style="width: 25%" />
-<col style="width: 4%" />
-<col style="width: 7%" />
+<col style="width: 5%" />
+<col style="width: 9%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -409,61 +409,65 @@ Here we create the drug lookup and view the top rows.
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">10 ML immunoglobulin G 200 MG/ML
-Injectable Solution [Hizentra] by Behring</td>
-<td style="text-align: right;">36926058</td>
-<td style="text-align: left;">Marketed Product</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">ANTIINFECTIVES FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J</td>
-<td style="text-align: right;">21602795</td>
+<td style="text-align: left;">0.1 ML aflibercept 40 MG/ML Injectable
+Solution</td>
+<td style="text-align: right;">41404616</td>
+<td style="text-align: left;">Quant Clinical Drug</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Other antineoplastic agents</td>
+<td style="text-align: left;">L01XX</td>
+<td style="text-align: right;">21603783</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">100 ML Immunoglobulin G 100 MG/ML
-Injectable Solution</td>
-<td style="text-align: right;">44135078</td>
+<td style="text-align: left;">0.1 ML aflibercept 40 MG/ML Injectable
+Solution</td>
+<td style="text-align: right;">41404616</td>
 <td style="text-align: left;">Quant Clinical Drug</td>
 <td style="text-align: left;">1</td>
-<td style="text-align: left;">ANTIINFECTIVES FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J</td>
-<td style="text-align: right;">21602795</td>
+<td style="text-align: left;">ANTINEOPLASTIC AND IMMUNOMODULATING
+AGENTS</td>
+<td style="text-align: left;">L</td>
+<td style="text-align: right;">21601386</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">canagliflozin 100 MG Oral Tablet</td>
-<td style="text-align: right;">43526467</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">Sodium-glucose co-transporter 2 (SGLT2)
-inhibitors</td>
-<td style="text-align: left;">A10BK</td>
-<td style="text-align: right;">1123627</td>
+<td style="text-align: left;">0.1 ML aflibercept 40 MG/ML Injectable
+Solution</td>
+<td style="text-align: right;">41404616</td>
+<td style="text-align: left;">Quant Clinical Drug</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">OTHER ANTINEOPLASTIC AGENTS</td>
+<td style="text-align: left;">L01X</td>
+<td style="text-align: right;">21603746</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">ixazomib 3 MG Oral Capsule</td>
-<td style="text-align: right;">35606236</td>
-<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">0.1 ML aflibercept 40 MG/ML Injectable
+Solution</td>
+<td style="text-align: right;">41404616</td>
+<td style="text-align: left;">Quant Clinical Drug</td>
 <td style="text-align: left;">5</td>
-<td style="text-align: left;">ixazomib; oral</td>
-<td style="text-align: left;">L01XG03</td>
-<td style="text-align: right;">947997</td>
+<td style="text-align: left;">aflibercept; ophthalmic, parenteral</td>
+<td style="text-align: left;">L01XX44</td>
+<td style="text-align: right;">43534816</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">osimertinib 80 MG Oral Tablet</td>
-<td style="text-align: right;">35605535</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">osimertinib; oral</td>
-<td style="text-align: left;">L01EB04</td>
-<td style="text-align: right;">947878</td>
+<td style="text-align: left;">0.1 ML aflibercept 40 MG/ML Injectable
+Solution</td>
+<td style="text-align: right;">41404616</td>
+<td style="text-align: left;">Quant Clinical Drug</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">ANTINEOPLASTIC AGENTS</td>
+<td style="text-align: left;">L01</td>
+<td style="text-align: right;">21601387</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">sunitinib 12.5 MG Oral Capsule</td>
-<td style="text-align: right;">1336541</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">sunitinib; oral</td>
-<td style="text-align: left;">L01EX01</td>
-<td style="text-align: right;">947855</td>
+<td style="text-align: left;">0.2 ML Dalteparin 12500 UNT/ML Injectable
+Solution</td>
+<td style="text-align: right;">43864220</td>
+<td style="text-align: left;">Quant Clinical Drug</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">BLOOD AND BLOOD FORMING ORGANS</td>
+<td style="text-align: left;">B</td>
+<td style="text-align: right;">21600959</td>
 </tr>
 </tbody>
 </table>
@@ -501,21 +505,12 @@ and see which ATC classes it appears in.
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
 <td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">ANTIINFECTIVES FOR SYSTEMIC USE</td>
-<td style="text-align: left;">J</td>
-<td style="text-align: right;">21602795</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Penicillins with extended spectrum</td>
+<td style="text-align: left;">J01CA</td>
+<td style="text-align: right;">21602819</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
-<td style="text-align: right;">19073187</td>
-<td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">amoxicillin; systemic</td>
-<td style="text-align: left;">J01CA04</td>
-<td style="text-align: right;">21602823</td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
 <td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
@@ -524,7 +519,7 @@ and see which ATC classes it appears in.
 <td style="text-align: left;">J01</td>
 <td style="text-align: right;">21602796</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
 <td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
@@ -534,14 +529,23 @@ PENICILLINS</td>
 <td style="text-align: left;">J01C</td>
 <td style="text-align: right;">21602818</td>
 </tr>
+<tr class="even">
+<td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
+<td style="text-align: right;">19073187</td>
+<td style="text-align: left;">Clinical Drug</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">ANTIINFECTIVES FOR SYSTEMIC USE</td>
+<td style="text-align: left;">J</td>
+<td style="text-align: right;">21602795</td>
+</tr>
 <tr class="odd">
 <td style="text-align: left;">amoxicillin 500 MG Oral Capsule</td>
 <td style="text-align: right;">19073187</td>
 <td style="text-align: left;">Clinical Drug</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: left;">Penicillins with extended spectrum</td>
-<td style="text-align: left;">J01CA</td>
-<td style="text-align: right;">21602819</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">amoxicillin; systemic</td>
+<td style="text-align: left;">J01CA04</td>
+<td style="text-align: right;">21602823</td>
 </tr>
 </tbody>
 </table>
