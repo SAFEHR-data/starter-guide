@@ -20,7 +20,6 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v4
-        # Only pull current branch, not the merge outcome so that we can commit the output
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           fetch-depth: 0
@@ -32,6 +31,13 @@ jobs:
         uses: r-lib/actions/setup-renv@v2
         env:
           GITHUB_PAT: ${{ secrets.READ_OMOPCEPT_PAT }}
+
+      - name: Generate GitHub App Token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Find and knit Rmd files
         run: |
@@ -53,3 +59,4 @@ jobs:
         uses: ad-m/github-push-action@v0.8.0
         with:
           branch: ${{ github.head_ref || github.ref_name }}
+          github_token: ${{ steps.generate-token.outputs.token }}
