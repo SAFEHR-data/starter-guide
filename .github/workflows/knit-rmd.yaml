@@ -18,12 +18,19 @@ jobs:
       - name: Setup pandoc
         uses: r-lib/actions/setup-pandoc@v2
 
+      - name: Generate GitHub App Token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.SAFEHR_WORKER_APP_ID }}
+          private-key: ${{ secrets.SAFEHR_WORKER_APP_KEY }}
 
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           fetch-depth: 0
+          token: ${{ steps.generate-token.outputs.token }}
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
@@ -38,12 +45,7 @@ jobs:
         env:
           GITHUB_PAT: ${{ secrets.READ_OMOPCEPT_PAT }}
 
-      - name: Generate GitHub App Token
-        id: generate-token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.SAFEHR_WORKER_APP_ID }}
-          private-key: ${{ secrets.SAFEHR_WORKER_APP_KEY }}
+
 
       - name: Find and knit Rmd files
         run: |
