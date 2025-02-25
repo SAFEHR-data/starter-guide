@@ -22,6 +22,8 @@ jobs:
           github_bot_account="github-actions[bot]"
           current_commit_author=$(git log -1 --pretty=format:"%an")
           previous_commit_author=$(git log -2 --pretty=format:"%an" | tail -n 1)
+          echo "current commit by '$current_commit_author'"
+          echo "previous commit by 'previous_commit_author'"
           if [ "$current_commit_author" = "$github_bot_account" ] && [ "$previous_commit_author" = "$github_bot_account" ]; then
             echo "skip_job=true" >> $GITHUB_OUTPUT
           else
