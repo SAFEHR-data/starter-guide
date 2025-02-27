@@ -1,8 +1,9 @@
 ---
 title: "Walkthrough reading in synthetic OMOP data for Critical Care"
-output:
-  html_document:
-    keep_md: true
+output: 
+  md_document:
+    variant: gfm
+  html_document: default
 author: Andy South
 date: "2024-12-03"
 ---

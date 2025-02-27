@@ -1,8 +1,9 @@
 ---
 title: "Outline of how drugs are coded in UCLH, standardised to OMOP and can be classified using ATC"
-output:
-  html_document:
-    keep_md: true
+output: 
+  md_document:
+    variant: gfm
+  html_document: default
 author: Andy South
 date: "2025-02-07"
 ---
