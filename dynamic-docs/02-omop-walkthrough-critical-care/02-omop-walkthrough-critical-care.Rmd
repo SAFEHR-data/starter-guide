@@ -207,7 +207,9 @@ joined_mp <- omop_named$measurement |>
 freq_top_measures <- joined_mp |> 
   count(measurement_concept_name,gender_concept_name, sort=TRUE) |> 
   filter(n > 1) |>
-  # Collect is used here because we're reading in
+  # We have to collect before plotting because the joined data with arrow
+  # has lazy loading and can't be coerced into a dataframe
+  # we explicitly set this to convert into dataframe before plotting
   collect()
 
 #plot
