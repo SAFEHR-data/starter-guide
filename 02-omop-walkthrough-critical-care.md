@@ -17,43 +17,47 @@ If any of the `library($PACKAGE)` packages aren’t installed, you can
 install them by running `install.packages("$PACKAGE")`, replacing
 `$PACKAGE` with the package name.
 
-    # install omopcept from Github if not installed
-    if (!requireNamespace("omopcept", quietly=TRUE)) 
-    {
-      if (!requireNamespace("remotes", quietly=TRUE)) install.packages("remotes")
-      
-      remotes::install_github("SAFEHR-data/omopcept")
-    }
+``` r
+# install omopcept from Github if not installed
+if (!requireNamespace("omopcept", quietly=TRUE)) 
+{
+  if (!requireNamespace("remotes", quietly=TRUE)) install.packages("remotes")
+  
+  remotes::install_github("SAFEHR-data/omopcept")
+}
 
-    library(readr)
-    library(dplyr)
-    library(here)
-    library(gh)
-    library(omopcept)
-    library(ggplot2)
-    library(stringr)
-    library(lubridate)
+library(readr)
+library(dplyr)
+library(here)
+library(gh)
+library(omopcept)
+library(ggplot2)
+library(stringr)
+library(lubridate)
+```
 
 ## Downloading & reading in OMOP data
 
 Here we will download & read in some UCLH critical care data stored in
 Github (if they are not already present from a previous download).
 
-    repo <- "SAFEHR-data/uclh-research-discovery"
-    path <- "_projects/uclh_cchic_s0/data"
-    destdata <- here("dynamic-docs/02-omop-walkthrough-critical-care/data")
+``` r
+repo <- "SAFEHR-data/uclh-research-discovery"
+path <- "_projects/uclh_cchic_s0/data"
+destdata <- here("dynamic-docs/02-omop-walkthrough-critical-care/data")
 
-    # only download if not already present
-    if (! file.exists(file.path(destdata,"person.csv")))
-    {
-      # Make GitHub API request to list contents of given path
-      response <- gh::gh(glue::glue("/repos/{repo}/contents/{path}"))
+# only download if not already present
+if (! file.exists(file.path(destdata,"person.csv")))
+{
+  # Make GitHub API request to list contents of given path
+  response <- gh::gh(glue::glue("/repos/{repo}/contents/{path}"))
 
-      # Download all files to the destination dir
-      purrr::walk(response, ~ download.file(.x$download_url, destfile = file.path(destdata, .x$name)))
+  # Download all files to the destination dir
+  purrr::walk(response, ~ download.file(.x$download_url, destfile = file.path(destdata, .x$name)))
 
-      list.files(destdata)
-    }
+  list.files(destdata)
+}
+```
 
 ## Reading in the OMOP data
 
@@ -64,16 +68,18 @@ developed at UCLH, and installed above, has a function for reading in
 OMOP tables to a single list object.
 
 You could alternatively use
-[CDMConnector::cdm\_from\_files](https://darwin-eu.github.io/CDMConnector/reference/cdm_from_files.html)
+[CDMConnector::cdm_from_files](https://darwin-eu.github.io/CDMConnector/reference/cdm_from_files.html)
 to access OMOP data from files like this and
-[CDMConnector::cdm\_from\_con](https://darwin-eu.github.io/CDMConnector/reference/cdm_from_con.html)
+[CDMConnector::cdm_from_con](https://darwin-eu.github.io/CDMConnector/reference/cdm_from_con.html)
 if your OMOP data are in a database. We aim to add documentation about
 that here soon.
 
-    omop <- omopcept::omop_cdm_read(destdata, filetype="csv")
+``` r
+omop <- omopcept::omop_cdm_read(destdata, filetype="csv")
 
-    # names() can show us names of the tables read in
-    names(omop)
+# names() can show us names of the tables read in
+names(omop)
+```
 
     ##  [1] "condition_occurrence" "death"                "device_exposure"     
     ##  [4] "drug_exposure"        "measurement"          "observation"         
@@ -89,8 +95,10 @@ Thus we can find the names of the columns in `person`, use `glimpse()`
 to preview the data and `ggplot()` plot some of them. Note that not all
 columns contain data and in that case are filled with `NA`.
 
-    # names() can also show column names for one of the tables
-    names(omop$person)
+``` r
+# names() can also show column names for one of the tables
+names(omop$person)
+```
 
     ##  [1] "person_id"                   "gender_concept_id"          
     ##  [3] "year_of_birth"               "month_of_birth"             
@@ -102,8 +110,10 @@ columns contain data and in that case are filled with `NA`.
     ## [15] "race_source_value"           "race_source_concept_id"     
     ## [17] "ethnicity_source_value"      "ethnicity_source_concept_id"
 
-    # glimpse table data
-    glimpse(omop$person)
+``` r
+# glimpse table data
+glimpse(omop$person)
+```
 
     ## Rows: 100
     ## Columns: 18
@@ -126,12 +136,14 @@ columns contain data and in that case are filled with `NA`.
     ## $ ethnicity_source_value      <chr> "Not Hispanic or Latino", "Not Hispanic or…
     ## $ ethnicity_source_concept_id <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
 
-    # plot some columns, patient birth years by gender
-    ggplot(omop$person, aes(x=year_of_birth, fill = as.factor(gender_concept_id))) +
-      geom_bar() +
-      theme_minimal()
+``` r
+# plot some columns, patient birth years by gender
+ggplot(omop$person, aes(x=year_of_birth, fill = as.factor(gender_concept_id))) +
+  geom_bar() +
+  theme_minimal()
+```
 
-![](/home/runner/work/starter-guide/starter-guide/02-omop-walkthrough-critical-care_files/figure-markdown_strict/explore-person-1.png)
+![](/home/runner/work/starter-guide/starter-guide/02-omop-walkthrough-critical-care_files/figure-gfm/explore-person-1.png)<!-- -->
 
 In the plot above bars are coloured by `gender_concept_id` which is the
 OMOP ID for gender, but we don’t actually know which is which. We will
@@ -153,20 +165,24 @@ concept ids (based on the column name). It works on single tables but
 will also accept a list of tables and add name columns to all of them
 (it can take a good few seconds to join on all the name columns).
 
-    # join name columns onto all tables
-    omop_named <- omop |> omop_join_name_all()
+``` r
+# join name columns onto all tables
+omop_named <- omop |> omop_join_name_all()
 
-    # the names columns that have been added
-    names(omop_named$person) |> str_subset("name")
+# the names columns that have been added
+names(omop_named$person) |> str_subset("name")
+```
 
     ## [1] "gender_concept_name"    "race_concept_name"      "ethnicity_concept_name"
 
-    # now the gender name column can be used in the plot
-    ggplot(omop_named$person, aes(x=year_of_birth, fill=as.factor(gender_concept_name))) +
-      geom_bar() +
-      theme_minimal()
+``` r
+# now the gender name column can be used in the plot
+ggplot(omop_named$person, aes(x=year_of_birth, fill=as.factor(gender_concept_name))) +
+  geom_bar() +
+  theme_minimal()
+```
 
-![](/home/runner/work/starter-guide/starter-guide/02-omop-walkthrough-critical-care_files/figure-markdown_strict/omop-join-names-all-1.png)
+![](/home/runner/work/starter-guide/starter-guide/02-omop-walkthrough-critical-care_files/figure-gfm/omop-join-names-all-1.png)<!-- -->
 
 ## Looking at the `measurement` table
 
@@ -174,7 +190,9 @@ We can use the `measurement_concept_name` column (that was added by
 `omop_join_name_all()` above) to see which are the most common
 measurements.
 
-    glimpse(omop_named$measurement)
+``` r
+glimpse(omop_named$measurement)
+```
 
     ## Table
     ## 100 rows x 24 columns
@@ -204,8 +222,10 @@ measurements.
     ## $ value_source_value                    <bool> NA, NA, NA, NA, NA, NA, NA, NA, N…
     ## Call `print()` for full schema details
 
-    # most frequent measurement concepts
-    count(omop_named$measurement, measurement_concept_name, sort=TRUE)
+``` r
+# most frequent measurement concepts
+count(omop_named$measurement, measurement_concept_name, sort=TRUE)
+```
 
     ## Table (query)
     ## measurement_concept_name: string
@@ -220,7 +240,9 @@ We can use the `observation_concept_name` column (that was added by
 `omop_join_name_all()` above) to see which are the most common
 observations.
 
-    glimpse(omop_named$observation)
+``` r
+glimpse(omop_named$observation)
+```
 
     ## Rows: 100
     ## Columns: 23
@@ -248,8 +270,10 @@ observations.
     ## $ unit_source_value               <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
     ## $ qualifier_source_value          <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
 
-    # most frequent observation concepts
-    count(omop_named$observation, observation_concept_name, sort=TRUE)
+``` r
+# most frequent observation concepts
+count(omop_named$observation, observation_concept_name, sort=TRUE)
+```
 
     ## # A tibble: 55 × 2
     ##    observation_concept_name                                                    n
@@ -271,7 +295,9 @@ observations.
 We can use the `drug_concept_name` column (that was added by
 `omop_join_name_all()` above) to see which are the most common drugs.
 
-    glimpse(omop_named$drug_exposure)
+``` r
+glimpse(omop_named$drug_exposure)
+```
 
     ## Rows: 100
     ## Columns: 27
@@ -303,8 +329,10 @@ We can use the `drug_concept_name` column (that was added by
     ## $ route_source_value           <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
     ## $ dose_unit_source_value       <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
 
-    # most frequent drug_exposure concepts
-    count(omop_named$drug_exposure, drug_concept_name, sort=TRUE)
+``` r
+# most frequent drug_exposure concepts
+count(omop_named$drug_exposure, drug_concept_name, sort=TRUE)
+```
 
     ## # A tibble: 61 × 2
     ##    drug_concept_name                                                           n
@@ -329,7 +357,9 @@ Other tables (e.g. `measurement` & `observation`) have a
 that they were associated with. Visits have a start & end date, in these
 synthetic data the interval between them can be substantial.
 
-    glimpse(omop_named$visit_occurrence)
+``` r
+glimpse(omop_named$visit_occurrence)
+```
 
     ## Rows: 100
     ## Columns: 22
@@ -356,20 +386,22 @@ synthetic data the interval between them can be substantial.
     ## $ discharge_to_source_value     <chr> "Independent Clinic", "Assisted Living F…
     ## $ preceding_visit_occurrence_id <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, …
 
-    # plot timeline of visit starts
-    omop_named$visit_occurrence |>
-      #ggplot(aes(x=visit_start_date)) + geom_bar() +
-      #replacing above with year tally otherwise bars too narrow to be reliably visible
-      group_by(visit_concept_name, year = lubridate::floor_date(visit_start_date, "year")) |>
-      summarize(nvisits = n()) |>
-      ungroup() |> 
-      ggplot(aes(x = year, y = nvisits, fill=visit_concept_name)) +
-      geom_col() +
-      facet_grid(vars(as.factor(visit_concept_name))) +
-      theme_minimal() +
-      theme(legend.position = "none")
+``` r
+# plot timeline of visit starts
+omop_named$visit_occurrence |>
+  #ggplot(aes(x=visit_start_date)) + geom_bar() +
+  #replacing above with year tally otherwise bars too narrow to be reliably visible
+  group_by(visit_concept_name, year = lubridate::floor_date(visit_start_date, "year")) |>
+  summarize(nvisits = n()) |>
+  ungroup() |> 
+  ggplot(aes(x = year, y = nvisits, fill=visit_concept_name)) +
+  geom_col() +
+  facet_grid(vars(as.factor(visit_concept_name))) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
 
-![](/home/runner/work/starter-guide/starter-guide/02-omop-walkthrough-critical-care_files/figure-markdown_strict/explore-visit_occurrence-1.png)
+![](/home/runner/work/starter-guide/starter-guide/02-omop-walkthrough-critical-care_files/figure-gfm/explore-visit_occurrence-1.png)<!-- -->
 
 ## Joining `person` data to other tables
 
@@ -380,27 +412,28 @@ attributes of the patient. Here we show how we can join the
 difference in measurements. A similar approach could be used to join to
 other tables including `observation` & `drug_exposure`.
 
-    joined_mp <- omop_named$measurement |> 
-      left_join(omop_named$person, by="person_id")
+``` r
+joined_mp <- omop_named$measurement |> 
+  left_join(omop_named$person, by="person_id")
 
-    freq_top_measures <- joined_mp |> 
-      count(measurement_concept_name,gender_concept_name, sort=TRUE) |> 
-      filter(n > 1) |> 
-      #TODO not sure why collect() needed here
-      #but without it the following ggplot erros with
-      #Error in `fortify()`:! `data` must be a <data.frame>, or an object coercible by
-      #something to do with arrow tables ?
-      collect()
+freq_top_measures <- joined_mp |> 
+  count(measurement_concept_name,gender_concept_name, sort=TRUE) |> 
+  filter(n > 1) |>
+  # We have to collect before plotting because the joined data with arrow
+  # has lazy loading and can't be coerced into a dataframe
+  # we explicitly set this to convert into dataframe before plotting
+  collect()
 
-    #plot
-    freq_top_measures |> 
-      ggplot(aes(y=measurement_concept_name, x=n, fill=as.factor(gender_concept_name))) +
-        geom_col() +
-        facet_wrap(vars(as.factor(gender_concept_name))) +
-        theme_minimal() +
-        theme(legend.position = "none")
+#plot
+freq_top_measures |> 
+  ggplot(aes(y=measurement_concept_name, x=n, fill=as.factor(gender_concept_name))) +
+    geom_col() +
+    facet_wrap(vars(as.factor(gender_concept_name))) +
+    theme_minimal() +
+    theme(legend.position = "none")
+```
 
-![](/home/runner/work/starter-guide/starter-guide/02-omop-walkthrough-critical-care_files/figure-markdown_strict/join-person-measurement-1.png)
+![](/home/runner/work/starter-guide/starter-guide/02-omop-walkthrough-critical-care_files/figure-gfm/join-person-measurement-1.png)<!-- -->
 
 Note that we use `left_join` here because we only want to join on
 `person` information for rows occurring in the `measurement` table which

@@ -8,48 +8,79 @@ on:
   workflow_dispatch:
 
 jobs:
-  knit:
+  # If the previous commit and the current commit are from the github actions bot
+  # don't generate markdown because we're probably in a loop where markdown files
+  # have an element of randomness in their generation
+  check-commit-author:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0
+      - name: Check commit authors
+        id: check-authors
+        run: |
+          github_bot_account="github-actions[bot]"
+          current_commit_author=$(git log -1 --pretty=format:"%an")
+          previous_commit_author=$(git log -2 --pretty=format:"%an" | tail -n 1)
+          echo "current commit by '$current_commit_author'"
+          echo "previous commit by '$previous_commit_author'"
+          if [ "$current_commit_author" = "$github_bot_account" ] && [ "$previous_commit_author" = "$github_bot_account" ]; then
+            echo "skip_job=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip_job=false" >> $GITHUB_OUTPUT
+          fi
+    outputs:
+      skip_job: ${{ steps.check-authors.outputs.skip_job }}
+
+  generate-md:
+    needs: check-commit-author
+    if: needs.check-commit-author.outputs.skip_job == 'false'
+    runs-on: ubuntu-latest
 
     steps:
       - name: Setup pandoc
         uses: r-lib/actions/setup-pandoc@v2
-
+      - name: Generate GitHub App Token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.SAFEHR_WORKER_APP_ID }}
+          private-key: ${{ secrets.SAFEHR_WORKER_APP_KEY }}
       - name: Checkout repository
         uses: actions/checkout@v4
-        # Only pull current branch, not the merge outcome so that we can commit the output
         with:
           ref: ${{ github.head_ref || github.ref_name }}
           fetch-depth: 0
-
+          token: ${{ steps.generate-token.outputs.token }}
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
-
+      - name: Install R dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libglpk40 libglpk-dev build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev unixodbc-dev
       - name: Setup Renv
         uses: r-lib/actions/setup-renv@v2
         env:
-          GITHUB_PAT: ${{ secrets.READ_OMOPCEPT_PAT }}
-
+          GITHUB_PAT: ${{ steps.generate-token.outputs.token }}
       - name: Find and knit Rmd files
         run: |
           Rscript -e '
             rmd_files <- list.files(path = "dynamic-docs", pattern = "\\.Rmd$", recursive = TRUE, full.names = TRUE)
             for (file in rmd_files) {
-              rmarkdown::render(file, output_format = "md_document", output_dir = ".")
+              rmarkdown::render(file, output_format = rmarkdown::md_document(variant = "gfm"), output_dir = ".")
             }
           '
-
       - name: Commit changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           git commit -m "Knit Rmd files" || echo "No changes to commit"
-
       - name: Push changes
         uses: ad-m/github-push-action@v0.8.0
         with:
           branch: ${{ github.head_ref || github.ref_name }}
+          github_token: ${{ steps.generate-token.outputs.token }}

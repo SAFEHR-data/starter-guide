@@ -1,16 +1,17 @@
 ---
 title: "Outline of how drugs are coded in UCLH, standardised to OMOP and can be classified using ATC"
-output:
-  html_document:
-    keep_md: true
+output: 
+  md_document:
+    variant: gfm
+  html_document: default
 author: Andy South
-date: "2024-12-03"
+date: "2025-02-07"
 ---
 
 <!-- *.md is generated from `*.Rmd` in /dynamic-docs/, to update edit `*.Rmd`, re-knit, copy `*.md` & the `*_files` folder to root, delete YAML header so it displays better in Github, don't delete `.html` because that will delete folder and images used by the md. We can automate this process later. -->
 
 
-This document introduces how drug data are stored in UCLH, how they are standardised to OMOP and how they can be classified into generic groupings (e.g. ANTIBACTERIALS FOR SYSTEMIC USE) using [ATC](https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/atc.html) (Anatomical Therapeutic Chemical Classification System) a WHO drug classification incorporated within OMOP.  
+This document introduces how drug data are stored in UCLH, how they are standardised to OMOP and how they can be classified into generic groupings (e.g. ANTIBACTERIALS FOR SYSTEMIC USE) using [ATC](https://www.nlm.nih.gov/research/umls/rxnorm/sourcereleasedocs/atc.html) (Anatomical Therapeutic Chemical Classification System), a WHO drug classification incorporated within OMOP.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
@@ -35,8 +36,6 @@ library(ggplot2)
 library(stringr)
 library(lubridate)
 library(knitr) #for kable
-library(DiagrammeR)
-
 ```
 
 ## Reading in OMOP drug data 
@@ -104,25 +103,13 @@ count(drugs_unique, route_concept_name, sort=TRUE) |> filter(row_number()<11) |>
 ## drug standardisation process at UCLH
 
 
-```{r diagram uclh drug, echo=FALSE}
-grViz("
-digraph uclh_drug_mapping {
-
-  graph [overlap = true, fontsize = 4] #, orientation=L]
-
-  # nodes
-  node [shape = box,
-        fontname = Helvetica]
-  1[label='1. EPIC_ID'];
-  2[label='2. dm+d code'];
-  3[label='3. OMOP concept_id\ndm+d'];
-  4[label='4. OMOP concept_id\nRxNorm & Extension']
-
-  # edges
-  1->2->3->4
-}
-")
+```mermaid
+graph TD;
+  A[EPIC_ID] --> B[dm+d code];
+  B --> C[OMOP concept_id dm+d];
+  C --> D[OMOP concept_id RxNorm & Extension];
 ```
+
 
 
 Drug records at UCLH are stored in our Electronic Health Record (EPIC) with as a `MedicationKey` value. Our OMOP extraction system translates this to an identifier in the NHS dictionary of medicines and devices (**dm+d**). `dm+d` is included in OMOP so there are values of OMOP concept_id for each dm+d. However because dm+d is not a standard vocabulary in OMOP we need to translate it once more to get to a standard OMOP id that can potentially be used in collaborative studies. The standard vocabularies for drugs in OMOP are **RxNorm** and **RxNormExtension**. Thus the `drug_concept_id` in UCLH OMOP extracts will either be in `RxNorm` or `RxNormExtension`.
@@ -174,9 +161,10 @@ Here we create the drug lookup and view the top rows.
 	
 ```{r creating drug lookup table}
 
-drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique)
+drug_lookup <- omopcept::omop_drug_lookup_create(drugs_unique) |>
+  arrange(drug_concept_name, ATC_level)
 
-drug_lookup |> head(6) |> kable()  
+drug_lookup |> head(6)  |> kable()
 
 ```
 	
@@ -185,8 +173,8 @@ We can select a single drug concept (`amoxicillin 500 MG Oral Capsule`) and see 
 ```{r amoxicillin ATC}
 
 drug_lookup |> 
-  filter(drug_concept_name == "amoxicillin 500 MG Oral Capsule") |> 
-  kable()  
+  filter(drug_concept_name == "amoxicillin 500 MG Oral Capsule") |>
+  kable()
 
 ```
 
