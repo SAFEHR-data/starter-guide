@@ -70,7 +70,7 @@ jobs:
           Rscript -e '
             rmd_files <- list.files(path = "dynamic-docs", pattern = "\\.Rmd$", recursive = TRUE, full.names = TRUE)
             for (file in rmd_files) {
-              rmarkdown::render(file, utput_format = rmarkdown::md_document(variant = "gfm"), output_dir = ".")
+              rmarkdown::render(file, output_format = rmarkdown::md_document(variant = "gfm"), output_dir = ".")
             }
           '
       - name: Commit changes
