@@ -45,35 +45,27 @@ Here we will read in some example drug data stored in this repository. These dat
 
 ```{r download-omop}
 
+#TODO change creation of the example drug data to
+#will need to tweak some examples below
+# drugs_unique <- cdm$drug_exposure |> 
+#   select(drug_concept_id, drug_type_concept_id, route_concept_id, drug_source_concept_id) |> 
+#   group_by(drug_concept_id) |> 
+#   slice_head(n=1)
+# write_csv(drugs_unique, "drugs_omop_unique.csv")
+
 datafolder <- here("dynamic-docs/03-drugs-uclh-omop/data")
 
-#using omopcept to read in a table, could use readr
+#using omopcept to read in a table, could use readr, but define types
 drugs_unique <- omop_cdm_table_read("drugs_omop_unique",path = datafolder, filetype = "csv")
 
-# names() can show us names of the tables read in
+# column names
 names(drugs_unique)
 
-# join on vocabulary_id for concept_id & maybe drug_source_concept_id (expect all to be dm+d)
-
-drugs_unique <- drugs_unique |> 
-  #remove concept_name temporarily due to issue in omopcept
-  select(-drug_concept_name) |> 
+# we can get attributes of the drugs from the omop concept table using omopcept
+drug_attributes <- drugs_unique |> 
+  select(drug_concept_id) |> 
   omopcept::omop_join_name(namefull="drug_concept_id",columns=c("concept_name","domain_id","vocabulary_id","concept_class_id"))
 
-
-
-#this is how file created, may be better to move join_names bit into here & make the data file closer to
-#the drug_exposure table
-# drugs_unique <- omde |> 
-#   #group_by(drug_concept_id) |> 
-#   #slice_head(n=1) #|> 
-#   #select(drug_concept_id) |> 
-#   #count replaces above 3 lines & gives num rows
-#   count(drug_concept_id, sort=TRUE) |> 
-#   omopcept::omop_join_name_all(columns=c("concept_name","domain_id","vocabulary_id","concept_class_id"))
-
-# #to use in documentation
-# write_csv(drugs_unique, "drugs_omop_unique.csv")
 
 ```
 
@@ -82,13 +74,12 @@ These data show us that drugs exported to OMOP from UCLH are in the vocabularies
 
 ```{r summarise drug standardisation}
 
-#note kable is a knitr function to display tables in a markdown file
-count(drugs_unique, vocabulary_id, sort=TRUE) |> kable()
-count(drugs_unique, concept_class_id, sort=TRUE)  |> kable()
+count(drug_attributes, vocabulary_id, sort=TRUE) |> kable()
+count(drug_attributes, concept_class_id, sort=TRUE)  |> kable()
 
 ```
 
-These data show us that drug records come from different places and have different administration routes.
+These data show us that drug records come from different places and have different administration routes. Note that the counts here do not represent frequencies in the whole database because just a single row per drug was extracted in the example data.
 
 ```{r where drug records come from}
 
@@ -110,12 +101,17 @@ graph TD;
 
 
 
-Drug records at UCLH are stored in our Electronic Health Record (EPIC) with as a `MedicationKey` value. Our OMOP extraction system translates this to an identifier in the NHS dictionary of medicines and devices (**dm+d**). `dm+d` is included in OMOP so there are values of OMOP concept_id for each dm+d. However because dm+d is not a standard vocabulary in OMOP we need to translate it once more to get to a standard OMOP id that can potentially be used in collaborative studies. The standard vocabularies for drugs in OMOP are **RxNorm** and **RxNormExtension**. Thus the `drug_concept_id` in UCLH OMOP extracts will either be in `RxNorm` or `RxNormExtension`.
+Drug records at UCLH are stored in our Electronic Health Record (EPIC) as an EPIC key. EPIC also stores a standard identifier in the NHS dictionary of medicines and devices (**dm+d**). `dm+d` is included in OMOP so there are values of OMOP concept_id for each dm+d. However because dm+d is not a standard vocabulary in OMOP we need to translate it once more to get to a standard OMOP id that can potentially be used in collaborative studies. The standard vocabularies for drugs in OMOP are **RxNorm** and **RxNormExtension**. Thus the `drug_concept_id` in UCLH OMOP extracts will either be in `RxNorm` or `RxNormExtension`.
 
-Note that the OMOP vocabularies have a dated representation of `dm+d` codes so some `dm+d` codes don't map to an OMOP or `RxNorm` equivalent.
+Note1 in UCLH EPIC there are many medication records that don't have a dm+d code and so can't be standardised to OMOP. 
+1/3 of outpatient medication records have no dm+d code
+1/5 of inpatient meds have no dm+d code
+
+Note2 that the OMOP vocabularies have a dated representation of `dm+d` codes so previously some `dm+d` codes in EPIC didn't map to an OMOP or `RxNorm` equivalent. We have now applied a patch for this that works for all but around 30 of the `dm+d` codes in EPIC.
+
+
 
 TODO add example with names & codes
-
 ```{r table drug codes in omop, echo=FALSE}
 
 tbl1 <- tibble(
