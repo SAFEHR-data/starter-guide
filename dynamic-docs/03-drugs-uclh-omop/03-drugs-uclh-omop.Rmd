@@ -45,8 +45,6 @@ Here we will read in some example drug data stored in this repository. These dat
 
 ```{r download-omop}
 
-#TODO copy drugs_omop_unique.csv from omop_analyses & look at it
-
 datafolder <- here("dynamic-docs/03-drugs-uclh-omop/data")
 
 #using omopcept to read in a table, could use readr
